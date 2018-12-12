@@ -1,0 +1,80 @@
+<div class="table-wrapper with-caption with-foot">
+  <div class="table-responsive-wrapper">
+    <table class="table table-title table-pagination table-striped table-sort table-search table-filter ">
+      <caption>
+        Manage Roles
+        <div class="search-box pull-left">
+          <div class="search-block search-default-sm">
+            <div class="search-btn"><i class="appkiticon icon-outline-search"></i></div>
+            <!-- --><input type="text" class="input-default search-content pull-left" name="roleList_search_keywords" id="roleList_search_keywords" value="" placeholder="Search"
+              [ngModel]="search.keywords.value" (change)="search.keywords.change($event, _self)" #searchBox>
+            <span class="delete-wrapper display-none"><i class="icon-outline-circle-delete input-delete"></i></span>
+          </div>
+        </div>
+        <div class="search-box pull-right">
+          <button class="button button-primary" type="button"(click)="createRole()">Add Role</button>
+        </div>
+      </caption>
+      <thead>
+        <tr>
+          <th>Actions</th>
+          <!--/* -->
+          <th ts-criteria="Name" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">Name<i class="no-sort" (click)='search.sort.change($event, _self, "name")'></i></th>
+          <th ts-criteria="Description" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">Description<i class="no-sort" (click)='search.sort.change($event, _self, "description")'></i></th>
+          <!--*/ -->
+        </tr>
+      </thead>
+      <tfoot>
+        <tr class="table-footer">
+          <td colspan="4">
+            <div class="pagination-detail pull-left">
+              <div>
+                <div class="dropdown dropdown-sample dropdown-default">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1_roles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{search.perPage.value}} / page</button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1_roles">
+                    <!--/* -->
+                    <li *ngFor="let amount of search.perPage.options">
+                      <a (click)="search.perPage.change(amount, _self)">{{amount}} / page</a>
+                    </li>
+                    <!--*/ -->
+                  </ul>
+                  <i class="appkiticon icon-outline-down-chevron" data-toggle="dropdown"></i>
+                </div>
+              </div>
+              <span>
+                <!--/* -->
+                {{search.result.chunk.interval.start}}-{{search.result.chunk.interval.end}} of {{search.result.total.items}} items
+                <!--*/ -->
+              </span>
+            </div>
+            <div class="pagination pull-right">
+              <ul class="nav navbar-nav pull-right">
+                <!--/* -->
+                <li>
+                  <i class="icon-outline-left-chevron" (click)="search.page.move(_self, -1)"></i>
+                </li>
+                <li><span><input type="text" class="current-page" value="{{search.page.value}}"> of {{search.result.total.pages}}</span></li>
+                <li>
+                  <i class="icon-outline-right-chevron" (click)="search.page.move(_self, 1)"></i>
+                </li>
+                <!--*/ -->
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <!-- --><tr *ngFor="let role of search.result.items" data-toggle="modal" data-target="#role-details">
+          <td class="table-row-actions">
+            <i class = "appkiticon icon-fill-delete" (click)="deleteRole(role._id)" title="Delete"></i>
+            <i class = "appkiticon icon-fill-edit" (click)="editRole(role)" title="Edit" data-toggle="modal" data-target="#roleToEditModal"></i>
+          </td>
+          <!--/* -->
+          <td>{{ role.displayName() }}</td>
+          <td>{{ role.description }}</td>
+          <!--*/ -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

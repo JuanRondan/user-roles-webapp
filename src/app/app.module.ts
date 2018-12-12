@@ -20,6 +20,7 @@ import { RoleDetailComponent } from './components/role-detail/role-detail.compon
 import { RolePickerComponent } from './components/role-picker/role-picker.component';
 import { RolePermissionsPickerComponent } from './components/role-permissions-picker/role-permissions-picker.component';
 import { ModalDialogComponent } from './components/modal-dialog/modal-dialog.component';
+import { DynamicTableComponent } from './components/dynamic-table/dynamic-table.component';
 
 const appRoutes : Routes = [
   { path : 'users', component : UserListComponent },
@@ -40,6 +41,7 @@ const appRoutes : Routes = [
     RolePickerComponent,
     RolePermissionsPickerComponent,
     ModalDialogComponent,
+    DynamicTableComponent,
   ],
   imports: [
     BrowserModule,

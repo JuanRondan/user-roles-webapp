@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { RoleService } from '../../services/role.service';
 import { Observable } from 'rxjs';
 
@@ -10,14 +10,45 @@ import { Role } from '../../types/role';
   styleUrls: ['./role-list.component.css']
 })
 export class RoleListComponent implements OnInit {
-
-  roles$: Observable<Role[]>;
   roleToEdit: Role;
-  
+  roles$: Observable<Role[]>;
+
+  /***/roles : Array<Role>;
+  /***/searchConfig : Object;
+  /***/_self : any;
+
   constructor( private roleService: RoleService) { }
 
   ngOnInit() {
     this.roles$ = this.roleService.getRoles();
+    /***/this._self = this;
+    /***/this.searchConfig = {
+      names : {
+        items : 'roles',
+      },
+      fieldsToSort : {
+        name : true,
+        description : true,
+      },
+      fieldsToEval : [
+        {
+          name : 'name',
+          type : 'string',
+        },
+        {
+          name : 'description',
+          type : 'string',
+        },
+      ],
+    };
+  }
+
+  /***/getItems() {
+    return this.roles;
+  }
+
+  /***/setItems(r) {
+    this.roles = r;
   }
 
   createRole() {
