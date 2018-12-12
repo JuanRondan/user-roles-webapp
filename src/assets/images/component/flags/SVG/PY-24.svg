@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/PY-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <ellipse id="path-5" cx="17" cy="12" rx="2.42857143" ry="2.4"></ellipse>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.666666667" y="-0.666666667" width="6.19047619" height="6.13333333">
+            <rect x="13.9047619" y="8.93333333" width="6.19047619" height="6.13333333" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-276.000000, -2634.000000)">
+            <g id="icons/Flags/PY-24" transform="translate(276.000000, 2634.000000)">
+                <g id="PY-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#E33F39" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#124BBA" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <g id="Oval-1" mask="url(#mask-3)" stroke-width="1.33333333" stroke="#398153">
+                        <use mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    </g>
+                    <ellipse id="Oval-29" fill="#E5CF58" mask="url(#mask-3)" cx="17" cy="12" rx="0.80952381" ry="0.8"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

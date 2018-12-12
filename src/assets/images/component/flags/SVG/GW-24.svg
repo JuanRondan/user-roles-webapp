@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/GW-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-340.000000, -2290.000000)">
+            <g id="icons/Flags/GW-24" transform="translate(340.000000, 2290.000000)">
+                <g id="GW-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#1AB558" mask="url(#mask-2)" x="0" y="11.2" width="34" height="12.8"></rect>
+                    <rect id="Rectangle-2" fill="#FFD952" mask="url(#mask-2)" x="0" y="0" width="34" height="11.2"></rect>
+                    <rect id="Rectangle-2" fill="#E72B42" mask="url(#mask-2)" x="0" y="0" width="12.952381" height="24"></rect>
+                    <polygon id="Star-53" fill="#262626" mask="url(#mask-2)" points="6.47619048 13.5340325 4.09705969 15.236068 4.99987037 12.4740421 2.62667601 10.763932 5.56377447 10.7589416 6.47619048 8 7.38860648 10.7589416 10.3257049 10.763932 7.95251059 12.4740421 8.85532126 15.236068"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TG-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1724.000000, -2756.000000)">
+            <g id="icons/Flags/TG-24" transform="translate(1724.000000, 2756.000000)">
+                <g id="TG-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#FFD44D" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M14.5714286,0 L34,0 L34,4.8 L14.5714286,4.8 L14.5714286,0 Z M14.5714286,9.6 L34,9.6 L34,14.4 L14.5714286,14.4 L14.5714286,9.6 Z M0,19.2 L34,19.2 L34,24 L0,24 L0,19.2 Z" id="Rectangle-537" fill="#159A74" mask="url(#mask-2)"></path>
+                    <rect id="Rectangle-1568" fill="#ED1F45" mask="url(#mask-2)" x="0" y="0" width="14.5714286" height="14.4"></rect>
+                    <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-2)" points="7.28571429 9.07200007 4.43075735 11.0832816 5.48414144 7.77847984 2.66629692 5.71671843 6.17228103 5.68552013 7.28571429 2.4 8.39914754 5.68552013 11.9051317 5.71671843 9.08728713 7.77847984 10.1406712 11.0832816"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

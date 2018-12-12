@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/MX-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-608.000000, -2537.000000)">
+            <g id="icons/Flags/MX-24" transform="translate(608.000000, 2537.000000)">
+                <g id="MX-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Mask" fill="#E3283E" mask="url(#mask-3)" x="22.6666667" y="0" width="11.3333333" height="24"></rect>
+                    <rect id="Rectangle-2" fill="#128A60" mask="url(#mask-3)" x="0" y="0" width="11.3333333" height="24"></rect>
+                    <path d="M13.7619048,11.2 C13.7619048,12.3829381 14.4114202,13.4159584 15.3772432,13.9697733 M18.7423171,13.897756 C19.6418012,13.3292412 20.2380952,12.3334373 20.2380952,11.2" id="Oval-5" stroke="#8C9157" stroke-width="1.33333333" stroke-linecap="round" mask="url(#mask-3)"></path>
+                    <ellipse id="Oval-5" fill="#C59262" mask="url(#mask-3)" cx="17" cy="10.4" rx="1.61904762" ry="2.4"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

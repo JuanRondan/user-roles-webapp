@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/WS-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1257.000000, -2881.000000)">
+            <g id="icons/Flags/WS-24" transform="translate(1257.000000, 2881.000000)">
+                <g id="WS-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <rect id="Mask-Copy" fill="#E31F37" mask="url(#mask-3)" x="0" y="0" width="34" height="24"></rect>
+                    <rect id="Rectangle-2" fill="#083B9A" mask="url(#mask-3)" x="-1.61904762" y="-1.6" width="19.4285714" height="14.4"></rect>
+                    <path d="M8.0952381,11.2 L6.95039854,11.5313708 L7.28571429,10.4 L6.95039854,9.26862915 L8.0952381,9.6 L9.24007765,9.26862915 L8.9047619,10.4 L9.24007765,11.5313708 L8.0952381,11.2 Z M8.0952381,3.2 L6.95039854,3.53137085 L7.28571429,2.4 L6.95039854,1.26862915 L8.0952381,1.6 L9.24007765,1.26862915 L8.9047619,2.4 L9.24007765,3.53137085 L8.0952381,3.2 Z M4.85714286,7.2 L3.71230331,7.53137085 L4.04761905,6.4 L3.71230331,5.26862915 L4.85714286,5.6 L6.00198241,5.26862915 L5.66666667,6.4 L6.00198241,7.53137085 L4.85714286,7.2 Z M12.1428571,6.4 L10.9980176,6.73137085 L11.3333333,5.6 L10.9980176,4.46862915 L12.1428571,4.8 L13.2876967,4.46862915 L12.952381,5.6 L13.2876967,6.73137085 L12.1428571,6.4 Z M10.1190476,8.8 C9.89550379,8.8 9.71428571,8.6209139 9.71428571,8.4 C9.71428571,8.1790861 9.89550379,8 10.1190476,8 C10.3425914,8 10.5238095,8.1790861 10.5238095,8.4 C10.5238095,8.6209139 10.3425914,8.8 10.1190476,8.8 Z" id="Star-2" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

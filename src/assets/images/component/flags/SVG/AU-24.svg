@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/AU-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <path d="M5.6,4.8 L0,0 L0.8,0 L6.4,4 L8,4 L14.4,0 L14.4,0.474609375 C14.4,0.654317655 14.283036,0.883545685 14.1299004,0.992928314 L8.8,4.8 L8.8,6.4 L14.1448279,10.9812811 C14.2857556,11.1020762 14.245752,11.2 14.0746094,11.2 L13.9253906,11.2 C13.7456823,11.2 13.483036,11.1164543 13.3299004,11.0070717 L8,7.2 L6.4,7.2 L0,11.2 L0,10.4 L5.6,6.4 L5.6,4.8 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.666666667" y="-0.666666667" width="15.7333333" height="12.5333333">
+            <rect x="-0.666666667" y="-0.666666667" width="15.7333333" height="12.5333333" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FF2E3A" offset="0%"></stop>
+            <stop stop-color="#FC0D1B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1771.000000, -2634.000000)">
+            <g id="icons/Flags/AU-24" transform="translate(1771.000000, 2634.000000)">
+                <g id="AU-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#0A17A7" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <g id="Rectangle-36" mask="url(#mask-2)">
+                        <use fill="#FF2E3B" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="1.33333333" xlink:href="#path-3"></use>
+                    </g>
+                    <path d="M0,4 L0,7.2 L5.6,7.2 L5.6,11.3325806 C5.6,11.7011861 5.8953125,12 6.26304207,12 L8.13695793,12 C8.50314595,12 8.8,11.6997385 8.8,11.3325806 L8.8,7.2 L14.539193,7.2 C14.9041466,7.2 15.2,6.9046875 15.2,6.53695793 L15.2,4.66304207 C15.2,4.29685405 14.9083748,4 14.539193,4 L8.8,4 L8.8,0 L5.6,0 L5.6,4 L0,4 Z" id="Rectangle-2" fill="url(#linearGradient-5)" mask="url(#mask-2)"></path>
+                    <polygon id="Rectangle-36" fill="url(#linearGradient-6)" mask="url(#mask-2)" points="0 4.8 6.4 4.8 6.4 4 6.4 0 8 0 8 4 8 4.8 14.4 4.8 14.4 6.4 8 6.4 8 7.2 8 11.2 6.4 11.2 6.4 7.2 6.4 6.4 0 6.4"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="7.2 19.6 5.78931539 20.3416408 6.05873218 18.7708204 4.91746436 17.6583592 6.4946577 17.4291796 7.2 16 7.9053423 17.4291796 9.48253564 17.6583592 8.34126782 18.7708204 8.61068461 20.3416408"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="24 20.8 22.8686292 21.1313708 23.2 20 22.8686292 18.8686292 24 19.2 25.1313708 18.8686292 24.8 20 25.1313708 21.1313708"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="24 5.6 22.8686292 5.93137085 23.2 4.8 22.8686292 3.66862915 24 4 25.1313708 3.66862915 24.8 4.8 25.1313708 5.93137085"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="28.8 10.4 27.6686292 10.7313708 28 9.6 27.6686292 8.46862915 28.8 8.8 29.9313708 8.46862915 29.6 9.6 29.9313708 10.7313708"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="19.2 12 18.0686292 12.3313708 18.4 11.2 18.0686292 10.0686292 19.2 10.4 20.3313708 10.0686292 20 11.2 20.3313708 12.3313708"></polygon>
+                    <polygon id="Star-2" fill="#FFFFFF" mask="url(#mask-2)" points="26.4 14 25.8343146 14.1656854 26 13.6 25.8343146 13.0343146 26.4 13.2 26.9656854 13.0343146 26.8 13.6 26.9656854 14.1656854"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SE-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-868.000000, -2756.000000)">
+            <g id="icons/Flags/SE-24" transform="translate(868.000000, 2756.000000)">
+                <g id="SE-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#157CBB" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <polygon id="Rectangle-2" fill="#FFD34D" mask="url(#mask-2)" points="0 14.4 9.71428571 14.4 9.71428571 24 14.5714286 24 14.5714286 14.4 34 14.4 34 9.6 14.5714286 9.6 14.5714286 0 9.71428571 0 9.71428571 9.6 0 9.6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

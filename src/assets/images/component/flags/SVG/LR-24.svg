@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/LR-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1743.000000, -2405.000000)">
+            <g id="icons/Flags/LR-24" transform="translate(1743.000000, 2405.000000)">
+                <g id="LR-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M16.1904762,0 L34,0 L34,3.2 L16.1904762,3.2 L16.1904762,0 Z M16.1904762,6.4 L34,6.4 L34,9.6 L16.1904762,9.6 L16.1904762,6.4 Z M16.1904762,12.8 L34,12.8 L34,16 L16.1904762,16 L16.1904762,12.8 Z M0,19.2 L34,19.2 L34,22.4 L0,22.4 L0,19.2 Z" id="Rectangle-537" fill="#E1244A" mask="url(#mask-3)"></path>
+                    <rect id="Rectangle-1568" fill="#0C3F8E" mask="url(#mask-3)" x="0" y="0" width="16.1904762" height="16"></rect>
+                    <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-3)" points="8.0952381 9.87200007 5.24028116 11.8832816 6.29366525 8.57847984 3.47582073 6.51671843 6.98180484 6.48552013 8.0952381 3.2 9.20867135 6.48552013 12.7146555 6.51671843 9.89681094 8.57847984 10.950195 11.8832816"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

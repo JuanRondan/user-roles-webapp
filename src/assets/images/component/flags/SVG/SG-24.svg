@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SG-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-167.000000, -2756.000000)">
+            <g id="icons/Flags/SG-24" transform="translate(167.000000, 2756.000000)">
+                <g id="SG-24">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-3)" fill="#FFFFFF">
+                        <use mask="url(#mask-5)" xlink:href="#path-2"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#E12237" mask="url(#mask-4)" x="0" y="0" width="34" height="12.8"></rect>
+                    <path d="M11.1287423,2.65102767 C10.6884355,2.48872092 10.2118449,2.4 9.71428571,2.4 C7.47884744,2.4 5.66666667,4.190861 5.66666667,6.4 C5.66666667,8.609139 7.47884744,10.4 9.71428571,10.4 C10.2118449,10.4 10.6884355,10.3112791 11.1287423,10.1489723 C10.2975409,10.8066667 9.2428703,11.2 8.0952381,11.2 C5.41271217,11.2 3.23809524,9.0509668 3.23809524,6.4 C3.23809524,3.7490332 5.41271217,1.6 8.0952381,1.6 C9.2428703,1.6 10.2975409,1.99333331 11.1287423,2.65102767 Z M8.9047619,6.4 C8.45767425,6.4 8.0952381,6.0418278 8.0952381,5.6 C8.0952381,5.1581722 8.45767425,4.8 8.9047619,4.8 C9.35184956,4.8 9.71428571,5.1581722 9.71428571,5.6 C9.71428571,6.0418278 9.35184956,6.4 8.9047619,6.4 Z M10.5238095,9.6 C10.0767219,9.6 9.71428571,9.2418278 9.71428571,8.8 C9.71428571,8.3581722 10.0767219,8 10.5238095,8 C10.9708972,8 11.3333333,8.3581722 11.3333333,8.8 C11.3333333,9.2418278 10.9708972,9.6 10.5238095,9.6 Z M13.7619048,9.6 C13.3148171,9.6 12.952381,9.2418278 12.952381,8.8 C12.952381,8.3581722 13.3148171,8 13.7619048,8 C14.2089924,8 14.5714286,8.3581722 14.5714286,8.8 C14.5714286,9.2418278 14.2089924,9.6 13.7619048,9.6 Z M15.3809524,6.4 C14.9338647,6.4 14.5714286,6.0418278 14.5714286,5.6 C14.5714286,5.1581722 14.9338647,4.8 15.3809524,4.8 C15.82804,4.8 16.1904762,5.1581722 16.1904762,5.6 C16.1904762,6.0418278 15.82804,6.4 15.3809524,6.4 Z M12.1428571,4 C11.6957695,4 11.3333333,3.6418278 11.3333333,3.2 C11.3333333,2.7581722 11.6957695,2.4 12.1428571,2.4 C12.5899448,2.4 12.952381,2.7581722 12.952381,3.2 C12.952381,3.6418278 12.5899448,4 12.1428571,4 Z" id="Oval-12" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

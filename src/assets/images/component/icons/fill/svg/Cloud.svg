@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Fill-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cloud" fill="#212121">
+            <path d="M20.9499,10.2474 C20.9619,10.0809 20.9994,9.9204 20.9994,9.7494 C20.9994,6.0219 17.9784,2.9994 14.2494,2.9994 C11.7444,2.9994 9.5829,4.3809 8.4189,6.4074 C7.9134,6.1554 7.3524,5.9994 6.7494,5.9994 C4.6794,5.9994 2.9994,7.6794 2.9994,9.7494 C2.9994,9.9204 3.0279,10.0824 3.0504,10.2474 C1.2534,11.0814 -0.0006,12.8889 -0.0006,14.9994 C-0.0006,17.8989 2.3499,20.2494 5.2494,20.2494 L18.7494,20.2494 C21.6489,20.2494 23.9994,17.8989 23.9994,14.9994 C23.9994,12.8889 22.7469,11.0814 20.9499,10.2474" id="Fill-1"></path>
+        </g>
+    </g>
+</svg>

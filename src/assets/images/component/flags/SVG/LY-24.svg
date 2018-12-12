@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/LY-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <rect id="path-3" x="0" y="8" width="34" height="8"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="16" width="34" height="8"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1646.000000, -2405.000000)">
+            <g id="icons/Flags/LY-24" transform="translate(1646.000000, 2405.000000)">
+                <g id="LY-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="Rectangle-2" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#262626" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Rectangle-2" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#34B857" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#F41F34" mask="url(#mask-2)" x="0" y="0" width="34" height="8"></rect>
+                    <path d="M18.3495878,10.0043988 C18.3048684,10.0014817 18.2597522,10 18.2142857,10 C17.0965666,10 16.1904762,10.8954305 16.1904762,12 C16.1904762,13.1045695 17.0965666,14 18.2142857,14 C18.2597522,14 18.3048684,13.9985183 18.3495878,13.9956012 C17.9636127,14.2510294 17.4994104,14.4 17,14.4 C15.658737,14.4 14.5714286,13.3254834 14.5714286,12 C14.5714286,10.6745166 15.658737,9.6 17,9.6 C17.4994104,9.6 17.9636127,9.74897057 18.3495878,10.0043988 Z M18.6190476,12.8 C18.17196,12.8 17.8095238,12.4418278 17.8095238,12 C17.8095238,11.5581722 18.17196,11.2 18.6190476,11.2 C19.0661353,11.2 19.4285714,11.5581722 19.4285714,12 C19.4285714,12.4418278 19.0661353,12.8 18.6190476,12.8 Z" id="Oval-68" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

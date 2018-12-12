@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SV-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#3C7839" offset="0%"></stop>
+            <stop stop-color="#31642E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-930.000000, -2171.000000)">
+            <g id="icons/Flags/SV-24" transform="translate(930.000000, 2171.000000)">
+                <g id="SV-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#1B57C4" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#1B57C4" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <path d="M15.0570796,9.43981257 C14.2706168,10.0236275 13.7619048,10.9531046 13.7619048,12 C13.7619048,13.7673112 15.2116494,15.2 17,15.2 C18.7883506,15.2 20.2380952,13.7673112 20.2380952,12 C20.2380952,10.9531046 19.7293832,10.0236275 18.9429204,9.43981257 L17.8095238,12.8 L16.1904762,12.8 L15.0570796,9.43981257 Z" id="Oval-12" fill="url(#linearGradient-5)" mask="url(#mask-3)"></path>
+                    <polygon id="Rectangle-483" fill="#F9C92E" mask="url(#mask-3)" points="17 8.8 17.8095238 12.8 16.1904762 12.8"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/RW-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <rect id="path-3" x="0" y="17.6" width="34" height="6.4"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1397.000000, -2634.000000)">
+            <g id="icons/Flags/RW-24" transform="translate(1397.000000, 2634.000000)">
+                <g id="RW-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <g id="Rectangle-2" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#2D754D" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#25B1EB" mask="url(#mask-2)" x="0" y="0" width="34" height="11.2"></rect>
+                    <rect id="Rectangle-2" fill="#FECB2F" mask="url(#mask-2)" x="0" y="11.2" width="34" height="6.4"></rect>
+                    <polygon id="Star-31" fill="#FECB2F" mask="url(#mask-2)" points="25.9047619 7.2 24.6655965 8.5564145 24.7599224 6.73137085 22.913152 6.82458698 24.2857143 5.6 22.913152 4.37541302 24.7599224 4.46862915 24.6655965 2.6435855 25.9047619 4 27.1439273 2.6435855 27.0496015 4.46862915 28.8963718 4.37541302 27.5238095 5.6 28.8963718 6.82458698 27.0496015 6.73137085 27.1439273 8.5564145"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

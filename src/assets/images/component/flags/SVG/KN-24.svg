@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/KN-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1257.000000, -2405.000000)">
+            <g id="icons/Flags/KN-24" transform="translate(1257.000000, 2405.000000)">
+                <g id="KN-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <polygon id="Rectangle-2" fill="#1EC160" mask="url(#mask-2)" points="0 16 34 0 0 0"></polygon>
+                    <polygon id="Rectangle-2" fill="#DF2A40" mask="url(#mask-2)" points="0 24 34 24 34 8"></polygon>
+                    <polygon id="Rectangle-2" fill="#FFD956" mask="url(#mask-2)" points="0.951901715 30.4000732 40.769779 5.81181936 33.0480983 -6.40007322 -6.76977899 18.1881806"></polygon>
+                    <polygon id="Rectangle-2" fill="#262626" mask="url(#mask-2)" points="-0.764027331 27.6863193 39.0538499 3.09806545 34.7640273 -3.68631931 -5.05384995 20.9019345"></polygon>
+                    <polygon id="Star-29" fill="#FFFFFF" mask="url(#mask-2)" points="24.6614156 9.35692194 23.5134187 11.1537514 22.7685375 9.16031301 20.6845567 8.6365987 22.3728182 7.32050266 22.2328442 5.2 24.0211283 6.38004626 26.0186004 5.59321785 25.4355593 7.63862259 26.810039 9.27283855"></polygon>
+                    <polygon id="Star-29" fill="#FFFFFF" mask="url(#mask-2)" points="11.7090346 17.1169317 10.5610377 18.9137611 9.81615652 16.9203228 7.73217574 16.3966085 9.42043723 15.0805124 9.28046321 12.9600098 11.0687474 14.140056 13.0662195 13.3532276 12.4831784 15.3986324 13.857658 17.0328483"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

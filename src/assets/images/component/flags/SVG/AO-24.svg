@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/AO-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FF323E" offset="0%"></stop>
+            <stop stop-color="#FD0D1B" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="12.8" width="34" height="11.2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="33.6" height="12.8"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M17.0089636,14.1674561 L14.7562398,12.6656402 C14.3886169,12.4205583 14.2892778,11.9238628 14.5343598,11.5562398 C14.7794417,11.1886169 15.2761372,11.0892778 15.6437602,11.3343598 L18.1008474,12.9724179 C18.2090659,12.7662266 18.2963138,12.5449452 18.359111,12.3105829 C18.8165248,10.6034913 17.8034608,8.84881306 16.0963693,8.39139927 C15.6695964,8.27704582 15.4163304,7.83837625 15.5306839,7.41160337 C15.6450373,6.98483049 16.0837069,6.73156449 16.5104798,6.84591794 C19.0711171,7.53203864 20.590713,10.164056 19.9045923,12.7246933 C19.7954038,13.1321905 19.636935,13.513323 19.4373161,13.8633971 L20.4437602,14.5343598 C20.8113831,14.7794417 20.9107222,15.2761372 20.6656402,15.6437602 C20.4205583,16.0113831 19.9238628,16.1107222 19.5562398,15.8656402 L18.4167804,15.1060006 C17.2532085,16.1151909 15.6255823,16.5474617 14.0258169,16.1188059 C13.599044,16.0044524 13.3457781,15.5657829 13.4601315,15.13901 C13.574485,14.7122371 14.0131545,14.4589711 14.4399274,14.5733246 C15.350832,14.8174007 16.2752858,14.6427888 17.0089636,14.1674561 Z M15.2,10.4 C14.7581722,10.4 14.4,10.0418278 14.4,9.6 C14.4,9.1581722 14.7581722,8.8 15.2,8.8 C15.6418278,8.8 16,9.1581722 16,9.6 C16,10.0418278 15.6418278,10.4 15.2,10.4 Z" id="path-9"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1770.000000, -2171.000000)">
+            <g id="icons/Flags/AO-24" transform="translate(1770.000000, 2171.000000)">
+                <g id="AO-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <rect id="Mask-Copy" fill="url(#linearGradient-4)" mask="url(#mask-3)" x="0" y="0" width="34" height="24"></rect>
+                    <g id="Rectangle-2" mask="url(#mask-3)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#262626" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Rectangle-2" mask="url(#mask-3)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#DD2137" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Shape" mask="url(#mask-3)" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="#F8D84B" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

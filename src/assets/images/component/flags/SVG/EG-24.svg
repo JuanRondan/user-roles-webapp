@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/EG-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M12.952381,10.2674194 C12.952381,9.89881386 13.2493392,9.6 13.6109096,9.6 L14.2437901,9.6 C14.4247398,9.6 14.6349505,9.72554932 14.7199077,9.89346466 L15.3809524,11.2 C15.3809524,11.2 16.2703448,9.6 17,9.6 C17.8095238,9.6 18.6190476,11.2 18.6190476,11.2 L19.2800923,9.89346466 C19.3620951,9.7313886 19.5779855,9.6 19.7562099,9.6 L20.3890904,9.6 C20.7527857,9.6 21.047619,9.9002615 21.047619,10.2674194 L21.047619,13.7325806 C21.047619,14.1011861 20.8058796,14.2407364 20.4843517,14.0289063 L18.6190476,12.8 L17.8095238,12.8 L17.8095238,13.7307266 C17.8095238,14.1003561 17.5125655,14.4 17.1509952,14.4 L16.8490048,14.4 C16.4853095,14.4 16.1904762,14.1065353 16.1904762,13.7307266 L16.1904762,12.8 L15.3809524,12.8 L13.5156483,14.0289063 C13.2045643,14.2338557 12.952381,14.0997385 12.952381,13.7325806 L12.952381,10.2674194 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.0952381" height="4.8" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-743.000000, -2171.000000)">
+            <g id="icons/Flags/EG-24" transform="translate(743.000000, 2171.000000)">
+                <g id="EG-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#E41D33" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#262626" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <g id="Rectangle-129" mask="url(#mask-3)" stroke="#C6A846" stroke-width="1.33333333" fill="#F4B32E" fill-opacity="0.25">
+                        <use mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

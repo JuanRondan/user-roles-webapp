@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/ET-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <polygon id="path-3" points="17 13.5600001 14.6208692 15.236068 15.4986893 12.4820665 13.1504855 10.763932 16.072139 10.7379334 17 8 17.927861 10.7379334 20.8495145 10.763932 18.5013107 12.4820665 19.3791308 15.236068"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.69902894" height="7.23606798" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1210.000000, -2171.000000)">
+            <g id="icons/Flags/ET-24" transform="translate(1210.000000, 2171.000000)">
+                <g id="ET-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#20AA46" mask="url(#mask-2)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#E92F3B" mask="url(#mask-2)" x="0" y="16" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#FADF50" mask="url(#mask-2)" x="0" y="8" width="34" height="8"></rect>
+                    <ellipse id="Oval-95" fill="#205CCA" mask="url(#mask-2)" cx="17" cy="12" rx="5.66666667" ry="5.6"></ellipse>
+                    <g id="Star-8" mask="url(#mask-2)" stroke-width="1.33333333" stroke="#FFDB3D">
+                        <use mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

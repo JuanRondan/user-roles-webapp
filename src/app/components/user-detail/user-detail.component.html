@@ -1,0 +1,57 @@
+<div class="modal fade add-edit-modal modal-popup" role="dialog" id="userToEditModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+        <div class="modal-header">
+          <button type="button" class="close" (click)="close()">
+            <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
+          </button>
+          <h6 class="modal-title">Edit User</h6>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="d-flex flex-column-lt-850">
+            <div class="add-panel">
+              <label class="form-label">First Name<span class="form-label-required"> *</span></label>
+              <label [hidden]="firstName.pristine || firstName.valid"><span class="text-danger">First name is required</span></label>
+              <input type="text" class="text-input" placeholder="First name" id="firstName" [ngModel]="user.firstName"
+                name="firstName" #firstName="ngModel" required>
+
+              <label class="form-label">Last Name<span class="form-label-required"> *</span></label>
+              <label [hidden]="lastName.pristine || lastName.valid"><span class="text-danger">Last name is required</span></label>
+              <input type="text" class="text-input" placeholder="Last name" id="lastName" [ngModel]="user.lastName"
+                name="lastName" #lastName="ngModel" required>
+
+              <label class="form-label">GUID<span class="form-label-required"> *</span></label>
+              <label [hidden]="guid.pristine || guid.valid"><span class="text-danger">GUID is required</span></label>
+              <input type="text" class="text-input" placeholder="GUID" id="guid" [ngModel]="user.guid" name="guid"
+                #guid="ngModel" required>
+
+              <label class="form-label">Address</label>
+              <input type="text" class="text-input" placeholder="Address" id="address" [ngModel]="user.address" name="address">
+
+              <label class="form-label">Phone</label>
+              <input type="text" class="text-input" id="phone" [ngModel]="user.phone" name="phone">
+
+              <label class="form-label">Email<span class="form-label-required"> *</span></label>
+              <label [hidden]="email.pristine || email.valid"><span class="text-danger">Email is required</span></label>
+              <input type="text" class="text-input" id="email" [ngModel]="user.email" name="email" #email="ngModel"
+                placeholder="firstname.lastname@pwc.com"  #email="ngModel" required>
+            </div>
+            <div class="add-panel">
+              <app-role-picker [selectedRoles]="user.roles" (updatedRoles)="updateRoles($event)">
+              </app-role-picker>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="buttons-combined pull-right">
+            <button class="button button-primary" type="submit"
+              [class.button-disabled]="!userForm.form.valid" [disabled]="!userForm.form.valid">Update</button>
+            <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

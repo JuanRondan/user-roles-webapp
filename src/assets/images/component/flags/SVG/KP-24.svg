@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/KP-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1159.000000, -2405.000000)">
+            <g id="icons/Flags/KP-24" transform="translate(1159.000000, 2405.000000)">
+                <g id="KP-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#1461B6" mask="url(#mask-2)" x="0" y="0" width="34" height="4.8"></rect>
+                    <rect id="Rectangle-2" fill="#1461B6" mask="url(#mask-2)" x="0" y="19.2" width="34" height="4.8"></rect>
+                    <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="0" y="4.8" width="34" height="14.4"></rect>
+                    <rect id="Rectangle-2-Copy-4" fill="#F53846" mask="url(#mask-2)" x="0" y="6.4" width="34" height="11.2"></rect>
+                    <path d="M12.1428571,16 C9.90741887,16 8.0952381,14.209139 8.0952381,12 C8.0952381,9.790861 9.90741887,8 12.1428571,8 C14.3782954,8 16.1904762,9.790861 16.1904762,12 C16.1904762,14.209139 14.3782954,16 12.1428571,16 Z M12.1428571,13.6050942 L14.5219879,15.236068 L13.6875655,12.4960014 L15.9923716,10.763932 L13.0975394,10.7014515 L12.1428571,8 L11.1881749,10.7014515 L8.29334267,10.763932 L10.5981488,12.4960014 L9.76372636,15.236068 L12.1428571,13.6050942 Z" id="Oval-12" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

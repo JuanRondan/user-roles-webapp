@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/HR-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FF202D" offset="0%"></stop>
+            <stop stop-color="#FD0D1B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1591.000000, -2290.000000)">
+            <g id="icons/Flags/HR-24" transform="translate(1591.000000, 2290.000000)">
+                <g id="HR-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#FF202D" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <path d="M12.952381,6.4 L13.7619048,5.6 L14.5714286,6.4 L14.5714286,8 L12.952381,8 L12.952381,6.4 Z M16.1904762,6.4 L17,5.6 L17.8095238,6.4 L17.8095238,8 L16.1904762,8 L16.1904762,6.4 Z M19.4285714,6.4 L20.2380952,5.6 L21.047619,6.4 L21.047619,8 L19.4285714,8 L19.4285714,6.4 Z" id="Rectangle-675" fill="#1895DB" opacity="0.5" mask="url(#mask-3)"></path>
+                    <path d="M14.5714286,6.4 L15.3809524,5.6 L16.1904762,6.4 L16.1904762,8 L14.5714286,8 L14.5714286,6.4 Z M17.8095238,6.4 L18.6190476,5.6 L19.4285714,6.4 L19.4285714,8 L17.8095238,8 L17.8095238,6.4 Z" id="Rectangle-675" fill="#191F94" opacity="0.5" mask="url(#mask-3)"></path>
+                    <rect id="Rectangle-2" fill="#2027AC" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <path d="M16.1904762,8 L17.8095238,8 L17.8095238,9.6 L16.1904762,9.6 L16.1904762,8 Z M19.4285714,8 L20.2380952,8 L21.047619,9.6 L19.4285714,9.6 L19.4285714,8 Z M13.7619048,8 L14.5714286,8 L14.5714286,9.6 L12.952381,9.6 L13.7619048,8 Z M14.5714286,9.6 L16.1904762,9.6 L16.1904762,11.2 L14.5714286,11.2 L14.5714286,9.6 Z M17.8095238,9.6 L19.4285714,9.6 L19.4285714,11.2 L17.8095238,11.2 L17.8095238,9.6 Z M16.1904762,11.2 L17.8095238,11.2 L17.8095238,12.8 L16.1904762,12.8 L16.1904762,11.2 Z M19.4285714,11.2 L21.047619,11.2 L21.047619,12.8 L19.4285714,12.8 L19.4285714,11.2 Z M17.8095238,12.8 L19.4285714,12.8 L19.4285714,14.4 L17.8095238,14.4 L17.8095238,12.8 Z M12.952381,11.2 L14.5714286,11.2 L14.5714286,12.8 L12.952381,12.8 L12.952381,11.2 Z M14.5714286,12.8 L16.1904762,12.8 L16.1904762,14.4 L14.5714286,14.4 L14.5714286,12.8 Z M12.952381,14.4 L14.5714286,14.4 L14.5714286,16 L12.952381,16 L12.952381,14.4 Z M16.1904762,14.4 L17.8095238,14.4 L17.8095238,16 L16.1904762,16 L16.1904762,14.4 Z M19.4285714,14.4 L21.047619,14.4 L21.047619,16 L19.4285714,16 L19.4285714,14.4 Z M17.8095238,16 L19.4285714,16 L19.4285714,17.6 L17.8095238,17.6 L17.8095238,16 Z M14.5714286,16 L16.1904762,16 L16.1904762,17.6 L14.5714286,17.6 L14.5714286,16 Z" id="Rectangle-657" fill="url(#linearGradient-5)" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

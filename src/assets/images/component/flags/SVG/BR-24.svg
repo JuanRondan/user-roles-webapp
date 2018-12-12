@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/BR-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <ellipse id="path-3" cx="5.6" cy="5.6" rx="5.6" ry="5.6"></ellipse>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2424.000000, -2756.000000)">
+            <g id="icons/Flags/BR-24" transform="translate(2424.000000, 2756.000000)">
+                <g id="BR-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#05AB41" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M3.76706029,12.3669214 C3.45388154,12.1642763 3.44766301,11.8397475 3.76706029,11.6330786 L16.2329397,3.56692137 C16.5461185,3.36427629 17.047663,3.36025254 17.3670603,3.56692137 L29.8329397,11.6330786 C30.1461185,11.8357237 30.152337,12.1602525 29.8329397,12.3669214 L17.3670603,20.4330786 C17.0538815,20.6357237 16.552337,20.6397475 16.2329397,20.4330786 L3.76706029,12.3669214 Z" id="Rectangle-60" fill="#FDD216" mask="url(#mask-2)"></path>
+                    <g id="Oval-2" mask="url(#mask-2)">
+                        <g transform="translate(11.200000, 6.400000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#053087" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <path d="M-0.8,4.8 C4.61852778e-14,4.00000003 2.8921875,4.37421881 5.6,4.80000001 C8.3078125,5.2257812 11.2097467,6.40974678 12,7.2" id="Line" stroke="#FFFFFF" stroke-width="1.33333333" stroke-linecap="square" fill="none" mask="url(#mask-4)" transform="translate(5.600000, 5.765037) rotate(6.000000) translate(-5.600000, -5.765037) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

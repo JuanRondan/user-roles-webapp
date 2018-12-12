@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/JO-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-186.000000, -2405.000000)">
+            <g id="icons/Flags/JO-24" transform="translate(186.000000, 2405.000000)">
+                <g id="JO-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#199E56" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#262626" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <polygon id="Rectangle-83" fill="#E6223A" mask="url(#mask-3)" points="0 0 16.1904762 12 0 24"></polygon>
+                    <polygon id="Star-27" fill="#FFFFFF" mask="url(#mask-3)" points="5.66666667 13.2 4.61294901 14.1623253 4.71729987 12.7481878 3.29898459 12.5340502 4.48282563 11.7329749 3.76793307 10.5036245 5.13980784 10.9188374 5.66666667 9.6 6.19352549 10.9188374 7.56540027 10.5036245 6.8505077 11.7329749 8.03434874 12.5340502 6.61603347 12.7481878 6.72038432 14.1623253"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/CA-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-176.000000, -2056.000000)">
+            <g id="icons/Flags/CA-24" transform="translate(176.000000, 2056.000000)">
+                <g id="CA-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Mask" fill="#FF3131" mask="url(#mask-3)" x="24.2857143" y="0" width="9.71428571" height="24"></rect>
+                    <rect id="Rectangle-2" fill="#FF3131" mask="url(#mask-3)" x="0" y="0" width="9.71428571" height="24"></rect>
+                    <path d="M18.8579437,11.7639145 C18.726005,11.8943009 18.6497934,11.8480797 18.6852943,11.6726632 L19.4285714,8 L17.8095238,8.8 L17,6.4 L16.1904762,8.8 L14.5714286,8 L15.3147057,11.6726632 C15.3512927,11.8534463 15.2747221,11.8950195 15.1420563,11.7639145 L14.0008008,10.6360855 C13.8688622,10.5056991 13.6626413,10.4980957 13.5233994,10.6356995 L12.952381,11.2 L11.3333333,10.4 L12.1428571,12 L11.5718387,12.5643005 C11.4401158,12.6944738 11.437686,12.903125 11.5750727,13.0388954 L13.7619048,15.2 L16.1904762,15.2 L16.5952381,17.6 L17.4047619,17.6 L17.8095238,15.2 L20.2380952,15.2 L22.4249273,13.0388954 C22.5584362,12.9069571 22.5674032,12.7019043 22.4281613,12.5643005 L21.8571429,12 L22.6666667,10.4 L21.047619,11.2 L20.4766006,10.6356995 C20.3448777,10.5055262 20.131865,10.5049805 19.9991992,10.6360855 L18.8579437,11.7639145 Z" id="Rectangle-66" fill="#FF3131" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

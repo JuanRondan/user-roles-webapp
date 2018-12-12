@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/HT-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="11.3333333" height="9.6" rx="0.666666667"></rect>
+        <path d="M0,8 L1.80839375,7.10644073 C2.59799608,6.71628429 3.95478339,6.4 4.82850547,6.4 L6.50482786,6.4 C7.38318718,6.4 8.73498151,6.71610851 9.52493958,7.10644073 L11.3333333,8 L11.3333333,9.6 L0,9.6 L0,8 Z" id="path-6"></path>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11.3333333" height="3.2" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <path d="M1.61904762,4.66051865 C1.61904762,4.29572427 1.86012309,4.19059143 2.14820312,4.41834412 L5.13751116,6.78165588 C5.42975568,7.01270096 5.90774214,7.00940857 6.19582217,6.78165588 L9.18513021,4.41834412 C9.47737473,4.18729904 9.71428571,4.30065012 9.71428571,4.66051865 L9.71428571,7.33948135 C9.71428571,7.70427573 9.40682793,8 9.0518184,8 L2.28151493,8 C1.91564434,8 1.61904762,7.69934988 1.61904762,7.33948135 L1.61904762,4.66051865 Z" id="path-8"></path>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.0952381" height="3.64051722" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1257.000000, -2290.000000)">
+            <g id="icons/Flags/HT-24" transform="translate(1257.000000, 2290.000000)">
+                <g id="HT-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#112EBC" mask="url(#mask-2)" x="0" y="0" width="34" height="11.2"></rect>
+                    <rect id="Rectangle-2" fill="#E3264A" mask="url(#mask-2)" x="0" y="11.2" width="34" height="12.8"></rect>
+                    <g id="Rectangle-180" mask="url(#mask-2)">
+                        <g transform="translate(11.333333, 8.000000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <g id="Rectangle-181" stroke="none" fill="none" mask="url(#mask-5)" stroke-width="1.33333333" fill-rule="evenodd">
+                                <use stroke="#366C14" mask="url(#mask-7)" fill="#AABCAE" xlink:href="#path-6"></use>
+                            </g>
+                            <ellipse id="Oval-6" stroke="none" fill="#D4B872" fill-rule="evenodd" mask="url(#mask-5)" cx="5.66666667" cy="4" rx="2.42857143" ry="2.4"></ellipse>
+                            <g id="Rectangle-182" stroke="none" fill="none" mask="url(#mask-5)" stroke-width="1.33333333" fill-rule="evenodd">
+                                <use stroke="#0D3488" mask="url(#mask-9)" fill="#C28321" xlink:href="#path-8"></use>
+                            </g>
+                            <path d="M3.47983465,1.83889542 C3.34632566,1.70695712 3.37822188,1.6 3.57194634,1.6 L7.761387,1.6 C7.94576787,1.6 7.99088542,1.703125 7.85349869,1.83889542 L5.90840608,3.76110458 C5.77489709,3.89304288 5.56231399,3.896875 5.42492726,3.76110458 L3.47983465,1.83889542 Z" id="Rectangle-183" stroke="none" fill="#216C30" fill-rule="evenodd" mask="url(#mask-5)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

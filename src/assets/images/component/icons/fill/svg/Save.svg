@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/fill/save-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.32211092,0.0103154574 C3.57441986,0.0976335587 3,0.728606178 3,1.49401276 L3,6.75598724 C3,7.57486787 3.67160853,8.25 4.50007964,8.25 L14.2499204,8.25 C15.0824562,8.25 15.75,7.5811077 15.75,6.75598724 L15.75,1.49401276 C15.75,0.706534446 15.1289133,0.0519911351 14.3445096,0.0029484974 L16.8536679,0.00110414163 C17.680738,0.000496204077 18.8490289,0.457246798 19.4574574,1.02128931 L22.8983426,4.21115508 C23.5089879,4.77725262 24,5.90585429 24,6.73654751 L24,22.4958969 C24,23.3320528 23.3278417,24 22.4986925,24 L1.50130749,24 C0.666946292,24 0,23.3282196 0,22.4995365 L0,1.5139559 C0,0.680063768 0.672527475,0.0129980822 1.50213216,0.0123882817 L4.32211092,0.0103154574 Z M3,13.4955452 L3,22.5044548 C3,23.3204455 3.67323387,24 4.50370994,24 L19.4962901,24 C20.338023,24 21,23.3304216 21,22.5044548 L21,13.4955452 C21,12.6795545 20.3267661,12 19.4962901,12 L4.50370994,12 C3.66197696,12 3,12.6695784 3,13.4955452 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="23.9988965" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M1.50213216,0.0123882817 C0.672527475,0.0129980822 0,0.680063768 0,1.5139559 L0,22.4995365 C0,23.3282196 0.666946292,24 1.50130749,24 L22.4986925,24 C23.3278417,24 24,23.3320528 24,22.4958969 L24,6.73654751 C24,5.90585429 23.5089879,4.77725262 22.8983426,4.21115508 L19.4574574,1.02128931 C18.8490289,0.457246798 17.680738,0.000496204077 16.8536679,0.00110414163 L1.50213216,0.0123882817 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M4.5,15.0063976 C4.5,14.1744372 5.16388585,13.5 5.99309635,13.5 L18.0069036,13.5 C18.831518,13.5 19.5,14.1764628 19.5,15.0063976 L19.5,22.5 L4.5,22.5 L4.5,15.0063976 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15" height="9" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1910.000000, -1913.000000)" stroke="#212121">
+            <g id="icons/fill/save-4" transform="translate(1910.000000, 1913.000000)">
+                <g id="icons/fill/save_32">
+                    <g>
+                        <g id="Group-19">
+                            <use id="Combined-Shape" mask="url(#mask-2)" stroke-width="3" fill="#212121" xlink:href="#path-1"></use>
+                            <use id="Path-2" mask="url(#mask-4)" stroke-width="3" xlink:href="#path-3"></use>
+                            <use id="Rectangle-6" mask="url(#mask-6)" stroke-width="3" fill="#212121" xlink:href="#path-5"></use>
+                            <path d="M12.75,3.375 L12.75,4.875" id="Line" stroke-width="1.5" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

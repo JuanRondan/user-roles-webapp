@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TL-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1646.000000, -2756.000000)">
+            <g id="icons/Flags/TL-24" transform="translate(1646.000000, 2756.000000)">
+                <g id="TL-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#FF323E" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <polygon id="Rectangle-83" fill="#FFCC51" mask="url(#mask-2)" points="0 0 21.047619 12 0 24"></polygon>
+                    <polygon id="Rectangle-83" fill="#262626" mask="url(#mask-2)" points="0 0 14.5714286 12 0 24"></polygon>
+                    <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-2)" transform="translate(6.347402, 11.499737) rotate(-30.000000) translate(-6.347402, -11.499737) " points="6.34740198 13.2196876 4.24026573 14.7041387 5.01772888 12.264989 2.93798391 10.7432805 5.52561881 10.7202542 6.34740198 8.29533545 7.16918515 10.7202542 9.75682005 10.7432805 7.67707508 12.264989 8.45453823 14.7041387"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

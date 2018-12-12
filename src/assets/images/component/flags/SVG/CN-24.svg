@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/CN-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-522.000000, -2056.000000)">
+            <g id="icons/Flags/CN-24" transform="translate(522.000000, 2056.000000)">
+                <g id="CN-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask" fill="#F1361D" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M16.3975314,7.17274066 L15.3774664,7.7891266 L15.4085362,6.60952018 L14.7918258,5.60348596 L15.983421,5.62725934 L17.003486,5.0108734 L16.9724161,6.19047982 L17.5891266,7.19651404 L16.3975314,7.17274066 Z M13.4112078,3.91903524 L12.2369695,3.71500476 L13.0343096,2.84512812 L13.2288901,1.68126599 L14.1126017,2.48096476 L15.2868401,2.68499524 L14.4894999,3.55487188 L14.2949194,4.71873401 L13.4112078,3.91903524 Z M13.9958021,14.3650438 L12.9978701,15.016654 L12.9877533,13.8366819 L12.3363084,12.8527834 L13.5280074,12.8349562 L14.5259394,12.183346 L14.5360562,13.3633181 L15.1875011,14.3472166 L13.9958021,14.3650438 Z M16.0515576,11.1878462 L14.8665688,11.3153835 L15.3932509,10.2594277 L15.2594898,9.08701791 L16.3293947,9.6121538 L17.5143835,9.48461652 L16.9877015,10.5405723 L17.1214626,11.7129821 L16.0515576,11.1878462 Z" id="Star-2" fill="#FFDC42" mask="url(#mask-2)"></path>
+                    <polygon id="Star-8" fill="#FFDC42" mask="url(#mask-2)" points="8.0952381 9.87200007 5.24028116 11.8832816 6.29366525 8.57847984 3.47582073 6.51671843 6.98180484 6.48552013 8.0952381 3.2 9.20867135 6.48552013 12.7146555 6.51671843 9.89681094 8.57847984 10.950195 11.8832816"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

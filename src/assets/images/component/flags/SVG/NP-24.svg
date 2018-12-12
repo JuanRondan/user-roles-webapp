@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/NP-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M0,2.00494659 C0,0.897645164 0.90199005,8.64298502e-10 1.99542382,1.91187202e-09 L2.56715981,2.45962855e-09 C2.93770722,2.81463464e-09 3.48374417,0.161839297 3.79860179,0.369274905 L21.5523208,12.0658427 C22.167757,12.4713066 22.0764728,12.8 21.3293191,12.8 L9.71428571,12.8 L21.6610928,23.1304744 C22.2164559,23.6107001 22.0603881,24 21.3333864,24 L1.99164966,24 C0.891691926,24 0,23.1029738 0,21.9950534 L0,2.00494659 Z" id="path-5"></path>
+        <path d="M0,0 L2.56715981,0 C2.93770722,0 3.48374417,0.161839294 3.79860179,0.369274902 L21.5523208,12.0658427 C22.167757,12.4713066 22.0764728,12.8 21.3293191,12.8 L9.71428571,12.8 L21.6610928,23.1304744 C22.2164559,23.6107001 22.0603881,24 21.3333864,24 L0,24 L0,0 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.8537496" height="24" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2165.000000, -2537.000000)">
+            <g id="icons/Flags/NP-24" transform="translate(2165.000000, 2537.000000)">
+                <g id="NP-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-5"></use>
+                    <g id="Mask-Copy" mask="url(#mask-6)" stroke="#0543A8" stroke-width="2.66666667" fill="#EE1B44" stroke-linejoin="round">
+                        <use mask="url(#mask-8)" xlink:href="#path-7"></use>
+                    </g>
+                    <path d="M8.31917701,9.36092087 C8.78559613,9.23460189 9.21559229,9.0618388 9.59590309,8.85136919 C9.21868544,10.2054114 7.96370764,11.2 6.47366578,11.2 C4.98362391,11.2 3.72864611,10.2054114 3.35142846,8.85136919 C3.73279215,9.06242148 4.16411669,9.23555819 4.63202922,9.36196895 L5.26190476,8.8 L4.23248304,7.88155976 L5.61756081,7.95147186 L5.54681643,6.58268912 L6.47619048,7.6 L7.40556453,6.58268912 L7.33482014,7.95147186 L8.71989791,7.88155976 L7.69047619,8.8 L8.31917701,9.36092087 Z M6.47619048,19.2 L5.23702508,20.5564145 L5.33135093,18.7313708 L3.48458056,18.824587 L4.85714286,17.6 L3.48458056,16.375413 L5.33135093,16.4686292 L5.23702508,14.6435855 L6.47619048,16 L7.71535588,14.6435855 L7.62103003,16.4686292 L9.46780039,16.375413 L8.0952381,17.6 L9.46780039,18.824587 L7.62103003,18.7313708 L7.71535588,20.5564145 L6.47619048,19.2 Z" id="Star-93" fill="#FFFFFF" mask="url(#mask-6)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

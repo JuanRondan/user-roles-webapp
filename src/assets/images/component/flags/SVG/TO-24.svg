@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TO-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#DF0F1B" offset="0%"></stop>
+            <stop stop-color="#C00711" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1412.000000, -2756.000000)">
+            <g id="icons/Flags/TO-24" transform="translate(1412.000000, 2756.000000)">
+                <g id="TO-24">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-3)" fill="#FFFFFF">
+                        <use mask="url(#mask-5)" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M0,0 L34,0 L34,24 L0,24 L0,0 Z M0,12.8 L19.4285714,12.8 L19.4285714,0 L0,0 L0,12.8 Z" id="Combined-Shape" fill="#E20F1B" mask="url(#mask-4)"></path>
+                    <path d="M11.3333333,4.8 L11.3333333,1.94166908 C11.3333333,1.75079308 11.1836456,1.6 10.9989964,1.6 L8.42957499,1.6 C8.25141816,1.6 8.0952381,1.75297046 8.0952381,1.94166908 L8.0952381,4.8 L5.19153056,4.8 C5.00973109,4.8 4.85714286,4.9533228 4.85714286,5.14245605 L4.85714286,7.65754395 C4.85714286,7.84565735 5.00685333,8 5.19153056,8 L8.0952381,8 L8.0952381,10.8583309 C8.0952381,11.0492069 8.24492582,11.2 8.42957499,11.2 L10.9989964,11.2 C11.1771533,11.2 11.3333333,11.0470295 11.3333333,10.8583309 L11.3333333,8 L14.2370409,8 C14.4188403,8 14.5714286,7.8466772 14.5714286,7.65754395 L14.5714286,5.14245605 C14.5714286,4.95434265 14.4217181,4.8 14.2370409,4.8 L11.3333333,4.8 Z" id="Rectangle-1703" fill="url(#linearGradient-6)" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

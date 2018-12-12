@@ -1,0 +1,13 @@
+.popUp-no-display{
+	display: inherit !important;
+}
+
+#sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -80px;
+}

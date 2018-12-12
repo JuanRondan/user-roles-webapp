@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SY-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-945.000000, -2756.000000)">
+            <g id="icons/Flags/SY-24" transform="translate(945.000000, 2756.000000)">
+                <g id="SY-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#262626" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#E32139" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <polygon id="Star-33" fill="#128A49" mask="url(#mask-3)" points="11.3333333 13.312 9.43002871 14.5888544 10.0706926 12.4054303 8.25372176 11.0111456 10.5529784 10.9385697 11.3333333 8.8 12.1136882 10.9385697 14.4129449 11.0111456 12.5959741 12.4054303 13.236638 14.5888544"></polygon>
+                    <polygon id="Star-33" fill="#128A49" mask="url(#mask-3)" points="22.6666667 13.312 20.763362 14.5888544 21.4040259 12.4054303 19.5870551 11.0111456 21.8863118 10.9385697 22.6666667 8.8 23.4470216 10.9385697 25.7462782 11.0111456 23.9293074 12.4054303 24.5699713 14.5888544"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

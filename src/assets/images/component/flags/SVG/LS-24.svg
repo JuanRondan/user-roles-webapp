@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/LS-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <ellipse id="path-5" cx="17" cy="10.4" rx="1.61904762" ry="1.6"></ellipse>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="3.23809524" height="3.2" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1938.000000, -2405.000000)">
+            <g id="icons/Flags/LS-24" transform="translate(1938.000000, 2405.000000)">
+                <g id="LS-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#0C33B8" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#1DB158" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <path d="M16.1904762,12 L16.7873072,10.2305717 C16.9047742,9.88231659 17.0928627,9.87531051 17.2126929,10.2305717 L17.8095238,11.9999999 L19.2428461,14.1246895 C19.3454194,14.2767393 19.3123605,14.4980957 19.1670968,14.6018738 C19.1670968,14.6018738 18.6190476,15.2 17,15.2 C15.3809524,15.2 14.8329032,14.6018738 14.8329032,14.6018738 C14.6884947,14.490382 14.6584756,14.2709656 14.7571539,14.1246895 L16.1904762,12 Z" id="Rectangle-328" fill="#262626" mask="url(#mask-3)"></path>
+                    <g id="Oval-17" mask="url(#mask-3)" stroke-width="1.33333333" stroke="#262626">
+                        <use mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

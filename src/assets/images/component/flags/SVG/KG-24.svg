@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/KG-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-673.000000, -2405.000000)">
+            <g id="icons/Flags/KG-24" transform="translate(673.000000, 2405.000000)">
+                <g id="KG-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#F22A46" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <ellipse id="Oval-9" fill="#FFF04D" mask="url(#mask-2)" cx="17" cy="12" rx="4.04761905" ry="4"></ellipse>
+                    <path d="M17,17.6563356 L15.0185041,20.5793656 L14.5165914,17.0961823 L11.4479718,18.880117 L12.5250523,15.5266676 L8.97708675,15.8181769 L11.4198315,13.2586531 L8.0952381,12 L11.4198315,10.7413469 L8.97708675,8.1818231 L12.5250523,8.47333243 L11.4479718,5.11988295 L14.5165914,6.9038177 L15.0185041,3.42063437 L17,6.34366438 L18.9814959,3.42063437 L19.4834086,6.9038177 L22.5520282,5.11988295 L21.4749477,8.47333243 L25.0229133,8.1818231 L22.5801685,10.7413469 L25.9047619,12 L22.5801685,13.2586531 L25.0229133,15.8181769 L21.4749477,15.5266676 L22.5520282,18.880117 L19.4834086,17.0961823 L18.9814959,20.5793656 L17,17.6563356 Z M17,17.6 C20.1296136,17.6 22.6666667,15.0927946 22.6666667,12 C22.6666667,8.9072054 20.1296136,6.4 17,6.4 C13.8703864,6.4 11.3333333,8.9072054 11.3333333,12 C11.3333333,15.0927946 13.8703864,17.6 17,17.6 Z" id="Star-28" fill="#FFF04D" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

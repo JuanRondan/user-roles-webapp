@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SB-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#1CBE4F" offset="0%"></stop>
+            <stop stop-color="#159B3F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#0660D5" offset="0%"></stop>
+            <stop stop-color="#0051BB" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-5" points="0 0 34 0 0 24"></polygon>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1023.000000, -2756.000000)">
+            <g id="icons/Flags/SB-24" transform="translate(1023.000000, 2756.000000)">
+                <g id="SB-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="url(#linearGradient-3)" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <g id="Rectangle-253" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <polygon id="Rectangle-253" fill="#2C7442" mask="url(#mask-2)" transform="translate(17.000000, 12.000000) scale(-1, 1) translate(-17.000000, -12.000000) " points="0 0 34 24 0 24"></polygon>
+                    <rect id="Rectangle-2" fill="#FFD646" mask="url(#mask-2)" x="-6.47619048" y="10.4" width="46.952381" height="3.2"></rect>
+                    <path d="M3.64285714,4.6 L2.45329175,5.21803399 L2.68047853,3.90901699 L1.71809991,2.98196601 L3.04807445,2.79098301 L3.64285714,1.6 L4.23763984,2.79098301 L5.56761438,2.98196601 L4.60523576,3.90901699 L4.83242253,5.21803399 L3.64285714,4.6 Z M11.7380952,4.6 L10.5485298,5.21803399 L10.7757166,3.90901699 L9.813338,2.98196601 L11.1433125,2.79098301 L11.7380952,1.6 L12.3328779,2.79098301 L13.6628525,2.98196601 L12.7004739,3.90901699 L12.9276606,5.21803399 L11.7380952,4.6 Z M11.7380952,9.4 L10.5485298,10.018034 L10.7757166,8.70901699 L9.813338,7.78196601 L11.1433125,7.59098301 L11.7380952,6.4 L12.3328779,7.59098301 L13.6628525,7.78196601 L12.7004739,8.70901699 L12.9276606,10.018034 L11.7380952,9.4 Z M3.64285714,9.4 L2.45329175,10.018034 L2.68047853,8.70901699 L1.71809991,7.78196601 L3.04807445,7.59098301 L3.64285714,6.4 L4.23763984,7.59098301 L5.56761438,7.78196601 L4.60523576,8.70901699 L4.83242253,10.018034 L3.64285714,9.4 Z M7.69047619,7 L6.5009108,7.61803399 L6.72809757,6.30901699 L5.76571896,5.38196601 L7.09569349,5.19098301 L7.69047619,4 L8.28525889,5.19098301 L9.61523343,5.38196601 L8.65285481,6.30901699 L8.88004158,7.61803399 L7.69047619,7 Z" id="Star-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

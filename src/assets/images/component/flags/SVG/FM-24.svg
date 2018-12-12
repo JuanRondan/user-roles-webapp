@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/FM-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1490.000000, -2171.000000)">
+            <g id="icons/Flags/FM-24" transform="translate(1490.000000, 2171.000000)">
+                <g id="FM-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#95CEF5" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M17,6.91199999 L15.0966954,8.18885438 L15.7373593,6.00543029 L13.9203884,4.61114562 L16.2196451,4.53856971 L17,2.4 L17.7803549,4.53856971 L20.0796116,4.61114562 L18.2626407,6.00543029 L18.9033046,8.18885438 L17,6.91199999 Z M17,19.712 L15.0966954,20.9888544 L15.7373593,18.8054303 L13.9203884,17.4111456 L16.2196451,17.3385697 L17,15.2 L17.7803549,17.3385697 L20.0796116,17.4111456 L18.2626407,18.8054303 L18.9033046,20.9888544 L17,19.712 Z M23.4761905,13.312 L21.5728858,14.5888544 L22.2135497,12.4054303 L20.3965789,11.0111456 L22.6958356,10.9385697 L23.4761905,8.8 L24.2565454,10.9385697 L26.5558021,11.0111456 L24.7388312,12.4054303 L25.3794951,14.5888544 L23.4761905,13.312 Z M10.5238095,13.312 L8.6205049,14.5888544 L9.26116879,12.4054303 L7.44419795,11.0111456 L9.74345463,10.9385697 L10.5238095,8.8 L11.3041644,10.9385697 L13.6034211,11.0111456 L11.7864503,12.4054303 L12.4271142,14.5888544 L10.5238095,13.312 Z" id="Star-33" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

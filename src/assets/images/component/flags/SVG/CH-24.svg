@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/CH-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-349.000000, -2056.000000)">
+            <g id="icons/Flags/CH-24" transform="translate(349.000000, 2056.000000)">
+                <g id="CH-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#FF0000" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M14.5714286,14.4 L10.0481368,14.4 C9.86375594,14.4 9.71428571,14.251082 9.71428571,14.0700766 L9.71428571,9.92992344 C9.71428571,9.74771176 9.85441235,9.6 10.0481368,9.6 L14.5714286,9.6 L14.5714286,5.12992344 C14.5714286,4.94771176 14.7115552,4.8 14.9052797,4.8 L19.0947203,4.8 C19.2791012,4.8 19.4285714,4.94891796 19.4285714,5.12992344 L19.4285714,9.6 L23.9518632,9.6 C24.1362441,9.6 24.2857143,9.74891796 24.2857143,9.92992344 L24.2857143,14.0700766 C24.2857143,14.2522882 24.1455876,14.4 23.9518632,14.4 L19.4285714,14.4 L19.4285714,18.8700766 C19.4285714,19.0522882 19.2884448,19.2 19.0947203,19.2 L14.9052797,19.2 C14.7208988,19.2 14.5714286,19.051082 14.5714286,18.8700766 L14.5714286,14.4 Z" id="Rectangle-78" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

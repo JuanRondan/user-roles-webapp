@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/DZ-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-463.000000, -2171.000000)">
+            <g id="icons/Flags/DZ-24" transform="translate(463.000000, 2171.000000)">
+                <g id="DZ-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#048345" mask="url(#mask-3)" x="0" y="0" width="17.8095238" height="24"></rect>
+                    <polygon id="Star-8" fill="#E81B42" mask="url(#mask-3)" points="21.047619 13.248 19.1443144 14.5888544 19.8465705 12.3856532 17.9680075 11.0111456 20.3053302 10.9903468 21.047619 8.8 21.7899079 10.9903468 24.1272306 11.0111456 22.2486676 12.3856532 22.9509237 14.5888544"></polygon>
+                    <path d="M21.4685718,6.74240058 C20.2201694,5.53760893 18.5423911,4.8 16.6975216,4.8 C12.8407869,4.8 9.71428571,8.0235498 9.71428571,12 C9.71428571,15.9764502 12.8407869,19.2 16.6975216,19.2 C18.5423911,19.2 20.2201694,18.4623911 21.4685718,17.2575994 C20.60749,17.6626503 19.6334917,17.8909091 18.6020404,17.8909091 C15.095918,17.8909091 12.2536442,15.2534593 12.2536442,12 C12.2536442,8.74654075 15.095918,6.10909091 18.6020404,6.10909091 C19.6334917,6.10909091 20.60749,6.33734968 21.4685718,6.74240058 Z" id="Oval-3" fill="#E81B42" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

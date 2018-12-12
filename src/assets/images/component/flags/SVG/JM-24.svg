@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/JM-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-89.000000, -2405.000000)">
+            <g id="icons/Flags/JM-24" transform="translate(89.000000, 2405.000000)">
+                <g id="JM-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#1DBE4F" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <polygon id="Rectangle-253" fill="#262626" mask="url(#mask-2)" points="0 0 14.5714286 12 0 24"></polygon>
+                    <polygon id="Rectangle-253" fill="#262626" mask="url(#mask-2)" transform="translate(26.714286, 12.000000) scale(-1, 1) translate(-26.714286, -12.000000) " points="19.4285714 0 34 12 19.4285714 24"></polygon>
+                    <path d="M17,10.0700513 L-1.56793532,-2.45417923 L-3.35735261,0.198741001 L14.1387334,12 L-3.35735261,23.801259 L-1.56793532,26.4541792 L17,13.9299487 L35.5679353,26.4541792 L37.3573526,23.801259 L19.8612666,12 L37.3573526,0.198741001 L35.5679353,-2.45417923 L17,10.0700513 Z" id="Rectangle-2" fill="#FFD646" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

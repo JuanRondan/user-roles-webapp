@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/ST-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-556.000000, -2756.000000)">
+            <g id="icons/Flags/ST-24" transform="translate(556.000000, 2756.000000)">
+                <g id="ST-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#2ACB41" mask="url(#mask-2)" x="0" y="16" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#2ACB41" mask="url(#mask-2)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#FDD043" mask="url(#mask-2)" x="0" y="8" width="34" height="8"></rect>
+                    <polygon id="Rectangle-83" fill="#E71E43" mask="url(#mask-2)" points="0 0 12.952381 12 0 24"></polygon>
+                    <polygon id="Star-33" fill="#262626" mask="url(#mask-2)" points="17.8095238 13.312 15.9062192 14.5888544 16.5468831 12.4054303 14.7299122 11.0111456 17.0291689 10.9385697 17.8095238 8.8 18.5898787 10.9385697 20.8891354 11.0111456 19.0721645 12.4054303 19.7128284 14.5888544"></polygon>
+                    <polygon id="Star-33" fill="#262626" mask="url(#mask-2)" points="25.9047619 13.312 24.0014573 14.5888544 24.6421212 12.4054303 22.8251503 11.0111456 25.124407 10.9385697 25.9047619 8.8 26.6851168 10.9385697 28.9843735 11.0111456 27.1674026 12.4054303 27.8080665 14.5888544"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 24 24 24 24 0 0 0"></polygon>
+    </defs>
+    <g id="Outline-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Circle-Minus">
+            <g id="Page-1">
+                <g id="Group-3" fill="#231F1F">
+                    <path d="M19.42485,19.42485 C17.44185,21.40785 14.80485,22.49985 11.99985,22.49985 C9.19485,22.49985 6.55785,21.40785 4.57485,19.42485 C2.59185,17.44185 1.49985,14.80485 1.49985,11.99985 C1.49985,9.19485 2.59185,6.55785 4.57485,4.57485 C6.55785,2.59185 9.19485,1.49985 11.99985,1.49985 C14.80485,1.49985 17.44185,2.59185 19.42485,4.57485 C23.51835,8.66985 23.51835,15.33135 19.42485,19.42485 M20.48535,3.51435 C18.14235,1.17135 15.07185,-0.00015 11.99985,-0.00015 C8.92935,-0.00015 5.85735,1.17135 3.51435,3.51435 C-1.17165,8.20035 -1.17165,15.79935 3.51435,20.48535 C5.85735,22.82835 8.92935,23.99985 11.99985,23.99985 C15.07185,23.99985 18.14235,22.82835 20.48535,20.48535 C25.17135,15.79935 25.17135,8.20035 20.48535,3.51435" id="Fill-1"></path>
+                </g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <polygon id="Fill-4" fill="#231F1F" mask="url(#mask-2)" points="5.25 12.75 18.75 12.75 18.75 11.25 5.25 11.25"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

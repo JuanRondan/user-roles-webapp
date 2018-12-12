@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TW-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2035.000000, -2756.000000)">
+            <g id="icons/Flags/TW-24" transform="translate(2035.000000, 2756.000000)">
+                <g id="TW-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-2"></use>
+                    <rect id="Rectangle-2" fill="#FE3030" mask="url(#mask-3)" x="-1.61904762" y="-1.6" width="37.2380952" height="27.2"></rect>
+                    <rect id="Rectangle-2" fill="#0909B6" mask="url(#mask-3)" x="-1.61904762" y="-1.6" width="19.4285714" height="14.4"></rect>
+                    <polygon id="Star-27" fill="#FFFFFF" mask="url(#mask-3)" points="8.9047619 8.4 7.35580515 10.0955181 7.47371247 7.81421356 5.16524951 7.93073373 6.88095238 6.4 5.16524951 4.86926627 7.47371247 4.98578644 7.35580515 2.70448187 8.9047619 4.4 10.4537187 2.70448187 10.3358113 4.98578644 12.6442743 4.86926627 10.9285714 6.4 12.6442743 7.93073373 10.3358113 7.81421356 10.4537187 10.0955181"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

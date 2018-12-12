@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_fill_ArrowIncrease_32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_fill_ArrowIncrease_32" fill-rule="nonzero" fill="#666666">
+            <path d="M28,6.83559621 L3.41421356,31.4143804 C2.63316498,32.1952065 1.36683502,32.1952065 0.585786438,31.4143804 C-0.195262146,30.6335543 -0.195262146,29.367585 0.585786438,28.5867588 L25.1806894,3.99886077 L6,3.99886077 C4.8954305,3.99886077 4,3.10368529 4,1.99943038 C4,0.895175474 4.8954305,0 6,0 L32,0 L32,25.992595 C32,27.0968499 31.1045695,27.9920254 30,27.9920254 C28.8954305,27.9920254 28,27.0968499 28,25.992595 L28,6.83559621 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

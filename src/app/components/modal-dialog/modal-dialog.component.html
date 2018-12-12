@@ -1,0 +1,22 @@
+<!-- Action Modal -->
+<div class="modal fade action-modal modal-popup" id="actionModal" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" (click)="close()">
+                  <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
+              </button>
+              <h4 class="modal-title">Confirmation required</h4>
+          </div>
+          <div class="modal-body">
+              <p class="desc">{{message}}</p>
+          </div>
+          <div class="modal-footer">
+              <div class="buttons-combined pull-right">
+                  <button class="button button-secondary" type="button" data-dismiss="modal" (click)="close()">No</button>
+                  <button class="button button-primary" type="button" data-dismiss="modal" (click)="onConfirm()">Yes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Folder_Open</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ADS---File-Explorer" transform="translate(-199.000000, -889.000000)" fill="#D04A02">
+            <g id="EXAMPLES" transform="translate(50.000000, 50.000000)">
+                <g id="Horizontal" transform="translate(0.000000, 705.000000)">
+                    <g id="Bread-Crumb" transform="translate(21.000000, 130.000000)">
+                        <g id="Icon_Folder_Open" transform="translate(128.000000, 4.000000)">
+                            <path d="M0.863257884,0 L5.75664236,0 L7.19620039,2.3516201 L12.5697025,2.3516201 L13.913078,3.82168707 L13.913078,6.17249543 L4.31787922,6.17249543 L0,10.4844754 L0,1.17540418 L0.863257884,0 Z M4.973987,6.96962727 L16,6.96962727 L11.0970768,11.9764594 L0.0480117645,12 L4.973987,6.96962727 Z" id="Open-Folder-Icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

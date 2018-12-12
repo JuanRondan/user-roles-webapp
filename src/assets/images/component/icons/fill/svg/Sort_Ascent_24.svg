@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_fill_sortAscent_32 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-17-Copy" fill="#FFFFFF" x="-116" y="-132" width="264.853516" height="184"></rect>
+        <g id="ic_fill_sortAscent_32">
+            <g id="ic_fill_sort_32" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(0.000000, 1.500000)">
+                <g id="Fill-v2">
+                    <g id="Convert">
+                        <polygon id="Combined-Shape" fill="#666666" points="0 12 0 14.9732408 16.1472226 14.9732408 12.2638871 18.8979187 14.3438251 21 23.25 12"></polygon>
+                        <polygon id="Combined-Shape-path" fill="#D8D8D8" points="9.65458917 0 0.75 9 24 9 24 6.02609557 7.85209634 6.02609557 11.7346149 2.10184981"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

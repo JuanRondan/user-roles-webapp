@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/AX-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2331.000000, -2634.000000)">
+            <g id="icons/Flags/AX-24" transform="translate(2331.000000, 2634.000000)">
+                <g id="AX-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#157CBB" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <polygon id="Rectangle-2" fill="#FFD34D" mask="url(#mask-2)" points="0 14.4 9.6 14.4 9.6 24 14.4 24 14.4 14.4 33.6 14.4 33.6 9.6 14.4 9.6 14.4 0 9.6 0 9.6 9.6 0 9.6"></polygon>
+                    <polygon id="Rectangle-2" fill="#EB363A" mask="url(#mask-2)" points="0 12.8 11.2 12.8 11.2 24 12.8 24 12.8 12.8 33.6 12.8 33.6 11.2 12.8 11.2 12.8 0 11.2 0 11.2 11.2 0 11.2"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

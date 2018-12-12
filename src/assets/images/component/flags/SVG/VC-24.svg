@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/VC-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1424.000000, -2881.000000)">
+            <g id="icons/Flags/VC-24" transform="translate(1424.000000, 2881.000000)">
+                <g id="VC-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask" fill="#08C47A" mask="url(#mask-2)" x="16.1904762" y="0" width="17.8095238" height="24"></rect>
+                    <rect id="Rectangle-2" fill="#0C87E1" mask="url(#mask-2)" x="0" y="0" width="11.3333333" height="24"></rect>
+                    <rect id="Rectangle-2-Copy" fill="#FECB2F" mask="url(#mask-2)" x="9.71428571" y="0" width="14.5714286" height="24"></rect>
+                    <path d="M17.8095238,9.6 L20.2380952,4.8 L22.6666667,9.6 L20.2380952,14.4 L17.8095238,9.6 Z M11.3333333,9.6 L13.7619048,4.8 L16.1904762,9.6 L13.7619048,14.4 L11.3333333,9.6 Z M14.5714286,16 L17,11.2 L19.4285714,16 L17,20.8 L14.5714286,16 Z" id="Rectangle-1194" fill="#08C47A" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

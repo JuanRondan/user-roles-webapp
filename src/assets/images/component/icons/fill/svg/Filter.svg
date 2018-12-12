@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Filter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Fill-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Filter" fill="#231F1F">
+            <path d="M0,6.00161241 L7.49957815,10.5013593 L8.08304533,15.751064 L15.9156047,15.751064 L16.4990719,10.5013593 L23.9986501,6.00161241 L0,6.00161241 Z M8.41677656,18.7502953 L9.00024374,24 L14.9984063,24 L15.5818735,18.7502953 L8.41677656,18.7502953 Z M0,6.00116243 L23.9986501,6.00116243 L23.9986501,0 L0,0 L0,6.00116243 Z"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/DK-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-89.000000, -2171.000000)">
+            <g id="icons/Flags/DK-24" transform="translate(89.000000, 2171.000000)">
+                <g id="DK-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M0,2.00494659 C0,0.897645164 0.891941149,0 1.9999204,0 L32.0000796,0 C33.1046051,0 34,0.897026226 34,2.00494659 L34,21.9950534 C34,23.1023548 33.1080589,24 32.0000796,24 L1.9999204,24 C0.895394863,24 0,23.1029738 0,21.9950534 L0,2.00494659 Z M0,14.4 L9.71428571,14.4 L9.71428571,24 L14.5714286,24 L14.5714286,14.4 L34,14.4 L34,9.6 L14.5714286,9.6 L14.5714286,0 L9.71428571,0 L9.71428571,9.6 L0,9.6 L0,14.4 Z" id="Combined-Shape" fill="#EF264D" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

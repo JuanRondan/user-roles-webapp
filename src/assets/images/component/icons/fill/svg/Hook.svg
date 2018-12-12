@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_fill_tick_32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_fill_checkmark_32" fill="#999999">
+            <g id="Group-2" transform="translate(0.000000, 2.250000)">
+                <polygon id="Checkmark" points="20.8425 0 8.5245 12.3165 3.1575 6.948 0 10.1055 8.5245 18.633 24 3.1575"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

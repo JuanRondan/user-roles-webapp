@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TC-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <path d="M0,5.6 L3.6889893e-17,1.33899093 C1.65161677e-17,0.599486658 0.595262185,0 1.33676393,0 L6.75847417,0 C7.4967485,0 8.0952381,0.602377319 8.0952381,1.33899093 L8.0952381,5.6 C8.0952381,9.6 4.04761905,11.2 4.04761905,11.2 C4.04761905,11.2 0,9.6 0,5.6 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.0952381" height="11.2" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="8.0952381" height="11.2" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M5.66666667,4.8 L0,0 L0.80952381,0 L6.47619048,4 L8.0952381,4 L14.5714286,0 L14.5714286,0.474609375 C14.5714286,0.654317655 14.4530722,0.883545685 14.2981135,0.992928314 L8.9047619,4.8 L8.9047619,6.4 L14.3132187,10.9812811 C14.4558241,11.1020762 14.4153442,11.2 14.2421642,11.2 L14.0911691,11.2 C13.9093214,11.2 13.6435484,11.1164543 13.4885897,11.0070717 L8.0952381,7.2 L6.47619048,7.2 L0,11.2 L0,10.4 L5.66666667,6.4 L5.66666667,4.8 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-0.666666667" y="-0.666666667" width="15.9047619" height="12.5333333">
+            <rect x="-0.666666667" y="-0.666666667" width="15.9047619" height="12.5333333" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2269.000000, -2756.000000)">
+            <g id="icons/Flags/TC-24" transform="translate(2269.000000, 2756.000000)">
+                <g id="TC-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#07319C" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <g id="Rectangle-1105" mask="url(#mask-2)">
+                        <g transform="translate(21.047619, 6.400000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask" stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="1.33333333" fill="#FFD033" fill-rule="evenodd">
+                                <use mask="url(#mask-6)" xlink:href="#path-3"></use>
+                            </g>
+                            <ellipse id="Oval-193" stroke="none" fill="#BA5B1F" fill-rule="evenodd" mask="url(#mask-5)" cx="5.66666667" cy="3.2" rx="0.80952381" ry="1.6"></ellipse>
+                            <ellipse id="Oval-193" stroke="none" fill="#FF9F3E" fill-rule="evenodd" mask="url(#mask-5)" transform="translate(2.123974, 3.248246) rotate(-20.000000) translate(-2.123974, -3.248246) " cx="2.12397426" cy="3.2482459" rx="0.80952381" ry="1.6"></ellipse>
+                            <ellipse id="Oval-193" stroke="none" fill="#FF937F" fill-rule="evenodd" mask="url(#mask-5)" transform="translate(2.770691, 3.274954) rotate(25.000000) translate(-2.770691, -3.274954) " cx="2.77069097" cy="3.27495377" rx="0.80952381" ry="1.6"></ellipse>
+                            <polygon id="Rectangle-1188" stroke="none" fill="#01A827" fill-rule="evenodd" mask="url(#mask-5)" points="3.23809524 6.4 4.04761905 4.8 4.85714286 6.4 4.85714286 8 3.23809524 8"></polygon>
+                        </g>
+                    </g>
+                    <g id="Rectangle-36" mask="url(#mask-2)">
+                        <use fill="#DB1E36" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-8)" stroke-width="1.33333333" xlink:href="#path-7"></use>
+                    </g>
+                    <path d="M0,4 L0,7.2 L5.66666667,7.2 L5.66666667,11.3325806 C5.66666667,11.7011861 5.96549479,12 6.33760209,12 L8.23382648,12 C8.60437388,12 8.9047619,11.6997385 8.9047619,11.3325806 L8.9047619,7.2 L14.7122786,7.2 C15.0815769,7.2 15.3809524,6.9046875 15.3809524,6.53695793 L15.3809524,4.66304207 C15.3809524,4.29685405 15.0858554,4 14.7122786,4 L8.9047619,4 L8.9047619,0 L5.66666667,0 L5.66666667,4 L0,4 Z" id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    <polygon id="Rectangle-36" fill="#DB1E36" mask="url(#mask-2)" points="0 4.8 6.47619048 4.8 6.47619048 4 6.47619048 0 8.0952381 0 8.0952381 4 8.0952381 4.8 14.5714286 4.8 14.5714286 6.4 8.0952381 6.4 8.0952381 7.2 8.0952381 11.2 6.47619048 11.2 6.47619048 7.2 6.47619048 6.4 0 6.4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

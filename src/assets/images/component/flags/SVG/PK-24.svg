@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/PK-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-89.000000, -2634.000000)">
+            <g id="icons/Flags/PK-24" transform="translate(89.000000, 2634.000000)">
+                <g id="PK-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M0,0 L34,0 L34,24 L0,24 L0,0 Z M0,24 L0,0 L9.71428571,0 L9.71428571,24 L0,24 Z" id="Combined-Shape" fill="#0A632F" mask="url(#mask-3)"></path>
+                    <g id="Star-8-+-Oval-3" mask="url(#mask-3)" fill="#FFFFFF">
+                        <g transform="translate(22.429563, 11.717157) rotate(-45.000000) translate(-22.429563, -11.717157) translate(14.536705, 3.917157)" id="Star-8">
+                            <path d="M11.5097968,13.0480901 C10.3257634,14.0004039 8.83625602,14.5677799 7.21822046,14.5677799 C3.3614858,14.5677799 0.234984623,11.3442301 0.234984623,7.3677799 C0.234984623,3.3913297 3.3614858,0.167779902 7.21822046,0.167779902 C8.83625602,0.167779902 10.3257634,0.735155933 11.5097968,1.68746969 C10.9722106,1.55019381 10.4060711,1.47687081 9.82147608,1.47687081 C6.31535366,1.47687081 3.47307986,4.11432065 3.47307986,7.3677799 C3.47307986,10.6212392 6.31535366,13.258689 9.82147608,13.258689 C10.4060711,13.258689 10.9722106,13.185366 11.5097968,13.0480901 L11.5097968,13.0480901 Z M11.568318,8.61577995 L9.66501333,9.95663428 L10.3672694,7.75343313 L8.48870638,6.37892552 L10.8260291,6.35812665 L11.568318,4.1677799 L12.3106068,6.35812665 L14.6479295,6.37892552 L12.7693665,7.75343313 L13.4716226,9.95663428 L11.568318,8.61577995 L11.568318,8.61577995 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

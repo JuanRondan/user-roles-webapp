@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_ol_ArrowDecrease_32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_ol_ArrowDecrease_32" fill-rule="nonzero" fill="#666666">
+            <path d="M30,3.41421356 L30,27 C30,27.5522847 30.4477153,28 31,28 C31.5522847,28 32,27.5522847 32,27 L32,2.30926389e-14 L5,3.01980663e-14 C4.44771525,3.01980663e-14 4,0.44771525 4,1 C4,1.55228475 4.44771525,2 5,2 L28.5857864,2 L0.292893219,30.2928932 C-0.0976310729,30.6834175 -0.0976310729,31.3165825 0.292893219,31.7071068 C0.683417511,32.0976311 1.31658249,32.0976311 1.70710678,31.7071068 L30,3.41421356 Z" id="Combined-Shape" transform="translate(16.000000, 16.000000) rotate(-270.000000) translate(-16.000000, -16.000000) "></path>
+        </g>
+    </g>
+</svg>

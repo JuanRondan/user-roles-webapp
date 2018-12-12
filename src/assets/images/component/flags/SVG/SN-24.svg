@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SN-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-89.000000, -2756.000000)">
+            <g id="icons/Flags/SN-24" transform="translate(89.000000, 2756.000000)">
+                <g id="SN-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask" fill="#F13642" mask="url(#mask-2)" x="16.1904762" y="0" width="17.8095238" height="24"></rect>
+                    <rect id="Rectangle-2" fill="#17A052" mask="url(#mask-2)" x="0" y="0" width="11.3333333" height="24"></rect>
+                    <rect id="Rectangle-2-Copy" fill="#FFF166" mask="url(#mask-2)" x="11.3333333" y="0" width="11.3333333" height="24"></rect>
+                    <polygon id="Star-33" fill="#17A052" mask="url(#mask-2)" points="17 13.64 14.6208692 15.236068 15.4216991 12.5067879 13.1504855 10.763932 16.0245564 10.6732121 17 8 17.9754436 10.6732121 20.8495145 10.763932 18.5783009 12.5067879 19.3791308 15.236068"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

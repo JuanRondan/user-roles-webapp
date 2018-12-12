@@ -1,0 +1,14 @@
+<h6 class="modal-title">Module permissions</h6>
+<br/>
+<div class="row">
+  <div class="col-sm-4" *ngFor="let module of modules">
+    <label class="form-label">{{module}}</label>
+    <ol class="list selectable-list">
+      <li *ngFor="let permission of permissions index as i">
+        <input type="checkbox" class="checkbox" name="{{module}}{{i}}" id="{{module}}{{i}}"
+          [ngModel]="checkForPermission(module, permission)" (change)="onPermissionCheck( module, permission )">
+        <label for="{{module}}{{i}}">{{ permission }}</label>
+      </li>
+    </ol>
+  </div>
+</div>

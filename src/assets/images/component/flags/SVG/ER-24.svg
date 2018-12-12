@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/ER-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <ellipse id="path-3" cx="10.5238095" cy="12" rx="5.66666667" ry="5.6"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11.3333333" height="11.2" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-836.000000, -2171.000000)">
+            <g id="icons/Flags/ER-24" transform="translate(836.000000, 2171.000000)">
+                <g id="ER-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#29C53F" mask="url(#mask-2)" x="0" y="0" width="34" height="12"></rect>
+                    <rect id="Rectangle-2" fill="#579DED" mask="url(#mask-2)" x="0" y="12" width="34" height="12.8"></rect>
+                    <polygon id="Rectangle-2" fill="#F42D56" mask="url(#mask-2)" points="0 24 34 12 0 0"></polygon>
+                    <g id="Oval-87" mask="url(#mask-2)" stroke-width="2.66666667" stroke="#FFC63C">
+                        <use mask="url(#mask-4)" xlink:href="#path-3"></use>
+                    </g>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="9.71428571" cy="10.4" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="11.3333333" cy="11.2" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="10.5238095" cy="9.6" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="9.71428571" cy="12" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="11.3333333" cy="12.8" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="9.71428571" cy="13.6" rx="0.80952381" ry="0.8"></ellipse>
+                    <ellipse id="Oval-88" fill="#FFC63C" mask="url(#mask-2)" cx="11.3333333" cy="14.4" rx="0.80952381" ry="0.8"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/DO-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M17,9.6 C15.658737,9.6 14.5714286,10.6745166 14.5714286,12 C14.5714286,13.3254834 15.658737,14.4 17,14.4 C18.341263,14.4 19.4285714,13.3254834 19.4285714,12" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="4.85714286" height="4.8" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-369.000000, -2171.000000)">
+            <g id="icons/Flags/DO-24" transform="translate(369.000000, 2171.000000)">
+                <g id="DO-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-3)" x="0" y="0" width="14.5714286" height="9.6"></rect>
+                    <rect id="Rectangle-2" fill="#083D7A" mask="url(#mask-3)" x="19.4285714" y="14.4" width="14.5714286" height="9.6"></rect>
+                    <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-3)" x="0" y="14.4" width="14.5714286" height="9.6"></rect>
+                    <rect id="Rectangle-2" fill="#DF1E35" mask="url(#mask-3)" x="19.4285714" y="0" width="14.5714286" height="9.6"></rect>
+                    <g id="Oval-85" mask="url(#mask-3)" transform="translate(17.000000, 12.000000) rotate(-45.000000) translate(-17.000000, -12.000000) " stroke-width="1.33333333" stroke="#0F6D1A">
+                        <use mask="url(#mask-6)" xlink:href="#path-5"></use>
+                    </g>
+                    <ellipse id="Oval-85" fill="#042F60" mask="url(#mask-3)" cx="17" cy="12" rx="0.80952381" ry="0.8"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

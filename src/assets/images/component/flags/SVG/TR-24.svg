@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TR-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1957.000000, -2756.000000)">
+            <g id="icons/Flags/TR-24" transform="translate(1957.000000, 2756.000000)">
+                <g id="TR-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#E92434" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <polygon id="Star-8" fill="#FFFFFF" mask="url(#mask-2)" points="22.6898761 12.9749645 20.7865714 14.3158188 21.4888275 12.1126176 19.6102645 10.73811 21.9475872 10.7173112 22.6898761 8.52696442 23.4321649 10.7173112 25.7694876 10.73811 23.8909246 12.1126176 24.5931807 14.3158188 22.6898761 12.9749645 22.6898761 12.9749645"></polygon>
+                    <path d="M21.1319244,7.57906305 C19.7987473,5.88779308 17.718396,4.8 15.3809524,4.8 C11.3571635,4.8 8.0952381,8.0235498 8.0952381,12 C8.0952381,15.9764502 11.3571635,19.2 15.3809524,19.2 C17.718396,19.2 19.7987473,18.1122069 21.1319244,16.420937 C20.1031471,17.1598663 18.8096809,17.6 17.4047619,17.6 C14.0516045,17.6 11.3333333,15.0927946 11.3333333,12 C11.3333333,8.9072054 14.0516045,6.4 17.4047619,6.4 C18.8096809,6.4 20.1031471,6.84013365 21.1319244,7.57906305 Z" id="Oval-41" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

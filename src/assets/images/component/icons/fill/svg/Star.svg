@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_fill_favorite_24</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_fill_like_32" fill="#333333">
+            <g id="icon_fill_like_32-copy-2">
+                <path d="M11.9999798,18.5953697 L6.31082348,22.3746171 C4.83794921,23.3530322 4.03036194,22.7618141 4.5047091,21.0623982 L6.34094097,14.4838374 L0.988617134,10.2409798 C-0.397054061,9.14254006 -0.0843304755,8.1917825 1.67849144,8.11776506 L8.50250146,7.83123824 L10.8837397,1.4297607 C11.5002221,-0.227527477 12.5010832,-0.223909916 13.1162199,1.4297607 L15.4974581,7.83123824 L22.3214681,8.11776506 C24.0881464,8.19194442 24.393989,9.14493776 23.0113424,10.2409798 L17.6590186,14.4838374 L19.4952505,21.0623982 C19.9706353,22.7655318 19.1587954,23.3508965 17.6891361,22.3746171 L11.9999798,18.5953697 Z" id="Star-Copy" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

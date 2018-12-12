@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/RS-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M0.80952381,4 C0.80952381,2.92188466 1.45131376,0.632526366 1.45131376,0.632526366 C1.54395061,0.2831917 1.90833818,0 2.29441252,0 L5.80082557,0 C6.17381931,0 6.55677028,0.296508095 6.64786966,0.643084613 C6.64786966,0.643084613 7.28571429,2.89616852 7.28571429,4 C7.28571429,5.03195648 6.64392433,7.35907019 6.64392433,7.35907019 C6.55128748,7.71304595 6.2917158,8.22247314 6.03658483,8.49747944 C6.03658483,8.49747944 5.26190476,9.6 4.04761905,9.6 C2.83333333,9.6 2.05008665,8.48874664 2.05008665,8.48874664 C1.81203036,8.21881933 1.54142707,7.71046043 1.44736844,7.34833403 C1.44736844,7.34833403 0.80952381,5.05767263 0.80952381,4 Z" id="path-5"></path>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1491.000000, -2634.000000)">
+            <g id="icons/Flags/RS-24" transform="translate(1491.000000, 2634.000000)">
+                <g id="RS-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#17508F" mask="url(#mask-3)" x="0" y="8" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#E1444D" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <g id="Rectangle-1668" mask="url(#mask-3)">
+                        <g transform="translate(6.476190, 8.000000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <path d="M7.28571429,0.8 L0.80952381,8.8" id="Line" stroke="#E1444D" stroke-width="1.33333333" stroke-linecap="square" fill="none" mask="url(#mask-6)"></path>
+                            <path d="M7.28571429,0.8 L0.80952381,8.8" id="Line" stroke="#E1444D" stroke-width="1.33333333" stroke-linecap="square" fill="none" mask="url(#mask-6)" transform="translate(4.047619, 4.800000) scale(-1, 1) translate(-4.047619, -4.800000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/EC-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-650.000000, -2171.000000)">
+            <g id="icons/Flags/EC-24" transform="translate(650.000000, 2171.000000)">
+                <g id="EC-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#0748AE" mask="url(#mask-2)" x="0" y="11.2" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#DE2035" mask="url(#mask-2)" x="0" y="17.6" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#FFD935" mask="url(#mask-2)" x="0" y="0" width="34" height="11.2"></rect>
+                    <path d="M15.0570796,9.6 C14.2706168,10.1838149 13.7619048,11.1132921 13.7619048,12.1601874 C13.7619048,13.9274986 15.2116494,15.3601874 17,15.3601874 C18.7883506,15.3601874 20.2380952,13.9274986 20.2380952,12.1601874 C20.2380952,11.1132921 19.7293832,10.1838149 18.9429204,9.6 L17.8095238,12.9601874 L16.1904762,12.9601874 L15.0570796,9.6 Z" id="Oval-12" fill="#FFD935" mask="url(#mask-2)"></path>
+                    <polygon id="Rectangle-483" fill="#5FC0DC" mask="url(#mask-2)" points="17 8.8 17.8095238 12.8 16.1904762 12.8"></polygon>
+                    <polyline id="Line" stroke="#3F2821" stroke-width="0.666666667" stroke-linecap="round" stroke-linejoin="round" opacity="0.66" mask="url(#mask-2)" points="21.047619 7.2 18.6190476 6.4 17 8 15.3809524 6.4 12.952381 7.2"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

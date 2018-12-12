@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/TJ-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1568.000000, -2756.000000)">
+            <g id="icons/Flags/TJ-24" transform="translate(1568.000000, 2756.000000)">
+                <g id="TJ-24">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-2)" fill="#FFFFFF">
+                        <use mask="url(#mask-4)" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#D9101C" mask="url(#mask-3)" x="0" y="0" width="34" height="8"></rect>
+                    <rect id="Rectangle-2" fill="#0F7811" mask="url(#mask-3)" x="0" y="16" width="34" height="8"></rect>
+                    <path d="M16.2973469,12.8 C16.2293527,12.4520578 16.1904762,12.144704 16.1904762,12 C16.1904762,11.5581722 16.5529123,11.2 17,11.2 C17.4470877,11.2 17.8095238,11.5581722 17.8095238,12 C17.8095238,12.144704 17.7706473,12.4520578 17.7026531,12.8 L18.7532065,12.8 C19.1262003,12.8 19.4285714,13.0934647 19.4285714,13.4692734 L19.4285714,13.7307266 C19.4285714,14.1003561 19.1392809,14.4 18.7532065,14.4 L15.2467935,14.4 C14.8737997,14.4 14.5714286,14.1065353 14.5714286,13.7307266 L14.5714286,13.4692734 C14.5714286,13.0996439 14.8607191,12.8 15.2467935,12.8 L16.2973469,12.8 Z M15.3809524,11.2 C14.9338647,11.2 14.5714286,10.8418278 14.5714286,10.4 C14.5714286,9.9581722 14.9338647,9.6 15.3809524,9.6 C15.82804,9.6 16.1904762,9.9581722 16.1904762,10.4 C16.1904762,10.8418278 15.82804,11.2 15.3809524,11.2 Z M18.6190476,11.2 C18.17196,11.2 17.8095238,10.8418278 17.8095238,10.4 C17.8095238,9.9581722 18.17196,9.6 18.6190476,9.6 C19.0661353,9.6 19.4285714,9.9581722 19.4285714,10.4 C19.4285714,10.8418278 19.0661353,11.2 18.6190476,11.2 Z M21.8571429,12.8 C21.4100552,12.8 21.047619,12.4418278 21.047619,12 C21.047619,11.5581722 21.4100552,11.2 21.8571429,11.2 C22.3042305,11.2 22.6666667,11.5581722 22.6666667,12 C22.6666667,12.4418278 22.3042305,12.8 21.8571429,12.8 Z M12.1428571,12.8 C11.6957695,12.8 11.3333333,12.4418278 11.3333333,12 C11.3333333,11.5581722 11.6957695,11.2 12.1428571,11.2 C12.5899448,11.2 12.952381,11.5581722 12.952381,12 C12.952381,12.4418278 12.5899448,12.8 12.1428571,12.8 Z" id="Oval-36" fill="#FAD14E" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

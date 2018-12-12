@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/SM-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="34" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-401.000000, -2756.000000)">
+            <g id="icons/Flags/SM-24" transform="translate(401.000000, 2756.000000)">
+                <g id="SM-24">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask" stroke="#F5F5F5" mask="url(#mask-3)" fill="#FFFFFF">
+                        <use mask="url(#mask-5)" xlink:href="#path-2"></use>
+                    </g>
+                    <rect id="Rectangle-2" fill="#7CCCF5" mask="url(#mask-4)" x="0" y="11.2" width="34" height="12.8"></rect>
+                    <path d="M13.7619048,11.2 C13.7619048,12.3829381 14.4114202,13.4159584 15.3772432,13.9697733 M18.7423171,13.897756 C19.6418012,13.3292412 20.2380952,12.3334373 20.2380952,11.2" id="Oval-5" stroke="#445F42" stroke-width="1.33333333" stroke-linecap="round" mask="url(#mask-4)"></path>
+                    <ellipse id="Oval-5" fill="#D89F3D" mask="url(#mask-4)" cx="17" cy="10.4" rx="1.61904762" ry="2.4"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

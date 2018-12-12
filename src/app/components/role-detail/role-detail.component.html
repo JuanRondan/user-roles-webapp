@@ -1,0 +1,41 @@
+<div class="modal fade add-edit-modal modal-popup" id="roleToEditModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form #roleForm="ngForm" (ngSubmit)="onSubmit(roleForm)">
+        <div class="modal-header">
+          <button type="button" class="close" (click)="close()">
+            <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
+          </button>
+          <h6 class="modal-title">Role Details</h6>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="d-flex flex-column-lt-850">
+            <div class="add-panel">
+              <label class="form-label">Role Name:<span class="form-label-required"> *</span></label>
+              <label [hidden]="roleName.pristine || roleName.valid"><span class="text-danger">Role name is required</span></label>
+              <input type="text" class="text-input" placeholder="Role name" id="roleName" [ngModel]="role.name" name="roleName"
+                #roleName="ngModel" required>
+
+              <label class="form-label">Description:</label>
+              <input type="text" class="text-input" placeholder="Role description" id="description" [ngModel]="role.description"
+                name="description" #description="ngModel">
+            </div>
+          </div>
+
+          <div class="add-panel">
+            <app-role-permissions-picker [modulesWithPermissions]="role.permissions" (updatePermissions)="updatePermissions($event)">
+            </app-role-permissions-picker>
+          </div>
+
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="buttons-combined pull-right">
+            <button class="button button-primary" type="submit" [class.button-disabled]="!roleForm.form.valid"
+              [disabled]="!roleForm.form.valid">Update</button>
+            <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

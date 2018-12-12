@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/BN-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-2424.000000, -2171.000000)">
+            <g id="icons/Flags/BN-24" transform="translate(2424.000000, 2171.000000)">
+                <g id="BN-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#F7E250" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <g id="Rectangle-2-Copy-4-+-Rectangle-2-Copy-4" mask="url(#mask-2)">
+                        <g transform="translate(17.056343, 11.880466) rotate(20.000000) translate(-17.056343, -11.880466) translate(-6.343657, 6.480466)" id="Rectangle-2-Copy-4">
+                            <rect fill="#FFFFFF" x="1.97175613e-14" y="0.8" width="46.4" height="4.8"></rect>
+                            <rect fill="#262626" x="-9.32587357e-14" y="5.6" width="46.4" height="4.8"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

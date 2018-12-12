@@ -1,0 +1,18 @@
+<div id="user-search">
+  <div>
+    <input [(ngModel)]="inputFieldValue"
+          class="search-box"
+          #searchBox id="search-box"
+          type="text"
+          value="" placeholder="Search user"
+          (keyup)="onKeyPress( searchBox.value )" />
+  </div>
+  <div *ngIf="usersFound$ | async">
+    <ul>
+      <li *ngFor="let user of usersFound$ | async"
+          (click)="onResultClick( user )">
+        <span>{{ user.displayName() }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

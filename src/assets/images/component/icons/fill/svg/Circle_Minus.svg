@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Circle Minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Fill-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Circle-Minus" fill="#231F1F">
+            <path d="M3.5145,3.5145 C-1.1715,8.2005 -1.1715,15.7995 3.5145,20.4855 C8.2005,25.1715 15.7995,25.1715 20.4855,20.4855 C25.1715,15.7995 25.1715,8.2005 20.4855,3.5145 C15.7995,-1.1715 8.2005,-1.1715 3.5145,3.5145 Z M5.1975,13.5 L18.804,13.5 L18.804,10.5 L5.1975,10.5 L5.1975,13.5 Z"></path>
+        </g>
+    </g>
+</svg>

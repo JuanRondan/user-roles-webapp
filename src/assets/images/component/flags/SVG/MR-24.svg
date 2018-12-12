@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/MR-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1386.000000, -2537.000000)">
+            <g id="icons/Flags/MR-24" transform="translate(1386.000000, 2537.000000)">
+                <g id="MR-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Mask-Copy" fill="#108B4D" mask="url(#mask-2)" x="0" y="0" width="34" height="24"></rect>
+                    <path d="M24.0594317,9.28000031 C24.11841,9.64892114 24.1490364,10.0271587 24.1490364,10.4124653 C24.1490364,14.3889155 20.887111,17.6124653 16.8633221,17.6124653 C12.8395332,17.6124653 9.57760782,14.3889155 9.57760782,10.4124653 C9.57760782,10.0271587 9.60823421,9.64892114 9.66721251,9.28000031 C10.2169034,12.7184248 13.2294268,15.3475353 16.8633221,15.3475353 C20.4972174,15.3475353 23.5097408,12.7184248 24.0594317,9.28000031 L24.0594317,9.28000031 Z M17,10.276904 L14.9987471,11.6867617 L15.7371428,9.37017891 L13.7619048,7.92493609 L16.2195113,7.90306687 L17,5.6 L17.7804887,7.90306687 L20.2380952,7.92493609 L18.2628572,9.37017891 L19.0012529,11.6867617 L17,10.276904 L17,10.276904 Z" id="Star-8" fill="#FFC941" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

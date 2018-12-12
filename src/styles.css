@@ -1,0 +1,40 @@
+i {
+    cursor: pointer;
+}
+
+#role-list table {
+    width:100%;
+}
+
+.table-row-actions {
+    text-align: center;
+    width: 100px;    
+}
+
+.modal-popup {
+    position: absolute;    
+    z-index: 99;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%); 
+}
+
+.custom-modal-background {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 550%;
+    top: -300%;
+    opacity: 0.5;
+    left:0px;
+}
+
+.table-wrapper {
+    min-width: 25rem;
+}
+
+.table {
+    min-width: 48rem;
+}

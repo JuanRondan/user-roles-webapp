@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/MZ-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-1213.000000, -2537.000000)">
+            <g id="icons/Flags/MZ-24" transform="translate(1213.000000, 2537.000000)">
+                <g id="MZ-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#FFE547" mask="url(#mask-2)" x="0" y="17.6" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#118C81" mask="url(#mask-2)" x="0" y="0" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="0" y="6.4" width="34" height="11.2"></rect>
+                    <rect id="Rectangle-2" fill="#262626" mask="url(#mask-2)" x="0" y="8" width="34" height="8"></rect>
+                    <polygon id="Rectangle-83" fill="#EF2147" mask="url(#mask-2)" points="0 0 16.1904762 12 0 24"></polygon>
+                    <polygon id="Star-27" fill="#FDE444" mask="url(#mask-2)" points="5.66666667 13.5288955 3.28753588 15.236068 4.19529028 12.4724547 1.8171522 10.763932 4.75730605 10.7630975 5.66666667 8 6.57602728 10.7630975 9.51618114 10.763932 7.13804305 12.4724547 8.04579745 15.236068"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

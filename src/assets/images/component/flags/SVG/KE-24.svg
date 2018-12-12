@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="24px" viewBox="0 0 34 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/Flags/KE-24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34" height="24" rx="2"></rect>
+        <path d="M4.04761905,16.8 C5.66666667,16.8 8.0952381,13.6601058 8.0952381,8.8 C8.0952381,3.9398942 5.66666667,0.8 4.04761905,0.8 C2.42857143,0.8 0,3.9398942 0,8.8 C0,13.6601058 2.42857143,16.8 4.04761905,16.8 Z" id="path-3"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F0F0F0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4.04761905,11.2 C3.60053139,11.2 3.23809524,10.1254834 3.23809524,8.8 C3.23809524,7.4745166 3.60053139,6.4 4.04761905,6.4 C4.4947067,6.4 4.85714286,7.4745166 4.85714286,8.8 C4.85714286,10.1254834 4.4947067,11.2 4.04761905,11.2 Z M4.04761905,6.4 C3.60053139,6.4 3.23809524,4.9673112 3.23809524,3.2 C3.23809524,1.4326888 3.60053139,0 4.04761905,0 C4.4947067,0 4.85714286,1.4326888 4.85714286,3.2 C4.85714286,4.9673112 4.4947067,6.4 4.04761905,6.4 Z M4.04761905,17.6 C3.60053139,17.6 3.23809524,16.1673112 3.23809524,14.4 C3.23809524,12.6326888 3.60053139,11.2 4.04761905,11.2 C4.4947067,11.2 4.85714286,12.6326888 4.85714286,14.4 C4.85714286,16.1673112 4.4947067,17.6 4.04761905,17.6 Z" id="path-6"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="STYLE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style_icons" transform="translate(-575.000000, -2405.000000)">
+            <g id="icons/Flags/KE-24" transform="translate(575.000000, 2405.000000)">
+                <g id="KE-24">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <rect id="Rectangle-2" fill="#262626" mask="url(#mask-2)" x="0" y="0" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#018301" mask="url(#mask-2)" x="0" y="17.6" width="34" height="6.4"></rect>
+                    <rect id="Rectangle-2" fill="#FFFFFF" mask="url(#mask-2)" x="0" y="6.4" width="34" height="11.2"></rect>
+                    <rect id="Rectangle-2-Copy-4" fill="#DC0808" mask="url(#mask-2)" x="0" y="8" width="34" height="8"></rect>
+                    <g id="Oval-225" mask="url(#mask-2)">
+                        <g transform="translate(12.952381, 3.200000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#BC0000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <ellipse id="Mask-Copy" stroke="none" fill="#262626" fill-rule="evenodd" mask="url(#mask-4)" cx="-2.42857143" cy="8.8" rx="4.04761905" ry="8.8"></ellipse>
+                            <ellipse id="Mask-Copy-2" stroke="none" fill="#262626" fill-rule="evenodd" mask="url(#mask-4)" cx="10.5238095" cy="8.8" rx="4.04761905" ry="8.8"></ellipse>
+                            <g id="Oval-228" stroke="none" fill="none" mask="url(#mask-4)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
