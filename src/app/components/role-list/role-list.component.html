@@ -1,76 +1,13 @@
 <div id="role-list" class="row">
   <div class="col-sm-12">
-    <div class="table-wrapper with-caption with-foot">
-      <div class="table-responsive-wrapper">
-          <table class="table table-title table-pagination table-striped">
-            <caption>
-              Manage Roles
-              <div class="pull-right">
-                  <button class="button button-primary" type="button"(click)="createRole()">Add Role</button>
-              </div>
-            </caption>
-            <thead>
-              <tr>
-                <th>Actions</th>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tfoot>
-              <tr class="table-footer">
-                <td colspan="4">
-                  <div class="pagination-detail pull-left">
-                    <div>
-                      <div class="dropdown dropdown-sample dropdown-default">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1_roles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">05 / page</button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1_roles">
-                        <li class="dropdown-active">
-                            <a>05 / page</a>
-                        </li>
-                        <li>
-                            <a>10 / page</a>
-                        </li>
-                        <li>
-                            <a>15 / page</a>
-                        </li>
-                        <li>
-                            <a>20 / page</a>
-                        </li>
-                        </ul>
-                        <i class="appkiticon icon-outline-down-chevron" data-toggle="dropdown"></i>
-                      </div>
-                    </div>
-                    <span>
-                      1-5 of 50 items
-                    </span>
-                  </div>
-                  <div class="pagination pull-right">
-                    <ul class="nav navbar-nav pull-right">
-                      <li>
-                        <i class="icon-outline-left-chevron disabled"></i>
-                      </li>
-                      <li><span><input type="text" class="current-page" value="1"> of 4</span></li>
-                      <li>
-                        <i class="icon-outline-right-chevron"></i>
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-            </tfoot>
-            <tbody>
-                <tr *ngFor="let role of roles$ | async" data-toggle="modal" data-target="#role-details">
-                  <td class="table-row-actions">
-                      <i class = "appkiticon icon-fill-delete" (click)="deleteRole(role._id)" title="Delete"></i>
-                      <i class = "appkiticon icon-fill-edit" (click)="editRole(role)" title="Edit" data-toggle="modal" data-target="#roleToEditModal"></i>
-                  </td>
-                  <td>{{ role.displayName() }}</td>
-                  <td>{{ role.description }}</td>
-                </tr>
-            </tbody>
-          </table>
-      </div>
-    </div>
+    <!--
+      [configuration], how to create the table (attributes, columns, sorting and filter methods, etc)
+      [listComponent], the angular component where the list elements are stored and handled
+    -->
+    <app-dynamic-table
+      [configuration] = "searchConfig"
+      [listComponent] = "_self"
+    ></app-dynamic-table>
   </div>
 </div>
 
