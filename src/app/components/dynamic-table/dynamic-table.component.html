@@ -6,22 +6,25 @@
         <div class="search-box pull-left">
           <div class="search-block search-default-sm">
             <div class="search-btn"><i class="appkiticon icon-outline-search"></i></div>
-            <!-- --><input type="text" class="input-default search-content pull-left" value="" placeholder="Search"
-              [ngModel]="search.keywords.value" (change)="search.keywords.change($event, listComponent, Table)" #searchBox>
+            <input type="text" class="input-default search-content pull-left" value="" placeholder="Search"
+            [ngModel]="search.keywords.value" (change)="search.keywords.change($event, listComponent, Table)" #searchBox>
             <span class="delete-wrapper display-none"><i class="icon-outline-circle-delete input-delete"></i></span>
           </div>
         </div>
         <div class="search-box pull-right">
-          <button class="button button-primary" type="button"(click)="createRole()">Add Role</button>
+          <button class="button button-primary" type="button"(click)="listComponent[Table.actions.create.method]()">{{Table.actions.create.title}}</button>
         </div>
       </caption>
       <thead>
         <tr>
           <th>Actions</th>
-          <!--/* -->
-          <th ts-criteria="Name" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">Name<i class="no-sort" (click)='search.sort.change($event, listComponent, "name", Table)'></i></th>
-          <th ts-criteria="Description" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">Description<i class="no-sort" (click)='search.sort.change($event, listComponent, "description", Table)'></i></th>
-          <!--*/ -->
+          <th *ngFor="let attr of Table.search.fieldsToEval" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">
+            <span>
+            {{attr.title}}
+            </span>
+            <i class="no-sort" (click)='search.sort.change($event, listComponent, attr.name, Table)'>
+            </i>
+          </th>
         </tr>
       </thead>
       <tfoot>
@@ -30,26 +33,21 @@
             <div class="pagination-detail pull-left">
               <div>
                 <div class="dropdown dropdown-sample dropdown-default">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1_roles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{search.perPage.value}} / page</button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1_roles">
-                    <!--/* -->
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{search.perPage.value}} / page</button>
+                  <ul class="dropdown-menu">
                     <li *ngFor="let amount of search.perPage.options">
                       <a (click)="search.perPage.change(amount, listComponent, Table)">{{amount}} / page</a>
                     </li>
-                    <!--*/ -->
                   </ul>
                   <i class="appkiticon icon-outline-down-chevron" data-toggle="dropdown"></i>
                 </div>
               </div>
               <span>
-                <!--/* -->
-                {{search.result.chunk.interval.start}}-{{search.result.chunk.interval.end}} of {{search.result.total.items}} items
-                <!--*/ -->
+              {{search.result.chunk.interval.start}}-{{search.result.chunk.interval.end}} of {{search.result.total.items}} items
               </span>
             </div>
             <div class="pagination pull-right">
               <ul class="nav navbar-nav pull-right">
-                <!--/* -->
                 <li>
                   <i class="icon-outline-left-chevron" (click)="search.page.move(listComponent, -1, Table)"></i>
                 </li>
@@ -57,22 +55,20 @@
                 <li>
                   <i class="icon-outline-right-chevron" (click)="search.page.move(listComponent, 1, Table)"></i>
                 </li>
-                <!--*/ -->
               </ul>
             </div>
           </td>
         </tr>
       </tfoot>
       <tbody>
-        <!-- --><tr *ngFor="let role of search.result.items" data-toggle="modal" data-target="#role-details">
+        <tr *ngFor="let item of search.result.items" data-toggle="modal">
           <td class="table-row-actions">
-            <i class = "appkiticon icon-fill-delete" (click)="listComponent.deleteRole(role._id)" title="Delete"></i>
-            <i class = "appkiticon icon-fill-edit" (click)="listComponent.editRole(role)" title="Edit" data-toggle="modal" data-target="#roleToEditModal"></i>
+            <i class = "appkiticon icon-fill-delete" (click)="listComponent[Table.actions.delete.title](item._id)" title="{{Table.actions.delete.title}}"></i>
+            <i class = "appkiticon icon-fill-edit" (click)="listComponent[Table.actions.update.title](item)" title="{{Table.actions.update.title}}" data-toggle="modal"></i>
           </td>
-          <!--/* -->
-          <td>{{ role.displayName() }}</td>
-          <td>{{ role.description }}</td>
-          <!--*/ -->
+          <td *ngFor="let attr of Table.search.fieldsToEval" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">
+            {{attr.value ? item[attr.value]() : item[attr.name]}}
+          </td>
         </tr>
       </tbody>
     </table>

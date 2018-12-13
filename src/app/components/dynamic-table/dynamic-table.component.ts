@@ -44,8 +44,8 @@ export class DynamicTableComponent implements OnInit {
       },
       sort : {
         change : function($event, component, attr, Table) {
-          Table.search.fieldsToSort[attr] = !Table.search.fieldsToSort[attr];
-          let factor = Table.search.fieldsToSort[attr] ? 1 : -1;
+          Table.search.fieldsToSort[attr].asc = !Table.search.fieldsToSort[attr].asc;
+          let factor = Table.search.fieldsToSort[attr].asc ? 1 : -1;
           if ($event.path[1].className.indexOf("-asc") !== -1) {
             $event.path[1].className = $event.path[1].className.replace("-asc", "-desc");
           } else {
@@ -116,6 +116,7 @@ export class DynamicTableComponent implements OnInit {
     this.Table.search.fieldsToSort = this.configuration.fieldsToSort;
     this.Table.search.fieldsToEval = this.configuration.fieldsToEval;
     this.Table.search.title = this.configuration.title;
+    this.Table.actions = this.configuration.actions;
     this.listComponent[this.Table.search.names.asyncItems].subscribe(((component, Table) => {
       return v => {
         component[Table.search.names.items] = v;
