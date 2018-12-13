@@ -28,6 +28,7 @@ export class UserDetailComponent implements OnInit {
     this.user.address = form.value.address;
     this.user.phone = form.value.phone;
     this.user.email = form.value.email;
+    this.user.status = form.value.status;
     this.notifyUpdate.emit(this.user);
     this.close();
   }

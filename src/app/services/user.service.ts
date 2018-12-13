@@ -65,7 +65,8 @@ export class UserService {
       address: user.address,
       phone: user.phone,
       email: user.email,
-      roles: user.roles
+      roles: user.roles,
+      status: user.status
     }
     return payload;
   }
