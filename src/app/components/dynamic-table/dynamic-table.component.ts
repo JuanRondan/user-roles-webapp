@@ -7,16 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DynamicTableComponent implements OnInit {
   search : any;
-  @Input() searchConfig : any;
-  @Input() _self : any;
+  Table : any;
+  @Input() configuration : any;
+  @Input() listComponent : any;
 
   constructor() {
     this.search = {
       keywords : {
-        change : function($event, component){
+        change : function($event, component, Table){
           let str = $event.target.value.toLowerCase();
           let something = [];
-          let fieldsToEval = component.search.fieldsToEval;
+          let fieldsToEval = Table.search.fieldsToEval;
 
           component.getItems().forEach(item => {
             let cond = false;
@@ -35,16 +36,16 @@ export class DynamicTableComponent implements OnInit {
             }
           });
 
-          component.search.result.source = something;
-          component.search.result.chunk.interval.start = 1;
-          component.search.page.value = 1;
-          component.search.show(component, something);
+          Table.search.result.source = something;
+          Table.search.result.chunk.interval.start = 1;
+          Table.search.page.value = 1;
+          Table.search.show(component, Table);
         },
       },
       sort : {
-        change : function($event, component, attr) {
-          component.search.fieldsToSort[attr] = !component.search.fieldsToSort[attr];
-          let factor = component.search.fieldsToSort[attr] ? 1 : -1;
+        change : function($event, component, attr, Table) {
+          Table.search.fieldsToSort[attr] = !Table.search.fieldsToSort[attr];
+          let factor = Table.search.fieldsToSort[attr] ? 1 : -1;
           if ($event.path[1].className.indexOf("-asc") !== -1) {
             $event.path[1].className = $event.path[1].className.replace("-asc", "-desc");
           } else {
@@ -56,28 +57,28 @@ export class DynamicTableComponent implements OnInit {
             return 0;
           };
           component.setItems(component.getItems().sort(f));
-          if (component.search.result.source) component.search.result.source.sort(f);
-          component.search.show(component);
+          if (Table.search.result.source) Table.search.result.source.sort(f);
+          Table.search.show(component, Table);
         },
       },
       page : {
         change : function($event){
         },
-        move : function(component, factor) {
-          if (component.search.page.value + factor > 0 && component.search.page.value + factor <= component.search.result.total.pages) {
-            component.search.page.value += factor;
-            component.search.result.chunk.interval.start = ((component.search.page.value - 1) * component.search.perPage.value) + 1;
-            component.search.show(component);
+        move : function(component, factor, Table) {
+          if (Table.search.page.value + factor > 0 && Table.search.page.value + factor <= Table.search.result.total.pages) {
+            Table.search.page.value += factor;
+            Table.search.result.chunk.interval.start = ((Table.search.page.value - 1) * Table.search.perPage.value) + 1;
+            Table.search.show(component, Table);
           }
         },
         value : 1,
       },
       perPage : {
-        change : function(page, component) {
-          component.search.perPage.value = page;
-          component.search.result.chunk.interval.start = 1;
-          component.search.page.value = 1;
-          component.search.show(component);
+        change : function(page, component, Table) {
+          Table.search.perPage.value = page;
+          Table.search.result.chunk.interval.start = 1;
+          Table.search.page.value = 1;
+          Table.search.show(component, Table);
         },
         options : [2, 5, 10, 15, 20],
         value : 2,
@@ -96,27 +97,31 @@ export class DynamicTableComponent implements OnInit {
         items : [],
         source : null,
       },
-      show : function(component){
-        let tmp = component.search.result.source ? component.search.result.source : component.getItems();
-        component.search.result.total.items = tmp.length;
-        component.search.result.total.pages = Math.ceil(component.search.result.total.items / component.search.perPage.value);
-        component.search.result.chunk.interval.end = component.search.result.chunk.interval.start + component.search.perPage.value - 1;
-        component.search.result.items = tmp.slice(component.search.result.chunk.interval.start - 1, component.search.result.chunk.interval.end);
+      show : function(component, Table){
+        let tmp = Table.search.result.source ? Table.search.result.source : component.getItems();
+        if (tmp) {
+          Table.search.result.total.items = tmp.length;
+          Table.search.result.total.pages = Math.ceil(Table.search.result.total.items / Table.search.perPage.value);
+          Table.search.result.chunk.interval.end = Table.search.result.chunk.interval.start + Table.search.perPage.value - 1;
+          Table.search.result.items = tmp.slice(Table.search.result.chunk.interval.start - 1, Table.search.result.chunk.interval.end);
+        }
       },
     }
   }
 
   ngOnInit() {
-    this._self.roles$.subscribe((component => {
+    this.Table = self;
+    this.Table.search = this.search;
+    this.Table.search.names = this.configuration.names;
+    this.Table.search.fieldsToSort = this.configuration.fieldsToSort;
+    this.Table.search.fieldsToEval = this.configuration.fieldsToEval;
+    this.Table.search.title = this.configuration.title;
+    this.listComponent[this.Table.search.names.asyncItems].subscribe(((component, Table) => {
       return v => {
-        component.roles = v;
-        component.search.show(component);
+        component[Table.search.names.items] = v;
+        Table.search.show(component, Table);
       };
-    })(this._self));
-    this._self.search = this.search;
-    this._self.search.names = this.searchConfig.names;
-    this._self.search.fieldsToSort = this.searchConfig.fieldsToSort;
-    this._self.search.fieldsToEval = this.searchConfig.fieldsToEval;
-    this.search.show(this._self);
+    })(this.listComponent, this.Table));
+    //this.search.show(this.listComponent, this.Table);
   }
 }

@@ -25,6 +25,7 @@ export class RoleListComponent implements OnInit {
     /***/this.searchConfig = {
       names : {
         items : 'roles',
+        asyncItems : 'roles$',
       },
       fieldsToSort : {
         name : true,
@@ -40,6 +41,7 @@ export class RoleListComponent implements OnInit {
           type : 'string',
         },
       ],
+      title : 'Manage Roles',
     };
   }
 
