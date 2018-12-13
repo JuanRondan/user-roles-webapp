@@ -1,13 +1,18 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+
+let theobject = null;
+
 @Component({
   selector: 'app-dynamic-table',
   templateUrl: './dynamic-table.component.html',
   styleUrls: ['./dynamic-table.component.css']
 })
+
 export class DynamicTableComponent implements OnInit {
   search : any;
   Table : any;
+  refreshItems : any;
   @Input() configuration : any;
   @Input() listComponent : any;
 
@@ -110,6 +115,7 @@ export class DynamicTableComponent implements OnInit {
   }
 
   ngOnInit() {
+    theobject = this;
     this.Table = self;
     this.Table.search = this.search;
     this.Table.search.names = this.configuration.names;
@@ -123,6 +129,13 @@ export class DynamicTableComponent implements OnInit {
         Table.search.show(component, Table);
       };
     })(this.listComponent, this.Table));
-    //this.search.show(this.listComponent, this.Table);
+
+    this.refreshItems = function(v) {
+      let table = theobject;
+      return (v) => {
+        table.listComponent[table.Table.search.names.items] = v;
+        table.search.show(table.listComponent, table);
+      };
+    }
   }
 }

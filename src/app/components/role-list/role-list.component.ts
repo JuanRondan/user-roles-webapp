@@ -111,21 +111,25 @@ export class RoleListComponent implements OnInit {
     this.roleToEdit = role;
   }
 
-  updateRole( updatedRole: Role ) {
+  updateRole( updatedRole: Role, f : any ) {
     if (updatedRole._id) {
       this.roleService.updateRole( updatedRole ).subscribe( role => updatedRole = role );
     } else {
       this.roleService.createRole( updatedRole ).subscribe( newRole => {
         updatedRole = newRole;
         this.roles$ = this.roleService.getRoles();
+        if (f) {
+          this.roles$.subscribe(f())
+        }
         this.roleToEdit = null;
       });
     }
   }
 
-  deleteRole( roleId: string ) {
+  deleteRole( roleId: string, f : any ) {
     this.roleService.deleteRole( roleId ).subscribe( () => { 
-      this.roles$ = this.roleService.getRoles(); 
+      this.roles$ = this.roleService.getRoles();
+      if (f) this.roles$.subscribe(f()) 
       this.roleToEdit = null; 
     });
   }
