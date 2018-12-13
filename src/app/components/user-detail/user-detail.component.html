@@ -1,13 +1,16 @@
 <div class="modal fade add-edit-modal modal-popup" role="dialog" id="userToEditModal">
   <div class="modal-dialog">
     <div class="modal-content">
-      
+
       <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
         <div class="modal-header">
           <button type="button" class="close" (click)="close()">
             <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
           </button>
           <h6 class="modal-title">Edit User</h6>
+
+
+
         </div>
         <div class="modal-body clearfix">
           <div class="d-flex flex-column-lt-850">
@@ -36,18 +39,37 @@
               <label class="form-label">Email<span class="form-label-required"> *</span></label>
               <label [hidden]="email.pristine || email.valid"><span class="text-danger">Email is required</span></label>
               <input type="text" class="text-input" id="email" [ngModel]="user.email" name="email" #email="ngModel"
-                placeholder="firstname.lastname@pwc.com"  #email="ngModel" required>
+                placeholder="firstname.lastname@pwc.com" #email="ngModel" required>
             </div>
             <div class="add-panel">
               <app-role-picker [selectedRoles]="user.roles" (updatedRoles)="updateRoles($event)">
               </app-role-picker>
+
+              <!-- SWITCH BUTTON USER STATUS -->
+
+              <div class="row col-6" style="margin-top: 20px">
+                <h6>Activate User</h6>
+                <div class="toggle-text-button toggle-mini row" style="margin-left: 10px">
+                    <label class="toggle-button-label">
+                        <input type="checkbox" class="toggle-button-checkbox" [ngModel]="user.status" name="status">
+                        <div>
+                            <span class="toggle-button-inner on">On</span>
+                            <span class="toggle-button-inner off">Off</span>
+                            <span class="toggle-button-switch"></span>            
+                        </div>
+                    </label>
+                </div>
+              </div>
+
+              <!-- ************************** -->
+
             </div>
           </div>
         </div>
         <div class="modal-footer clearfix">
           <div class="buttons-combined pull-right">
-            <button class="button button-primary" type="submit"
-              [class.button-disabled]="!userForm.form.valid" [disabled]="!userForm.form.valid">Update</button>
+            <button class="button button-primary" type="submit" [class.button-disabled]="!userForm.form.valid"
+              [disabled]="!userForm.form.valid">Update</button>
             <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
           </div>
         </div>

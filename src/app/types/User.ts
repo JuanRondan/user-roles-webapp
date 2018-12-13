@@ -10,6 +10,7 @@ export class User {
     phone: string;
     email: string;
     roles: string[];
+    status: boolean;
 
     constructor() {
         this.roles = new Array<string>();
@@ -34,6 +35,7 @@ export class UserAdapter implements Adapter<User> {
         u.phone = user.phone;
         u.email = user.email;
         u.roles = user.roles;
+        u.status = user.status;
         return u;
     }
 }
