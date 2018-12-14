@@ -5,9 +5,11 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './dynamic-table.component.html',
   styleUrls: ['./dynamic-table.component.css']
 })
+
 export class DynamicTableComponent implements OnInit {
   search : any;
   Table : any;
+  refreshItems : any;
   @Input() configuration : any;
   @Input() listComponent : any;
 
@@ -22,12 +24,19 @@ export class DynamicTableComponent implements OnInit {
           component.getItems().forEach(item => {
             let cond = false;
             let i = -1, n = fieldsToEval.length;
+            let evalString = (i) => {
+              item[fieldsToEval[i].name] = item[fieldsToEval[i].name] || '';
+              return item[fieldsToEval[i].name].toLowerCase().indexOf(str) !== -1;
+            };
             while (!cond && ++i < n) {
               switch (fieldsToEval[i].type) {
                 case 'string' : {
-                  item[fieldsToEval[i].name] = item[fieldsToEval[i].name] || '';
-                  cond = cond || item[fieldsToEval[i].name].toLowerCase().indexOf(str) !== -1;
+                  cond = cond || evalString(i);
                 }break;
+                //if type is not specified, it's assumed as string
+                default : {
+                  cond = cond || evalString(i);
+                };
               }
             }
 
@@ -46,11 +55,17 @@ export class DynamicTableComponent implements OnInit {
         change : function($event, component, attr, Table) {
           Table.search.fieldsToSort[attr].asc = !Table.search.fieldsToSort[attr].asc;
           let factor = Table.search.fieldsToSort[attr].asc ? 1 : -1;
+          Table.search.sort.lastAttr = attr;
+          Table.search.sort.lastFactor = factor;
           if ($event.path[1].className.indexOf("-asc") !== -1) {
             $event.path[1].className = $event.path[1].className.replace("-asc", "-desc");
           } else {
             $event.path[1].className = $event.path[1].className.replace("-desc", "-asc");
           }
+          Table.search.sort.logic(attr, factor, component, Table);
+          Table.search.show(component, Table);
+        },
+        logic : (attr, factor, component, Table) => {
           let f = (u, v) => {
             if (u[attr] < v[attr]) return factor * -1;
             if (u[attr] > v[attr])  return factor * 1;
@@ -58,12 +73,11 @@ export class DynamicTableComponent implements OnInit {
           };
           component.setItems(component.getItems().sort(f));
           if (Table.search.result.source) Table.search.result.source.sort(f);
-          Table.search.show(component, Table);
         },
+        lastAttr : null,
+        lastFactor : 1,
       },
       page : {
-        change : function($event){
-        },
         move : function(component, factor, Table) {
           if (Table.search.page.value + factor > 0 && Table.search.page.value + factor <= Table.search.result.total.pages) {
             Table.search.page.value += factor;
@@ -123,6 +137,16 @@ export class DynamicTableComponent implements OnInit {
         Table.search.show(component, Table);
       };
     })(this.listComponent, this.Table));
-    //this.search.show(this.listComponent, this.Table);
+
+    this.refreshItems = function() {
+      let table = this;
+      return (v) => {
+        table.listComponent[table.Table.search.names.items] = v;
+        if (table.search.sort.lastAttr) {
+          table.search.sort.logic(table.search.sort.lastAttr, table.search.sort.lastFactor, table.listComponent, table.Table);
+        }
+        table.search.show(table.listComponent, table);
+      };
+    }
   }
 }

@@ -63,8 +63,8 @@
       <tbody>
         <tr *ngFor="let item of search.result.items" data-toggle="modal">
           <td class="table-row-actions">
-            <i class = "appkiticon icon-fill-delete" (click)="listComponent[Table.actions.delete.method](item._id)" title="{{Table.actions.delete.title}}"></i>
-            <i class = "appkiticon icon-fill-edit" (click)="listComponent[Table.actions.update.method](item)" title="{{Table.actions.update.title}}" data-toggle="modal"></i>
+            <i class = "appkiticon icon-fill-delete" (click)="listComponent[Table.actions.delete.method](item._id, this)" title="{{Table.actions.delete.title}}"></i>
+            <i class = "appkiticon icon-fill-edit" (click)="listComponent[Table.actions.update.method](item, this)" title="{{Table.actions.update.title}}" data-toggle="modal"></i>
           </td>
           <td *ngFor="let attr of Table.search.fieldsToEval" ts-default="" class="ng-isolate-scope tablesort-sortable tablesort-asc">
             {{attr.value ? item[attr.value]() : item[attr.name]}}
