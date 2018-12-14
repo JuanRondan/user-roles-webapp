@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { RoleService } from '../../services/role.service';
 import { Observable } from 'rxjs';
-
 import { Role } from '../../types/role';
 
 @Component({
@@ -9,6 +8,7 @@ import { Role } from '../../types/role';
   templateUrl: './role-list.component.html',
   styleUrls: ['./role-list.component.css']
 })
+
 export class RoleListComponent implements OnInit {
   roleToEdit: Role;
   roles$: Observable<Role[]>;
@@ -22,7 +22,7 @@ export class RoleListComponent implements OnInit {
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self : any;
 
-  constructor( private roleService: RoleService) { }
+  constructor( private roleService : RoleService) { }
 
   ngOnInit() {
     this.roles$ = this.roleService.getRoles();
@@ -95,11 +95,13 @@ export class RoleListComponent implements OnInit {
     };
   }
 
-  /***/getItems() {
+  /* mandatory method */
+  getItems() {
     return this.roles;
   }
 
-  /***/setItems(r) {
+  /* mandatory method */
+  setItems(r) {
     this.roles = r;
   }
 
@@ -111,25 +113,23 @@ export class RoleListComponent implements OnInit {
     this.roleToEdit = role;
   }
 
-  updateRole( updatedRole: Role, f : any ) {
+  updateRole( updatedRole: Role) {
     if (updatedRole._id) {
       this.roleService.updateRole( updatedRole ).subscribe( role => updatedRole = role );
     } else {
       this.roleService.createRole( updatedRole ).subscribe( newRole => {
         updatedRole = newRole;
         this.roles$ = this.roleService.getRoles();
-        if (f) {
-          this.roles$.subscribe(f())
-        }
+        this.roles.push(newRole);
         this.roleToEdit = null;
       });
     }
   }
 
-  deleteRole( roleId: string, f : any ) {
+  deleteRole( roleId: string, table : any ) {
     this.roleService.deleteRole( roleId ).subscribe( () => { 
       this.roles$ = this.roleService.getRoles();
-      if (f) this.roles$.subscribe(f()) 
+      this.roles$.subscribe(table.refreshItems());
       this.roleToEdit = null; 
     });
   }
@@ -137,5 +137,4 @@ export class RoleListComponent implements OnInit {
   closeRoleDetails() {
     this.roleToEdit = null;
   }
-
 }
