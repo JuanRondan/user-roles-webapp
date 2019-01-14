@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { RoleService } from '../../services/role.service';
 import { Observable } from 'rxjs';
 import { Role } from '../../types/role';
+import { AppRoles } from '@pa-util/trident-rolemanagement/types/app-roles';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-role-list',
@@ -10,8 +12,10 @@ import { Role } from '../../types/role';
 })
 
 export class RoleListComponent implements OnInit {
+  
   roleToEdit: Role;
   roles$: Observable<Role[]>;
+  resolvedRoles: AppRoles;
 
   /*array where the items are stored*/
   roles : Array<Role>;
@@ -22,9 +26,10 @@ export class RoleListComponent implements OnInit {
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self : any;
 
-  constructor( private roleService : RoleService) { }
+  constructor( private route: ActivatedRoute, private roleService : RoleService) { }
 
   ngOnInit() {
+    this.resolvedRoles = this.route.snapshot.data.resolvedRoles;
     this.roles$ = this.roleService.getRoles();
 
     /*store the reference to the elements list component (roles in this case)*/
