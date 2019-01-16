@@ -8,6 +8,7 @@ export const environment = {
   // Add endpoints
   userApiUrl: 'http://localhost:3000/api/users',
   roleApiUrl: 'http://localhost:3000/api/roles',
+  requestsApiUrl: 'http://localhost:3000/api/camunda',
 
   discoveryUrl: 'https://fedsvc-stage.pwc.com/ofisids/api/discovery',
   redirect: 'http://localhost:55000/', // You can also pass an array of redirect urls like ['http://localhost:55000/', 'http://localhost:4200'],
