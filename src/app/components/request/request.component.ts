@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Request } from '../../types/Request';
+
+import { RequestService } from '../../services/request.service';
+import { Global, GLOBALS } from '../../utils/globals';
 
 @Component({
   selector: 'app-request',
@@ -10,14 +13,17 @@ import { Request } from '../../types/Request';
 export class RequestComponent implements OnInit {
   /*table configuration JSON*/
   searchConfig: Object;
+  requests: Request[];
 
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self: any;
   requestToAdd: boolean;
   requests$: Observable<Request[]>;
-  constructor() { }
+  constructor( private requestService: RequestService,
+               @Inject(GLOBALS) public global: Global) { }
 
   ngOnInit() {
+    this.requests$ = this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
     this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
@@ -57,6 +63,16 @@ export class RequestComponent implements OnInit {
           title: 'Name',
           // method to be used to show the value, if not specified it will be used [object].[name]
           value: 'displayName'
+        },
+        {
+          name: 'instanceId',
+          type: 'string',
+          title: 'Instance Id'
+        },
+        {
+          name: 'status',
+          type: 'string',
+          title: 'Status'
         },
         {
           name: 'description',
@@ -111,6 +127,15 @@ export class RequestComponent implements OnInit {
     console.log(event);
   }
   
+    /* mandatory method */
+    getItems() {
+      return this.requests;
+    }
+  
+    /* mandatory method */
+    setItems(r) {
+      this.requests = r;
+    }
 }
 
 
