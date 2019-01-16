@@ -4,6 +4,7 @@ import './utils/shim';
 import { GLOBALS, Global } from './utils/globals';
 import { IdamAuthenticationService } from '@pa-util/angular2-idam';
 import { Router } from '@angular/router';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(
             public authService: IdamAuthenticationService,
+            private userService: UserService,
             @Inject(GLOBALS)public g: Global, //Recomended injection token this is how to inject it on your components and services,
             router : Router,
     ) {
@@ -42,9 +44,15 @@ export class AppComponent implements OnInit, OnDestroy {
         this.lastInitial = this.g.user.family_name[0];
         this.uName = this.g.user.given_name;
         this.uLastName = this.g.user.family_name;
-        this.router.navigate(['users']);
-        this.isLogged = true;
-      } else {
+        this.userService.getUserByEmail( u.email ).subscribe(
+          user => {
+            this.g.userDetails = user;
+            this.router.navigate(['users']);
+            this.isLogged = true;
+            console.log("current custom user ", user);
+            console.log("current idam user ", u);
+          });
+        } else {
         this.isLogged = false;
         //this is not good, please think in a better alternative
         if (!window.localStorage.getItem("notFirstTime")) {
