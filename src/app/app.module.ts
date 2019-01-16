@@ -2,7 +2,7 @@ import './utils/shim';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -27,6 +27,8 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
 import { UserSearchComponent } from './components/user-search/user-search.component';
 import { GLOBALS } from './utils/globals';
 import { environment } from '../environments/environment';
+import { RequestComponent } from './components/request/request.component';
+import { RequestDetailComponent } from './components/request-detail/request-detail.component';
 
 const appRoutes : Routes = [
   { path : 'users',
@@ -38,7 +40,10 @@ const appRoutes : Routes = [
     component : RoleListComponent,
     //resolve: { resolvedUser: AppUserRolesResolver, resolvedRoles: AppRolesResolver },
     //canActivate: [AuthGuard, UserRoleEditorGuard ]
-  },  
+  },
+  { path : 'requests',
+    component : RequestComponent,
+  },
   { path: '', component: IdamLoginComponent },
 ];
 
@@ -55,11 +60,14 @@ const appRoutes : Routes = [
     RolePermissionsPickerComponent,
     ModalDialogComponent,
     DynamicTableComponent,
+    RequestComponent,
+    RequestDetailComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,    
     Angular2IdamModule.forRoot({
       discoveryUrl: environment.discoveryUrl,
       redirect: environment.redirect,
