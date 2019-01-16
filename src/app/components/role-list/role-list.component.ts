@@ -26,7 +26,7 @@ export class RoleListComponent implements OnInit {
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self : any;
 
-  constructor( private route: ActivatedRoute, private roleService : RoleService) { }
+  constructor( private route: ActivatedRoute, private roleService: RoleService) { }
 
   ngOnInit() {
     this.resolvedRoles = this.route.snapshot.data.resolvedRoles;

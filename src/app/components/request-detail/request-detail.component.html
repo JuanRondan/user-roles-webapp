@@ -1,0 +1,44 @@
+<div class="modal fade add-edit-modal modal-popup" role="dialog" id="userToEditModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <form [formGroup]="requestForm" (ngSubmit)="requestFormData()">
+          <div class="modal-header">
+            <button type="button" class="close" (click)="close()">
+              <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
+            </button>
+            <h6 class="modal-title">Add Request</h6>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="d-flex flex-column-lt-850">
+              <div class="add-panel">
+                <label class="form-label">First Name<span class="form-label-required"> *</span></label>
+                <label *ngIf="(requestForm.controls.name.dirty || requestForm.controls.name.touched) && requestForm.controls.name.invalid && requestForm.controls.name.errors.required"><span class="text-danger">Name is required</span></label>
+                <input type="text" name="name" formControlName="name" placeholder="First Name" id="name"
+                class="form-control text-input">
+  
+                <label class="form-label">Current Date<span class="form-label-required"> *</span></label>
+                <label *ngIf="(requestForm.controls.currentDate.dirty || requestForm.controls.currentDate.touched) && requestForm.controls.currentDate.invalid && requestForm.controls.currentDate.errors.required"><span class="text-danger">Date is required</span></label>
+                <input type="date" name="date" formControlName="currentDate" id="currentDate"
+                class="form-control text-input">                
+              </div>
+              <div class="add-panel second-panel">
+                  <label *ngIf="(requestForm.controls.comment.dirty || requestForm.controls.comment.touched) && requestForm.controls.comment.invalid && requestForm.controls.comment.errors.required"><span class="text-danger">Comment is required</span></label>
+                  <label class="form-label">Your comment</label>
+                  <textarea class="textarea" formControlName="comment"></textarea>
+              </div>
+            </div>
+            <div>
+              {{requestForm.value | json}}
+            </div>
+          </div>
+          <div class="modal-footer clearfix">
+            <div class="buttons-combined pull-right">
+              <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Add</button>
+              <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
