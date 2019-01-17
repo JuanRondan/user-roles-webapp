@@ -9,22 +9,34 @@ import {Request} from '../../types/Request';
   styleUrls: ['./request-detail.component.css']
 })
 export class RequestDetailComponent implements OnInit {
+  @Input() checkFormType: string;
+  @Input() getFromValue: any;
   @Input() request: Request;
   @Output() notifyInitiate = new EventEmitter<Request>();
   @Output() notifyDelete = new EventEmitter<string>();
   @Output() notifyCloseComponent = new EventEmitter<any>();
+  @Output() notifyApprove =  new EventEmitter<any>();
+  @Output() notifyReject =  new EventEmitter<any>();
 
   requestForm: FormGroup;
   constructor(private _fb: FormBuilder) {
     this.requestForm = this._fb.group({
       'name': ['', [Validators.required]],
-      'currentDate': ['', [Validators.required]],
-      'comment': ['', [Validators.required]],
+      'created': ['', [Validators.required]],
+      'description': ['', []]
     });
+    if (this.checkFormType === 'Approve or Reject') {
+      this.requestForm.disable();
+      this.requestForm.patchValue({
+        'name': this.getFromValue.name,
+        'created': this.getFromValue.created,
+        'description': this.getFromValue.description
+      });
+    }
    }
 
   ngOnInit() {
-    console.log("init req. det. ", this.request);
+    
   }
 
   close() {
@@ -39,4 +51,11 @@ export class RequestDetailComponent implements OnInit {
     this.notifyInitiate.emit( this.request );
     this.close();
  }
+ 
+  approve() {
+    this.notifyApprove.emit(this.requestForm.controls);
+  }
+  reject() {
+    this.notifyReject.emit(this.requestForm.controls);
+  }
 }

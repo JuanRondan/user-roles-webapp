@@ -21,8 +21,8 @@ export class RequestService {
     return this.http.post(`${this.requestApiUrl}`, this.createRequestPayload( request ));
   }
 
-  getRequests( userId: string, userRole: string ): Observable<any[]> {
-    return this.http.get<any>(`${this.requestApiUrl}/${userId}/roles/${userRole}` ).pipe(
+  getRequests( userEmail: string, userRole: string ): Observable<any[]> {
+    return this.http.get<any>(`${this.requestApiUrl}/${userEmail}/roles/${userRole}` ).pipe(
       map((rawData: any[]) => rawData.map( rawRequest => this.adapter.adapt(rawRequest)))
     );
   }
@@ -38,7 +38,6 @@ export class RequestService {
   private createRequestPayload(request: Request): any {
     const payload = {
         owner: request.owner,
-        name: request.name,
         description: request.description,
         creationDate: request.creationDate
     }

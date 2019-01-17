@@ -1,30 +1,50 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Request } from '../../types/Request';
-
 import { RequestService } from '../../services/request.service';
+import { RoleService } from '../../services/role.service';
+import { Request } from '../../types/Request';
 import { Global, GLOBALS } from '../../utils/globals';
-
 @Component({
   selector: 'app-request',
   templateUrl: './request.component.html',
-  styleUrls: ['./request.component.css']
+  styleUrls: ['./request.component.css'],
+  providers: [Global]
 })
 export class RequestComponent implements OnInit {
+  showAddBtn: boolean;
+  fromType: string;
+  fromValue: any;
+  tableData: any;
+  tableSelectedData: any;
   /*table configuration JSON*/
   searchConfig: Object;
   requests: Request[];
+  role: string;
 
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self: any;
   requestToEdit: Request;
   requests$: Observable<Request[]>;
   constructor(private requestService: RequestService,
-    @Inject(GLOBALS) public global: Global) { }
+    private roleService: RoleService,
+    @Inject(GLOBALS) public global: Global) {
+    this.showAddBtn = false;
+  }
 
   ngOnInit() {
-    this.requests$ = this.requestService.getRequests(this.global.userDetails._id, this.global.userDetails.email);
+    this.fromType = 'Add';
+    this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
+      this.role = role.name;
+      if (role.name === 'user') {
+        this.showAddBtn = true;
+      }
+    });
+    this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+      this.tableData = data;
+    });
+    this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
 
+    //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -56,18 +76,13 @@ export class RequestComponent implements OnInit {
       fieldsToEval: [
         {
           // attribute field name in the object
-          name: 'name',
+          name: 'owner',
           // type of the field
           type: 'string',
           // string to be shown in the table when referrencing this attribute
           title: 'Name',
           // method to be used to show the value, if not specified it will be used [object].[name]
-          value: 'displayName'
-        },
-        {
-          name: 'instanceId',
-          type: 'string',
-          title: 'Instance Id'
+          //value: 'displayName'
         },
         {
           name: 'status',
@@ -98,7 +113,7 @@ export class RequestComponent implements OnInit {
         delete: {
           method: 'deleteRequest',
           title: 'delete',
-        },
+        }
       },
     };
   }
@@ -123,11 +138,10 @@ export class RequestComponent implements OnInit {
   }
 
   // update the request
-  initiateRequest( request: Request) {
+  initiateRequest(request: Request) {
     console.log("initiate request ", request);
-    this.requestService.initiateRequest( request ).subscribe();
+    this.requestService.initiateRequest(request).subscribe();
   }
-
 
   /* mandatory method */
   getItems() {
@@ -137,6 +151,19 @@ export class RequestComponent implements OnInit {
   /* mandatory method */
   setItems(r) {
     this.requests = r;
+  }
+  approveInitiation(data) {
+    console.log(data);
+  }
+  rejectInitiation(data) {
+    console.log(data);
+  }
+  editRequest(data, table) {
+    // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
+    // console.log(selectedData);
+    this.tableSelectedData = data;
+    this.fromType = 'Approve or Reject';
+    //this.requestToAdd = true;
   }
 }
 

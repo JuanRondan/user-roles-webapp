@@ -7,11 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class DynamicTableComponent implements OnInit {
-  search : any;
-  Table : any;
-  refreshItems : any;
-  @Input() configuration : any;
-  @Input() listComponent : any;
+  search: any;
+  Table: any;
+  refreshItems: any;
+  @Input() configuration: any;
+  @Input() listComponent: any;
+  @Input() showAddBtn: boolean;
 
   constructor() {
     this.search = {
@@ -95,7 +96,7 @@ export class DynamicTableComponent implements OnInit {
           Table.search.show(component, Table);
         },
         options : [2, 5, 10, 15, 20],
-        value : 2,
+        value : 10,
       },
       result : {
         total : {

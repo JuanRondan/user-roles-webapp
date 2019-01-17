@@ -1,12 +1,16 @@
 <div id="role-list" class="row">
   <div class="col-sm-12">
-    <app-dynamic-table [configuration]="searchConfig" [listComponent]="_self"></app-dynamic-table>
+    <app-dynamic-table [showAddBtn]="showAddBtn" [configuration]="searchConfig" [listComponent]="_self"></app-dynamic-table>
   </div>
 </div>
 
-<app-request-detail id="request-detail" *ngIf="requestToEdit" [request]="requestToEdit"
-  (notifyInitiate)="initiateRequest( $event )"
+<app-request-detail id="request-detail" *ngIf="requestToEdit" 
+  [checkFormType]="fromType"
+  [getFromValue]="tableSelectedData"
+  (notifyUpdate)="updateRequest( $event )"
   (notifyAdd)="addRequest( $event )"
   (notifyDelete)="deleteRequest( $event )"
+  (notifyApprove)="approveInitiation($event)"
+  (notifyReject)="rejectInitiation($event)"
   (notifyCloseComponent)="closeRequestDetails()">
 </app-request-detail>
