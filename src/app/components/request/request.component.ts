@@ -19,30 +19,32 @@ export class RequestComponent implements OnInit {
   /*table configuration JSON*/
   searchConfig: Object;
   requests: Request[];
+  role: string;
 
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self: any;
-  requestToAdd: boolean;
+  requestToEdit: Request;
   requests$: Observable<Request[]>;
-  constructor( private requestService: RequestService,
-               private roleService: RoleService,
-               @Inject(GLOBALS) public global: Global) {
-                 this.showAddBtn = false;
-                }
+  constructor(private requestService: RequestService,
+    private roleService: RoleService,
+    @Inject(GLOBALS) public global: Global) {
+    this.showAddBtn = false;
+  }
 
   ngOnInit() {
     this.fromType = 'Add';
-    this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email).subscribe(data => {
-      this.tableData = data;
-    });
-    this.requests$ = this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
-    this.roleService.getRole( this.global.userDetails.roles[0] ).subscribe( role => {
-      console.log(role);
-      if(role.name === 'user') {
+    this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
+      this.role = role.name;
+      if (role.name === 'user') {
         this.showAddBtn = true;
       }
     });
-    this.requestToAdd = false;
+    this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+      this.tableData = data;
+    });
+    this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
+
+    //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -74,18 +76,13 @@ export class RequestComponent implements OnInit {
       fieldsToEval: [
         {
           // attribute field name in the object
-          name: 'name',
+          name: 'owner',
           // type of the field
           type: 'string',
           // string to be shown in the table when referrencing this attribute
           title: 'Name',
           // method to be used to show the value, if not specified it will be used [object].[name]
-          value: 'displayName'
-        },
-        {
-          name: 'instanceId',
-          type: 'string',
-          title: 'Instance Id'
+          //value: 'displayName'
         },
         {
           name: 'status',
@@ -122,12 +119,12 @@ export class RequestComponent implements OnInit {
   }
 
   createRequest() {
-    this.requestToAdd = true;
+    this.requestToEdit = new Request();
+    this.requestToEdit.owner = this.global.userDetails.email;
   }
   // close modal
   closeRequestDetails() {
-    console.log('close modal');
-    this.requestToAdd = false;
+    this.requestToEdit = null;
   }
 
   // delete the request
@@ -141,32 +138,33 @@ export class RequestComponent implements OnInit {
   }
 
   // update the request
-  updateRequest(event) {
-    console.log(event);
+  initiateRequest(request: Request) {
+    console.log("initiate request ", request);
+    this.requestService.initiateRequest(request).subscribe();
   }
-  
-    /* mandatory method */
-    getItems() {
-      return this.requests;
-    }
-  
-    /* mandatory method */
-    setItems(r) {
-      this.requests = r;
-    }
-    approveInitiation(data) {
-      console.log(data);
-    }
-    rejectInitiation(data) {
-      console.log(data);
-    }
-    editRequest(data, table) {
-      // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
-      // console.log(selectedData);
-      this.tableSelectedData = data;
-      this.fromType = 'Approve or Reject';
-      this.requestToAdd = true;
-    }
+
+  /* mandatory method */
+  getItems() {
+    return this.requests;
+  }
+
+  /* mandatory method */
+  setItems(r) {
+    this.requests = r;
+  }
+  approveInitiation(data) {
+    console.log(data);
+  }
+  rejectInitiation(data) {
+    console.log(data);
+  }
+  editRequest(data, table) {
+    // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
+    // console.log(selectedData);
+    this.tableSelectedData = data;
+    this.fromType = 'Approve or Reject';
+    //this.requestToAdd = true;
+  }
 }
 
 

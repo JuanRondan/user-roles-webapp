@@ -96,7 +96,7 @@ export class DynamicTableComponent implements OnInit {
           Table.search.show(component, Table);
         },
         options : [2, 5, 10, 15, 20],
-        value : 2,
+        value : 10,
       },
       result : {
         total : {

@@ -17,11 +17,12 @@ export class RequestService {
   private requestApiUrl = environment.requestsApiUrl;
 
   initiateRequest( request: any): Observable<any> {
-    return this.http.post<any>(`${this.requestApiUrl}`, request);
+    console.log("initiating requst ", request);
+    return this.http.post(`${this.requestApiUrl}`, this.createRequestPayload( request ));
   }
 
-  getRequests( userId: string, userRole: string ): Observable<any[]> {
-    return this.http.get<any>(`${this.requestApiUrl}/${userId}/roles/${userRole}` ).pipe(
+  getRequests( userEmail: string, userRole: string ): Observable<any[]> {
+    return this.http.get<any>(`${this.requestApiUrl}/${userEmail}/roles/${userRole}` ).pipe(
       map((rawData: any[]) => rawData.map( rawRequest => this.adapter.adapt(rawRequest)))
     );
   }
@@ -36,11 +37,8 @@ export class RequestService {
 
   private createRequestPayload(request: Request): any {
     const payload = {
-        _id: request._id,
-        name: request.name,
+        owner: request.owner,
         description: request.description,
-        instanceId: request.instanceId,
-        status: request.status,
         creationDate: request.creationDate
     }
     return payload;
