@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {Request} from '../../types/Request';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+import {Request} from '../../types/Request';
+
 @Component({
   selector: 'app-request-detail',
   templateUrl: './request-detail.component.html',
@@ -8,7 +10,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class RequestDetailComponent implements OnInit {
   @Input() request: Request;
-  @Output() notifyUpdate = new EventEmitter<Request>();
+  @Output() notifyInitiate = new EventEmitter<Request>();
   @Output() notifyDelete = new EventEmitter<string>();
   @Output() notifyCloseComponent = new EventEmitter<any>();
 
@@ -22,12 +24,19 @@ export class RequestDetailComponent implements OnInit {
    }
 
   ngOnInit() {
+    console.log("init req. det. ", this.request);
   }
 
   close() {
     this.notifyCloseComponent.emit();
   }
-  requestFormData() {
-    console.log(this.requestForm.controls);
-  }
+
+ requestFormData(form: FormGroup) {
+    this.request.creationDate = new Date();
+    this.request.description = this.requestForm.controls.comment.value;
+
+    //if role === user
+    this.notifyInitiate.emit( this.request );
+    this.close();
+ }
 }

@@ -17,14 +17,14 @@ export class RequestComponent implements OnInit {
 
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self: any;
-  requestToAdd: boolean;
+  requestToEdit: Request;
   requests$: Observable<Request[]>;
-  constructor( private requestService: RequestService,
-               @Inject(GLOBALS) public global: Global) { }
+  constructor(private requestService: RequestService,
+    @Inject(GLOBALS) public global: Global) { }
 
   ngOnInit() {
-    this.requests$ = this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
-    this.requestToAdd = false;
+    this.requests$ = this.requestService.getRequests(this.global.userDetails._id, this.global.userDetails.email);
+
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -104,12 +104,12 @@ export class RequestComponent implements OnInit {
   }
 
   createRequest() {
-    this.requestToAdd = true;
+    this.requestToEdit = new Request();
+    this.requestToEdit.owner = this.global.userDetails.email;
   }
   // close modal
   closeRequestDetails() {
-    console.log('close modal');
-    this.requestToAdd = false;
+    this.requestToEdit = null;
   }
 
   // delete the request
@@ -123,19 +123,21 @@ export class RequestComponent implements OnInit {
   }
 
   // update the request
-  updateRequest(event) {
-    console.log(event);
+  initiateRequest( request: Request) {
+    console.log("initiate request ", request);
+    this.requestService.initiateRequest( request ).subscribe();
   }
-  
-    /* mandatory method */
-    getItems() {
-      return this.requests;
-    }
-  
-    /* mandatory method */
-    setItems(r) {
-      this.requests = r;
-    }
+
+
+  /* mandatory method */
+  getItems() {
+    return this.requests;
+  }
+
+  /* mandatory method */
+  setItems(r) {
+    this.requests = r;
+  }
 }
 
 

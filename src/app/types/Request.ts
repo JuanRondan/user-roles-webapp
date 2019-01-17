@@ -3,14 +3,12 @@ import { Adapter } from './IAdapter';
 
 export class Request {
     _id: string;
+    owner: string;
     name: string;
     description: string;
-    permissions: Array<Object>;
-    instanceId: string;
-    status: string;
     creationDate: Date;
 
-    constructor() {}
+    constructor() { }
 
     displayName(): string {
         return this.name;
@@ -26,10 +24,7 @@ export class RequestAdapter implements Adapter<Request> {
         u._id = request._id;
         u.name = request.name;
         u.description = request.description;
-        u.permissions = request.permissions;
-        u.instanceId = request.processInstanceId;
-        u.status = request.status;
-        //u.creationDate = request.
+        u.creationDate = request.creationDate;
         return u;
     }
 }

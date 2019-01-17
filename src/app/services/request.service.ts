@@ -17,7 +17,8 @@ export class RequestService {
   private requestApiUrl = environment.requestsApiUrl;
 
   initiateRequest( request: any): Observable<any> {
-    return this.http.post<any>(`${this.requestApiUrl}`, request);
+    console.log("initiating requst ", request);
+    return this.http.post(`${this.requestApiUrl}`, this.createRequestPayload( request ));
   }
 
   getRequests( userId: string, userRole: string ): Observable<any[]> {
@@ -36,11 +37,9 @@ export class RequestService {
 
   private createRequestPayload(request: Request): any {
     const payload = {
-        _id: request._id,
+        owner: request.owner,
         name: request.name,
         description: request.description,
-        instanceId: request.instanceId,
-        status: request.status,
         creationDate: request.creationDate
     }
     return payload;
