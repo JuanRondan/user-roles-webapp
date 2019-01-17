@@ -120,7 +120,11 @@ export class RoleListComponent implements OnInit {
 
   updateRole( updatedRole: Role) {
     if (updatedRole._id) {
-      this.roleService.updateRole( updatedRole ).subscribe( role => updatedRole = role );
+      this.roleService.updateRole( updatedRole ).subscribe( role => {
+        updatedRole = role;
+        this.roles$ = this.roleService.getRoles();
+      });
+
     } else {
       this.roleService.createRole( updatedRole ).subscribe( newRole => {
         updatedRole = newRole;

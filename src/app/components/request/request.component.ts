@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Inject, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
+import { RequestService } from '../../services/request.service';
 import { Request } from '../../types/Request';
-
+import { Global, GLOBALS } from '../../utils/globals';
 @Component({
   selector: 'app-request',
   templateUrl: './request.component.html',
-  styleUrls: ['./request.component.css']
+  styleUrls: ['./request.component.css'],
+  providers: [Global]
 })
 export class RequestComponent implements OnInit {
   /*table configuration JSON*/
@@ -15,10 +17,11 @@ export class RequestComponent implements OnInit {
   _self: any;
   requestToAdd: boolean;
   requests$: Observable<Request[]>;
-  constructor() { }
+  constructor(private _requestService: RequestService, @Inject(GLOBALS) public global: Global) { }
 
   ngOnInit() {
     this.requestToAdd = false;
+    this.requests$ = this._requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -82,7 +85,7 @@ export class RequestComponent implements OnInit {
         delete: {
           method: 'deleteRequest',
           title: 'delete',
-        },
+        }
       },
     };
   }
@@ -110,7 +113,6 @@ export class RequestComponent implements OnInit {
   updateRequest(event) {
     console.log(event);
   }
-  
 }
 
 
