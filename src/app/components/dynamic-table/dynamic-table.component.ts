@@ -7,11 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class DynamicTableComponent implements OnInit {
-  search : any;
-  Table : any;
-  refreshItems : any;
-  @Input() configuration : any;
-  @Input() listComponent : any;
+  search: any;
+  Table: any;
+  refreshItems: any;
+  @Input() configuration: any;
+  @Input() listComponent: any;
+  @Input() showAddBtn: boolean;
 
   constructor() {
     this.search = {

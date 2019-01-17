@@ -20,7 +20,7 @@
               <th>Last Modified</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             <tr *ngFor="let user of users$ | async" ts-repeat="" class="ng-scope">
               <td class="table-row-actions">
                 <i class="appkiticon icon-fill-delete" (click)="confirmDelete( user._id )" title="Delete" data-toggle="modal" data-target="#actionModal"></i>

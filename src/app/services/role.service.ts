@@ -19,8 +19,10 @@ export class RoleService {
 
   getRoles(): Observable<Role[]> {
     return this.http.get( `${this.roleApiUrl}` ).pipe(
-      map ( (jsonData: any[]) => jsonData.map( jsonRole => this.adapter.adapt( jsonRole ) ))
-    )
+      map ( (jsonData: any[]) => jsonData.map( jsonRole =>
+        this.adapter.adapt( jsonRole )
+       ))
+    );
   }
 
   getRole( roleId: string): Observable<Role> {

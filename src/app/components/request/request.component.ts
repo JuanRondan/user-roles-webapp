@@ -1,16 +1,21 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Request } from '../../types/Request';
-
 import { RequestService } from '../../services/request.service';
+import { RoleService } from '../../services/role.service';
+import { Request } from '../../types/Request';
 import { Global, GLOBALS } from '../../utils/globals';
-
 @Component({
   selector: 'app-request',
   templateUrl: './request.component.html',
-  styleUrls: ['./request.component.css']
+  styleUrls: ['./request.component.css'],
+  providers: [Global]
 })
 export class RequestComponent implements OnInit {
+  showAddBtn: boolean;
+  fromType: string;
+  fromValue: any;
+  tableData: any;
+  tableSelectedData: any;
   /*table configuration JSON*/
   searchConfig: Object;
   requests: Request[];
@@ -20,10 +25,23 @@ export class RequestComponent implements OnInit {
   requestToAdd: boolean;
   requests$: Observable<Request[]>;
   constructor( private requestService: RequestService,
-               @Inject(GLOBALS) public global: Global) { }
+               private roleService: RoleService,
+               @Inject(GLOBALS) public global: Global) {
+                 this.showAddBtn = false;
+                }
 
   ngOnInit() {
+    this.fromType = 'Add';
+    this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email).subscribe(data => {
+      this.tableData = data;
+    });
     this.requests$ = this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
+    this.roleService.getRole( this.global.userDetails.roles[0] ).subscribe( role => {
+      console.log(role);
+      if(role.name === 'user') {
+        this.showAddBtn = true;
+      }
+    });
     this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
@@ -98,7 +116,7 @@ export class RequestComponent implements OnInit {
         delete: {
           method: 'deleteRequest',
           title: 'delete',
-        },
+        }
       },
     };
   }
@@ -135,6 +153,19 @@ export class RequestComponent implements OnInit {
     /* mandatory method */
     setItems(r) {
       this.requests = r;
+    }
+    approveInitiation(data) {
+      console.log(data);
+    }
+    rejectInitiation(data) {
+      console.log(data);
+    }
+    editRequest(data, table) {
+      // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
+      // console.log(selectedData);
+      this.tableSelectedData = data;
+      this.fromType = 'Approve or Reject';
+      this.requestToAdd = true;
     }
 }
 
