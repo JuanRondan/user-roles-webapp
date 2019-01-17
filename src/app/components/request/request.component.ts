@@ -1,6 +1,7 @@
-import { Component, OnInit, Inject, Inject, Inject } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { RequestService } from '../../services/request.service';
+import { RoleService } from '../../services/role.service';
 import { Request } from '../../types/Request';
 import { Global, GLOBALS } from '../../utils/globals';
 @Component({
@@ -10,18 +11,38 @@ import { Global, GLOBALS } from '../../utils/globals';
   providers: [Global]
 })
 export class RequestComponent implements OnInit {
+  showAddBtn: boolean;
+  fromType: string;
+  fromValue: any;
+  tableData: any;
+  tableSelectedData: any;
   /*table configuration JSON*/
   searchConfig: Object;
+  requests: Request[];
 
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self: any;
   requestToAdd: boolean;
   requests$: Observable<Request[]>;
-  constructor(private _requestService: RequestService, @Inject(GLOBALS) public global: Global) { }
+  constructor( private requestService: RequestService,
+               private roleService: RoleService,
+               @Inject(GLOBALS) public global: Global) {
+                 this.showAddBtn = false;
+                }
 
   ngOnInit() {
+    this.fromType = 'Add';
+    this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email).subscribe(data => {
+      this.tableData = data;
+    });
+    this.requests$ = this.requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
+    this.roleService.getRole( this.global.userDetails.roles[0] ).subscribe( role => {
+      console.log(role);
+      if(role.name === 'user') {
+        this.showAddBtn = true;
+      }
+    });
     this.requestToAdd = false;
-    this.requests$ = this._requestService.getRequests( this.global.userDetails._id, this.global.userDetails.email);
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -60,6 +81,16 @@ export class RequestComponent implements OnInit {
           title: 'Name',
           // method to be used to show the value, if not specified it will be used [object].[name]
           value: 'displayName'
+        },
+        {
+          name: 'instanceId',
+          type: 'string',
+          title: 'Instance Id'
+        },
+        {
+          name: 'status',
+          type: 'string',
+          title: 'Status'
         },
         {
           name: 'description',
@@ -113,6 +144,29 @@ export class RequestComponent implements OnInit {
   updateRequest(event) {
     console.log(event);
   }
+  
+    /* mandatory method */
+    getItems() {
+      return this.requests;
+    }
+  
+    /* mandatory method */
+    setItems(r) {
+      this.requests = r;
+    }
+    approveInitiation(data) {
+      console.log(data);
+    }
+    rejectInitiation(data) {
+      console.log(data);
+    }
+    editRequest(data, table) {
+      // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
+      // console.log(selectedData);
+      this.tableSelectedData = data;
+      this.fromType = 'Approve or Reject';
+      this.requestToAdd = true;
+    }
 }
 
 

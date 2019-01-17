@@ -26,7 +26,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(
             public authService: IdamAuthenticationService,
             private userService: UserService,
-            @Inject(GLOBALS)public g: Global, //Recomended injection token this is how to inject it on your components and services,
+            @Inject(GLOBALS) public g: Global, //Recomended injection token this is how to inject it on your components and services,
             router : Router,
     ) {
       this.router = router;

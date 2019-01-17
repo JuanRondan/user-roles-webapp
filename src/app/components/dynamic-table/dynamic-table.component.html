@@ -11,7 +11,7 @@
             <span class="delete-wrapper display-none"><i class="icon-outline-circle-delete input-delete"></i></span>
           </div>
         </div>
-        <div class="search-box pull-right">
+        <div class="search-box pull-right" *ngIf="showAddBtn">
           <button class="button button-primary" type="button"(click)="listComponent[Table.actions.create.method]()">{{Table.actions.create.title}}</button>
         </div>
       </caption>

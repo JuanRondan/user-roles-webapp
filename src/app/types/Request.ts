@@ -6,6 +6,9 @@ export class Request {
     name: string;
     description: string;
     permissions: Array<Object>;
+    instanceId: string;
+    status: string;
+    creationDate: Date;
 
     constructor() {}
 
@@ -17,13 +20,16 @@ export class Request {
 @Injectable({
     providedIn: 'root'
 })
-export class RoleAdapter implements Adapter<Request> {
+export class RequestAdapter implements Adapter<Request> {
     adapt( request: any ): Request {
         const u = new Request();
         u._id = request._id;
         u.name = request.name;
         u.description = request.description;
         u.permissions = request.permissions;
+        u.instanceId = request.processInstanceId;
+        u.status = request.status;
+        //u.creationDate = request.
         return u;
     }
 }

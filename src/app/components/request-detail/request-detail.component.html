@@ -7,7 +7,7 @@
             <button type="button" class="close" (click)="close()">
               <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
             </button>
-            <h6 class="modal-title">Add Request</h6>
+            <h6 class="modal-title">{{checkFormType}} Request</h6>
           </div>
           <div class="modal-body clearfix">
             <div class="d-flex flex-column-lt-850">
@@ -18,14 +18,14 @@
                 class="form-control text-input">
   
                 <label class="form-label">Current Date<span class="form-label-required"> *</span></label>
-                <label *ngIf="(requestForm.controls.currentDate.dirty || requestForm.controls.currentDate.touched) && requestForm.controls.currentDate.invalid && requestForm.controls.currentDate.errors.required"><span class="text-danger">Date is required</span></label>
-                <input type="date" name="date" formControlName="currentDate" id="currentDate"
+                <label *ngIf="(requestForm.controls.created.dirty || requestForm.controls.created.touched) && requestForm.controls.created.invalid && requestForm.controls.created.errors.required"><span class="text-danger">Date is required</span></label>
+                <input type="date" name="date" formControlName="created" id="currentDate"
                 class="form-control text-input">                
               </div>
               <div class="add-panel second-panel">
-                  <label *ngIf="(requestForm.controls.comment.dirty || requestForm.controls.comment.touched) && requestForm.controls.comment.invalid && requestForm.controls.comment.errors.required"><span class="text-danger">Comment is required</span></label>
+                  <!-- <label *ngIf="(requestForm.controls.description.dirty || requestForm.controls.description.touched) && requestForm.controls.description.invalid && requestForm.controls.description.errors.required"><span class="text-danger">Comment is required</span></label> -->
                   <label class="form-label">Your comment</label>
-                  <textarea class="textarea" formControlName="comment"></textarea>
+                  <textarea class="textarea" formControlName="description"></textarea>
               </div>
             </div>
             <div>
@@ -33,10 +33,16 @@
             </div>
           </div>
           <div class="modal-footer clearfix">
-            <div class="buttons-combined pull-right">
+            <div class="buttons-combined pull-right" *ngIf="fromType === 'Add'; else approveOrReject">
               <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Add</button>
               <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
             </div>
+            <ng-template #approveOrReject>
+              <div class="buttons-combined pull-right">
+                <button class="button button-primary" type="button" (click)="approve()">Approve</button>
+                <button class="button button-primary" type="button" (click)="reject()">Reject</button>
+              </div>
+            </ng-template>
           </div>
         </form>
       </div>
