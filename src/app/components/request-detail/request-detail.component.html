@@ -7,7 +7,12 @@
             <button type="button" class="close" (click)="close()">
               <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
             </button>
-            <h6 class="modal-title">{{checkFormType}} Request</h6>
+            <div *ngIf="formAdd; else approveReject">
+              <h6 class="modal-title">Add Request</h6>
+            </div>
+            <ng-template #approveReject>
+              <h6 class="modal-title">Approve/Reject Request</h6>
+            </ng-template>
           </div>
           <div class="modal-body clearfix">
             <div class="d-flex flex-column-lt-850">
@@ -33,7 +38,7 @@
             </div>
           </div>
           <div class="modal-footer clearfix">
-            <div class="buttons-combined pull-right" *ngIf="fromType === 'Add'; else approveOrReject">
+            <div class="buttons-combined pull-right" *ngIf="formAdd; else approveOrReject">
               <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Add</button>
               <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
             </div>

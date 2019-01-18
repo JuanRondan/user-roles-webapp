@@ -6,7 +6,7 @@ export class Request {
     owner: string;
     status: string;
     description: string;
-    creationDate: Date;
+    created: Date;
 
     constructor() { }
 

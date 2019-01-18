@@ -9,7 +9,7 @@ import {Request} from '../../types/Request';
   styleUrls: ['./request-detail.component.css']
 })
 export class RequestDetailComponent implements OnInit {
-  @Input() checkFormType: string;
+  @Input() formAdd: boolean;
   @Input() getFromValue: any;
   @Input() request: Request;
   @Output() notifyInitiate = new EventEmitter<Request>();
@@ -25,7 +25,7 @@ export class RequestDetailComponent implements OnInit {
       'created': ['', [Validators.required]],
       'description': ['', []]
     });
-    if (this.checkFormType === 'Approve or Reject') {
+    if (this.formAdd) {
       this.requestForm.disable();
       this.requestForm.patchValue({
         'name': this.getFromValue.name,
@@ -44,16 +44,16 @@ export class RequestDetailComponent implements OnInit {
   }
 
  requestFormData(form: FormGroup) {
-    this.request.creationDate = new Date();
-    this.request.description = this.requestForm.controls.comment.value;
+    // this.request.creationDate = new Date();
+    // this.request.description = this.requestForm.controls.comment.value;
 
     //if role === user
-    this.notifyInitiate.emit( this.request );
+    this.notifyInitiate.emit( this.requestForm.value);
     this.close();
  }
  
   approve() {
-    this.notifyApprove.emit(this.requestForm.controls);
+    this.notifyApprove.emit(this.requestForm.controls.value);
   }
   reject() {
     this.notifyReject.emit(this.requestForm.controls);
