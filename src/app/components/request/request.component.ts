@@ -33,18 +33,19 @@ export class RequestComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
-      this.role = role.name;
-      if (this.role) {
+    let roleId = this.global.userDetails.roles[0];
+    if (roleId) {
+      this.roleService.getRole( roleId ).subscribe(role => {
+        this.role = role.name;
         this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
-/*         this.requests$.subscribe(data => {
-          this.tableData = data;
-        }); */
-      }
-      if (role.name === 'user') {
-        this.showAddBtn = true;
-      }
-    });
+        
+        if (role.name === 'user') {
+          this.showAddBtn = true;
+        }
+      });
+    } else {
+      console.log("user unauthorized to access this page");
+    }
 
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
@@ -136,9 +137,11 @@ export class RequestComponent implements OnInit {
 
   // update the request
   initiateRequest(request: Request) {
-
     console.log("initiate request ", request);
-    this.requestService.initiateRequest(request).subscribe();
+    this.requestService.initiateRequest(request).subscribe( (response) => {      
+      console.log("initiate request completed ", response);
+      console.log("<<<< update table >>>>");
+    });
   }
 
   /* mandatory method */
@@ -153,15 +156,17 @@ export class RequestComponent implements OnInit {
   
   approveRequest(request: Request) {
     console.log("approving request ", request);
-    this.requestService.approveRequest( request._id ).subscribe( () => {
-      console.log("request approved");
+    this.requestService.approveRequest( request._id ).subscribe( (response) => {
+      console.log("request approved ", response);
+      console.log("<<<< update table >>>>");
     });
   }
 
   rejectRequest(request: Request) {
     console.log("rejecting request ", request);
-    this.requestService.rejectRequest( request._id ).subscribe( () => {
-      console.log("request rejected");
+    this.requestService.rejectRequest( request._id ).subscribe( (response) => {
+      console.log("request rejected ", response);
+      console.log("<<<< update table >>>>");
     })
   }
 
