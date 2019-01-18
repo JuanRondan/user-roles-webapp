@@ -8,9 +8,8 @@
   [formAdd]="formAdd"  
   [request]="requestToEdit"
   (notifyInitiate)="initiateRequest( $event )"
-  (notifyAdd)="addRequest( $event )"
+  (notifyApprove)="approveRequest($event)"
+  (notifyReject)="rejectRequest($event)"
   (notifyDelete)="deleteRequest( $event )"
-  (notifyApprove)="approveInitiation($event)"
-  (notifyReject)="rejectInitiation($event)"
   (notifyCloseComponent)="closeRequestDetails()">
 </app-request-detail>

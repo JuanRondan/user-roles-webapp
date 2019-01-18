@@ -22,17 +22,17 @@ export class RequestService {
   }
 
   getRequests( userEmail: string, userRole: string ): Observable<any[]> {
-    return this.http.get<any>(`${this.requestApiUrl}/${userEmail}/roles/${userRole}` ).pipe(
+    return this.http.get(`${this.requestApiUrl}/${userEmail}/roles/${userRole}` ).pipe(
       map((rawData: any[]) => rawData.map( rawRequest => this.adapter.adapt(rawRequest)))
     );
   }
 
   approveRequest( requestId: string): Observable<any> {
-    return this.http.post<any>(`${this.requestApiUrl}/${requestId}`, {});
+    return this.http.post(`${this.requestApiUrl}/${requestId}/approve`, {});
   }
 
   rejectRequest( requestId: string): Observable<any> {
-    return this.http.post<any>(`${this.requestApiUrl}/${requestId}`, {});
+    return this.http.post(`${this.requestApiUrl}/${requestId}/reject`, {});
   }
 
   private createRequestPayload(request: Request): any {

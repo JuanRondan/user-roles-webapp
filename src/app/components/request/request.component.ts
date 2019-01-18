@@ -134,14 +134,9 @@ export class RequestComponent implements OnInit {
     console.log(event);
   }
 
-  // add the request
-  addRequest(event) {
-    console.log(event);
-  }
-
   // update the request
   initiateRequest(request: Request) {
-    
+
     console.log("initiate request ", request);
     this.requestService.initiateRequest(request).subscribe();
   }
@@ -155,12 +150,21 @@ export class RequestComponent implements OnInit {
   setItems(r) {
     this.requests = r;
   }
-  approveInitiation(data) {
-    console.log(data);
+  
+  approveRequest(request: Request) {
+    console.log("approving request ", request);
+    this.requestService.approveRequest( request._id ).subscribe( () => {
+      console.log("request approved");
+    });
   }
-  rejectInitiation(data) {
-    console.log(data);
+
+  rejectRequest(request: Request) {
+    console.log("rejecting request ", request);
+    this.requestService.rejectRequest( request._id ).subscribe( () => {
+      console.log("request rejected");
+    })
   }
+
   editRequest(data, table) {
     // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
     console.log(data);
