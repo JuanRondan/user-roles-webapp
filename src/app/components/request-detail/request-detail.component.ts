@@ -42,16 +42,16 @@ export class RequestDetailComponent implements OnInit {
 
   requestFormData(form: FormGroup) {
     this.request.description = this.requestForm.controls.description.value;
-
-    //if role === user
     this.notifyInitiate.emit(this.request);
     this.close();
   }
 
   approve() {
-    this.notifyApprove.emit(this.requestForm.controls.value);
+    this.notifyApprove.emit(this.request);
+    this.close();
   }
   reject() {
-    this.notifyReject.emit(this.requestForm.controls);
+    this.notifyReject.emit(this.request);
+    this.close();
   }
 }
