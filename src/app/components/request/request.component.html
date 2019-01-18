@@ -5,9 +5,9 @@
 </div>
 
 <app-request-detail id="request-detail" *ngIf="requestToEdit" 
-  [checkFormType]="fromType"
+  [formAdd]="formAdd"
   [getFromValue]="tableSelectedData"
-  (notifyUpdate)="updateRequest( $event )"
+  (notifyInitiate)="initiateRequest( $event )"
   (notifyAdd)="addRequest( $event )"
   (notifyDelete)="deleteRequest( $event )"
   (notifyApprove)="approveInitiation($event)"
