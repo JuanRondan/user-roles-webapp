@@ -36,10 +36,10 @@ export class RequestComponent implements OnInit {
     this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
       this.role = role.name;
       if (this.role) {
-        this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
+        this.requests$.subscribe(data => {
           this.tableData = data;
         });
-        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
       }
       if (role.name === 'user') {
         this.showAddBtn = true;
