@@ -38,11 +38,11 @@ export class RequestComponent implements OnInit {
       if (role.name === 'user') {
         this.showAddBtn = true;
       }
+      this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+        this.tableData = data;
+      });
+      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
-    this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
-      this.tableData = data;
-    });
-    this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
 
     //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
