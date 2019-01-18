@@ -1,15 +1,85 @@
-<div id="role-list" class="row">
-  <div class="col-sm-12" *ngIf="role">
-    <app-dynamic-table [showAddBtn]="showAddBtn" [configuration]="searchConfig" [listComponent]="_self"></app-dynamic-table>
+<div class="row">
+  <div class="col-12 view fluid">
+    <div class="table-wrapper with-caption with-foot">
+      <div class="table-responsive-wrapper">
+        <table class="table table-title table-pagination table-striped" style="width: 100%;">
+          <caption>
+            Request List
+            <div class="pull-right">
+              <button class="button button-primary" type="button" (click)="createRequest()">New Request</button>
+            </div>
+          </caption>
+          <thead>
+            <tr>
+              <th>Owner</th>
+              <th>Status</th>
+              <th>Description</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr *ngFor="let request of requests$ | async" ts-repeat="" class="ng-scope">
+              <td class="table-row-actions">
+                <i class="appkiticon icon-fill-delete" title="Delete" data-toggle="modal" data-target="#actionModal"></i>
+                <i class="appkiticon icon-fill-edit" (click)="editRequest(request)" title="Edit" data-toggle="modal"
+                  data-target="#requestToEditModal"></i>
+              </td>
+              <td class="ng-binding">{{request.owner}}</td>
+              <td class="ng-binding">{{request.status}}</td>
+              <td class="ng-binding">{{request.description}}</td>
+              <td class="ng-binding">{{request.creationDate}}</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="table-footer">
+              <td colspan="4">
+                <div class="pagination-detail pull-left">
+                  <div>
+                    <div class="dropdown dropdown-sample dropdown-default">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">05 / page</button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li class="dropdown-active">
+                          <a>05 / page</a>
+                        </li>
+                        <li>
+                          <a>10 / page</a>
+                        </li>
+                        <li>
+                          <a>15 / page</a>
+                        </li>
+                        <li>
+                          <a>20 / page</a>
+                        </li>
+                      </ul>
+                      <i class="appkiticon icon-outline-down-chevron" data-toggle="dropdown"></i>
+                    </div>
+                  </div>
+                  <span>
+                    1-5 of 50 items
+                  </span>
+                </div>
+                <div class="pagination pull-right">
+                  <ul class="nav navbar-nav pull-right">
+                    <li>
+                      <i class="icon-outline-left-chevron"></i>
+                    </li>
+                    <li><span><input type="text" class="current-page" value="1"> of 4</span></li>
+                    <li>
+                      <i class="icon-outline-right-chevron"></i>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 
-<app-request-detail id="request-detail" *ngIf="requestToEdit" 
-  [formAdd]="formAdd"  
-  [request]="requestToEdit"
-  (notifyInitiate)="initiateRequest( $event )"
-  (notifyApprove)="approveRequest($event)"
-  (notifyReject)="rejectRequest($event)"
-  (notifyDelete)="deleteRequest( $event )"
-  (notifyCloseComponent)="closeRequestDetails()">
+<app-request-detail id="request-detail" *ngIf="requestToEdit" [formAdd]="formAdd" [request]="requestToEdit"
+  (notifyInitiate)="initiateRequest( $event )" (notifyApprove)="approveRequest($event)" (notifyReject)="rejectRequest($event)"
+  (notifyDelete)="deleteRequest( $event )" (notifyCloseComponent)="closeRequestDetails()">
 </app-request-detail>

@@ -19,15 +19,15 @@ export class UserListComponent implements OnInit {
   showModal: boolean;
   userToDelete: string;
   
-  users: AppUserRolesPaging;
-  roles: AppRoles;
+  //users: AppUserRolesPaging;
+  //roles: AppRoles;
   
   constructor(private userService: UserService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.users$ = this.userService.getUsers();
-    this.users = this.route.snapshot.data.resolvedUsers;
-    this.roles = this.route.snapshot.data.resolvedRoles;
+    //this.users = this.route.snapshot.data.resolvedUsers;
+    //this.roles = this.route.snapshot.data.resolvedRoles;
   }
 
   createUser() {
