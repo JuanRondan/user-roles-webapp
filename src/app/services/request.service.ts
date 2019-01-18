@@ -39,7 +39,7 @@ export class RequestService {
     const payload = {
         owner: request.owner,
         description: request.description,
-        creationDate: request.created
+        creationDate: request.creationDate
     };
     return payload;
   }

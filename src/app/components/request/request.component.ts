@@ -36,21 +36,16 @@ export class RequestComponent implements OnInit {
     this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
       this.role = role.name;
       if (this.role) {
-        this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
+        this.requests$.subscribe(data => {
           this.tableData = data;
         });
-        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
       }
       if (role.name === 'user') {
         this.showAddBtn = true;
       }
-      this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
-        this.tableData = data;
-      });
-      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
 
-    //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -127,6 +122,7 @@ export class RequestComponent implements OnInit {
   createRequest() {
     this.requestToEdit = new Request();
     this.requestToEdit.owner = this.global.userDetails.email;
+    this.requestToEdit.creationDate = new Date();
   }
   // close modal
   closeRequestDetails() {
@@ -145,7 +141,7 @@ export class RequestComponent implements OnInit {
 
   // update the request
   initiateRequest(request: Request) {
-    request.owner = this.global.userDetails.email;
+    
     console.log("initiate request ", request);
     this.requestService.initiateRequest(request).subscribe();
   }
