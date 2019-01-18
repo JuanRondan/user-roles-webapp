@@ -14,7 +14,7 @@ export class RequestComponent implements OnInit {
   showAddBtn: boolean;
   formAdd: boolean;
   fromValue: any;
-  tableData: any;
+  //tableData: any;
   tableSelectedData: any;
   /*table configuration JSON*/
   searchConfig: Object;
@@ -37,9 +37,9 @@ export class RequestComponent implements OnInit {
       this.role = role.name;
       if (this.role) {
         this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
-        this.requests$.subscribe(data => {
+/*         this.requests$.subscribe(data => {
           this.tableData = data;
-        });
+        }); */
       }
       if (role.name === 'user') {
         this.showAddBtn = true;
