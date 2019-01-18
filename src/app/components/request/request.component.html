@@ -5,8 +5,8 @@
 </div>
 
 <app-request-detail id="request-detail" *ngIf="requestToEdit" 
-  [formAdd]="formAdd"
-  [getFromValue]="tableSelectedData"
+  [formAdd]="formAdd"  
+  [request]="requestToEdit"
   (notifyInitiate)="initiateRequest( $event )"
   (notifyAdd)="addRequest( $event )"
   (notifyDelete)="deleteRequest( $event )"

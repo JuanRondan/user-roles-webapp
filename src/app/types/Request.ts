@@ -6,11 +6,11 @@ export class Request {
     owner: string;
     status: string;
     description: string;
-    created: Date;
+    creationDate: Date;
 
     constructor() { }
 
-/*     displayName(): string {
+    /* displayName(): string {
         return this.name;
     } */
 }

@@ -127,6 +127,7 @@ export class RequestComponent implements OnInit {
   createRequest() {
     this.requestToEdit = new Request();
     this.requestToEdit.owner = this.global.userDetails.email;
+    this.requestToEdit.creationDate = new Date();
   }
   // close modal
   closeRequestDetails() {
@@ -145,7 +146,7 @@ export class RequestComponent implements OnInit {
 
   // update the request
   initiateRequest(request: Request) {
-    request.owner = this.global.userDetails.email;
+    
     console.log("initiate request ", request);
     this.requestService.initiateRequest(request).subscribe();
   }
