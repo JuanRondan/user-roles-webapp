@@ -1,5 +1,5 @@
 <div id="role-list" class="row">
-  <div class="col-sm-12">
+  <div class="col-sm-12" *ngIf="role">
     <app-dynamic-table [showAddBtn]="showAddBtn" [configuration]="searchConfig" [listComponent]="_self"></app-dynamic-table>
   </div>
 </div>

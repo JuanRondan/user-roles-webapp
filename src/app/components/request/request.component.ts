@@ -44,8 +44,11 @@ export class RequestComponent implements OnInit {
       if (role.name === 'user') {
         this.showAddBtn = true;
       }
+      this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
+        this.tableData = data;
+      });
+      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
-
 
     //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
@@ -164,7 +167,8 @@ export class RequestComponent implements OnInit {
   }
   editRequest(data, table) {
     // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
-    // console.log(selectedData);
+    console.log(data);
+    this.requestToEdit = data;
     this.tableSelectedData = data;
     this.formAdd = false;
     //this.requestToAdd = true;
