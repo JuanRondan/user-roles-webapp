@@ -161,9 +161,11 @@ export class RequestComponent implements OnInit {
   }
   approveInitiation(data) {
     console.log(data);
+    this.formAdd = true;
   }
   rejectInitiation(data) {
     console.log(data);
+    this.formAdd = true;
   }
   editRequest(data, table) {
     // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);

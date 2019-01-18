@@ -25,7 +25,7 @@ export class RequestDetailComponent implements OnInit {
       'created': ['', [Validators.required]],
       'description': ['', []]
     });
-    if (this.formAdd) {
+    if (this.formAdd === false) {
       this.requestForm.disable();
       this.requestForm.patchValue({
         'name': this.getFromValue.name,
@@ -41,6 +41,7 @@ export class RequestDetailComponent implements OnInit {
 
   close() {
     this.notifyCloseComponent.emit();
+    console.log(this.formAdd);
   }
 
  requestFormData(form: FormGroup) {
