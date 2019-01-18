@@ -40,7 +40,7 @@ export class RequestService {
         owner: request.owner,
         description: request.description,
         creationDate: request.creationDate
-    }
+    };
     return payload;
   }
 }

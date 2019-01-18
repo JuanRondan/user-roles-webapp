@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
-import {Request} from '../../types/Request';
+import { Request } from '../../types/Request';
 
 @Component({
   selector: 'app-request-detail',
@@ -9,14 +9,14 @@ import {Request} from '../../types/Request';
   styleUrls: ['./request-detail.component.css']
 })
 export class RequestDetailComponent implements OnInit {
-  @Input() checkFormType: string;
-  @Input() getFromValue: any;
+  @Input() formAdd: boolean;
+  //@Input() getFromValue: any;
   @Input() request: Request;
   @Output() notifyInitiate = new EventEmitter<Request>();
   @Output() notifyDelete = new EventEmitter<string>();
   @Output() notifyCloseComponent = new EventEmitter<any>();
-  @Output() notifyApprove =  new EventEmitter<any>();
-  @Output() notifyReject =  new EventEmitter<any>();
+  @Output() notifyApprove = new EventEmitter<any>();
+  @Output() notifyReject = new EventEmitter<any>();
 
   requestForm: FormGroup;
   constructor(private _fb: FormBuilder) {
@@ -25,35 +25,31 @@ export class RequestDetailComponent implements OnInit {
       'created': ['', [Validators.required]],
       'description': ['', []]
     });
-    if (this.checkFormType === 'Approve or Reject') {
-      this.requestForm.disable();
-      this.requestForm.patchValue({
-        'name': this.getFromValue.name,
-        'created': this.getFromValue.created,
-        'description': this.getFromValue.description
-      });
-    }
-   }
+    //this.requestForm.disable();
+  }
 
   ngOnInit() {
-    
+    this.requestForm.patchValue({
+      'name': this.request.owner,
+      'created': this.request.creationDate,
+      'description': this.request.description
+    });
   }
 
   close() {
     this.notifyCloseComponent.emit();
   }
 
- requestFormData(form: FormGroup) {
-    this.request.creationDate = new Date();
-    this.request.description = this.requestForm.controls.comment.value;
+  requestFormData(form: FormGroup) {
+    this.request.description = this.requestForm.controls.description.value;
 
     //if role === user
-    this.notifyInitiate.emit( this.request );
+    this.notifyInitiate.emit(this.request);
     this.close();
- }
- 
+  }
+
   approve() {
-    this.notifyApprove.emit(this.requestForm.controls);
+    this.notifyApprove.emit(this.requestForm.controls.value);
   }
   reject() {
     this.notifyReject.emit(this.requestForm.controls);

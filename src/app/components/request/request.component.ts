@@ -12,7 +12,7 @@ import { Global, GLOBALS } from '../../utils/globals';
 })
 export class RequestComponent implements OnInit {
   showAddBtn: boolean;
-  fromType: string;
+  formAdd: boolean;
   fromValue: any;
   tableData: any;
   tableSelectedData: any;
@@ -29,22 +29,23 @@ export class RequestComponent implements OnInit {
     private roleService: RoleService,
     @Inject(GLOBALS) public global: Global) {
     this.showAddBtn = false;
+    this.formAdd = true;
   }
 
   ngOnInit() {
-    this.fromType = 'Add';
     this.roleService.getRole(this.global.userDetails.roles[0]).subscribe(role => {
       this.role = role.name;
+      if (this.role) {
+        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
+        this.requests$.subscribe(data => {
+          this.tableData = data;
+        });
+      }
       if (role.name === 'user') {
         this.showAddBtn = true;
       }
-      this.requestService.getRequests(this.global.userDetails.email, this.role).subscribe(data => {
-        this.tableData = data;
-      });
-      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
 
-    //this.requestToAdd = false;
     /*store the reference to the elements list component (roles in this case)*/
     this._self = this;
 
@@ -121,6 +122,7 @@ export class RequestComponent implements OnInit {
   createRequest() {
     this.requestToEdit = new Request();
     this.requestToEdit.owner = this.global.userDetails.email;
+    this.requestToEdit.creationDate = new Date();
   }
   // close modal
   closeRequestDetails() {
@@ -139,6 +141,7 @@ export class RequestComponent implements OnInit {
 
   // update the request
   initiateRequest(request: Request) {
+    
     console.log("initiate request ", request);
     this.requestService.initiateRequest(request).subscribe();
   }
@@ -160,9 +163,10 @@ export class RequestComponent implements OnInit {
   }
   editRequest(data, table) {
     // const selectedData = this.tableData.forEach(list => list['processInstanceId'] === data.instanceId);
-    // console.log(selectedData);
+    console.log(data);
+    this.requestToEdit = data;
     this.tableSelectedData = data;
-    this.fromType = 'Approve or Reject';
+    this.formAdd = false;
     //this.requestToAdd = true;
   }
 }
