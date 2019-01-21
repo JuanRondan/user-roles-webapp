@@ -105,7 +105,7 @@ export class RequestComponent implements OnInit {
           // name of the method that sould be declared in the current component
           method: 'createRequest',
           // title to be shown in the interface in the control of the action
-          title: 'Add Request',
+          title: 'Initiate Request',
         },
         update: {
           method: 'editRequest',

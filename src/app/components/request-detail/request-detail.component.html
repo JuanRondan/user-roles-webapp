@@ -8,7 +8,7 @@
               <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
             </button>
             <div *ngIf="formAdd; else approveReject">
-              <h6 class="modal-title">Add Request</h6>
+              <h6 class="modal-title">Initiate Request</h6>
             </div>
             <ng-template #approveReject>
               <h6 class="modal-title">Approve/Reject Request</h6>
@@ -39,7 +39,7 @@
           </div>
           <div class="modal-footer clearfix">
             <div class="buttons-combined pull-right" *ngIf="formAdd; else approveOrReject">
-              <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Add</button>
+              <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Initiate</button>
               <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
             </div>
             <ng-template #approveOrReject>
