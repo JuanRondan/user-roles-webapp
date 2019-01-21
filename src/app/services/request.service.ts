@@ -27,16 +27,12 @@ export class RequestService {
     );
   }
 
-  approveRequest( requestId: string): Observable<Request> {
-    return this.http.post(`${this.requestApiUrl}/${requestId}/approve`, {}).pipe(
-      map( request => this.adapter.adapt( request ))
-    );
+  approveRequest( requestId: string): Observable<any> {
+    return this.http.post(`${this.requestApiUrl}/${requestId}/approve`, {})
   }
 
-  rejectRequest( requestId: string): Observable<Request> {
-    return this.http.post(`${this.requestApiUrl}/${requestId}/reject`, {}).pipe(
-      map( request => this.adapter.adapt( request ))
-    );
+  rejectRequest( requestId: string): Observable<any> {
+    return this.http.post(`${this.requestApiUrl}/${requestId}/reject`, {});
   }
 
   private createRequestPayload(request: Request): any {
