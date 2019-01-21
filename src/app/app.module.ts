@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Angular2IdamModule, AuthGuard } from '@pa-util/angular2-idam';
 import { AuthInterceptorService} from './services/auth-interceptor-service.service';
@@ -30,7 +29,6 @@ import { GLOBALS } from './utils/globals';
 import { environment } from '../environments/environment';
 import { RequestComponent } from './components/request/request.component';
 import { RequestDetailComponent } from './components/request-detail/request-detail.component';
-import {ToasterModule, ToasterService} from 'angular2-toaster';
 
 const appRoutes : Routes = [
   { path : 'users',
@@ -69,9 +67,7 @@ const appRoutes : Routes = [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ToasterModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
+    ReactiveFormsModule,    
     Angular2IdamModule.forRoot({
       discoveryUrl: environment.discoveryUrl,
       redirect: environment.redirect,
