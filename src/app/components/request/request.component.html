@@ -6,10 +6,9 @@
           <caption>
             Request List
             <div class="pull-left">
-              <li>
-                <input type="checkbox" class="checkbox" name="showCompleted" id="showCompleted" [ngModel]="showCompleted" (change)="toggleHideCompleted()">                
-                <label for="showCompleted">Show completed</label>
-              </li>
+              <input type="checkbox" class="checkbox" name="showCompleted" id="showCompleted" [ngModel]="showCompleted"
+                (change)="toggleHideCompleted()">
+              <label for="showCompleted">Show completed</label>
             </div>
             <div class="pull-right">
               <button class="button button-primary" type="button" (click)="createRequest()">New Request</button>
@@ -27,7 +26,7 @@
           <tbody class="table-body">
             <tr *ngFor="let request of requests$ | async" ts-repeat="" class="ng-scope">
               <td class="table-row-actions">
-                <i class="appkiticon icon-fill-delete" title="Delete" data-toggle="modal" data-target="#actionModal"></i>
+                <!-- <i class="appkiticon icon-fill-delete" title="Delete" data-toggle="modal" data-target="#actionModal"></i> -->
                 <i class="appkiticon icon-fill-edit" (click)="editRequest(request)" title="Edit" data-toggle="modal"
                   data-target="#requestToEditModal"></i>
               </td>
