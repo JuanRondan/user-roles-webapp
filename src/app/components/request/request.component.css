@@ -1,0 +1,7 @@
+.checkbox:checked+label:after {
+    top: 1.1875rem;
+}
+
+.checkbox+label:before {
+    top: 1.1875rem;
+}

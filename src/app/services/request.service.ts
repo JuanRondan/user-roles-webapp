@@ -21,14 +21,14 @@ export class RequestService {
     return this.http.post(`${this.requestApiUrl}`, this.createRequestPayload( request ));
   }
 
-  getRequests( userEmail: string, userRole: string ): Observable<any[]> {
+  getRequests( userEmail: string, userRole: string ): Observable<Request[]> {
     return this.http.get(`${this.requestApiUrl}/${userEmail}/roles/${userRole}` ).pipe(
       map((rawData: any[]) => rawData.map( rawRequest => this.adapter.adapt(rawRequest)))
     );
   }
 
   approveRequest( requestId: string): Observable<any> {
-    return this.http.post(`${this.requestApiUrl}/${requestId}/approve`, {});
+    return this.http.post(`${this.requestApiUrl}/${requestId}/approve`, {})
   }
 
   rejectRequest( requestId: string): Observable<any> {
