@@ -5,12 +5,19 @@
         <table class="table table-title table-pagination table-striped" style="width: 100%;">
           <caption>
             Request List
+            <div class="pull-left">
+              <li>
+                <input type="checkbox" class="checkbox" name="showCompleted" id="showCompleted" [ngModel]="showCompleted" (change)="toggleHideCompleted()">                
+                <label for="showCompleted">Show completed</label>
+              </li>
+            </div>
             <div class="pull-right">
               <button class="button button-primary" type="button" (click)="createRequest()">New Request</button>
             </div>
           </caption>
           <thead>
             <tr>
+              <th>Action</th>
               <th>Owner</th>
               <th>Status</th>
               <th>Description</th>

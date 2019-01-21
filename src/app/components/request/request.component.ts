@@ -1,9 +1,11 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
+
+import { Global, GLOBALS } from '../../utils/globals';
 import { RequestService } from '../../services/request.service';
 import { RoleService } from '../../services/role.service';
 import { Request } from '../../types/Request';
-import { Global, GLOBALS } from '../../utils/globals';
 
 @Component({
   selector: 'app-request',
@@ -19,6 +21,7 @@ export class RequestComponent implements OnInit {
   role: string;
   requests$: Observable<Request[]>;
   requestToEdit: Request;
+  showCompleted: boolean = false;
 
   constructor(private requestService: RequestService,
     private roleService: RoleService,
@@ -33,8 +36,14 @@ export class RequestComponent implements OnInit {
     if (roleId) {
       this.roleService.getRole(roleId).subscribe(role => {
         this.role = role.name;
-        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
-
+        this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role).pipe(
+          map( allReqs => allReqs.filter( oneReq => {
+            if (oneReq.status !== "Accepted" && oneReq.status !== "Rejected") {
+              console.log("filtering " + oneReq.description );
+              return true;
+            }
+          }))
+        )
         if (role.name === 'user') {
           this.showAddBtn = true;
         }
@@ -74,6 +83,23 @@ export class RequestComponent implements OnInit {
       console.log("request rejected ", response);
       this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     })
+  }
+
+  toggleHideCompleted() {
+    this.showCompleted = !this.showCompleted;
+    if( !this.showCompleted ) {
+      console.log("hide completed");
+      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role).pipe(
+        map( allReqs => allReqs.filter( oneReq => {
+          if (oneReq.status !== "Accepted" && oneReq.status !== "Rejected") {
+            console.log("filtering " + oneReq.description );
+            return true;
+          }
+        }))
+      )
+    } else {
+      this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role)
+    }
   }
 
   closeRequestDetails() {

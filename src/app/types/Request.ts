@@ -7,12 +7,10 @@ export class Request {
     status: string;
     description: string;
     creationDate: Date;
+    completed: boolean;
 
     constructor() { }
 
-    /* displayName(): string {
-        return this.name;
-    } */
 }
 
 @Injectable({
@@ -24,7 +22,16 @@ export class RequestAdapter implements Adapter<Request> {
         const u = new Request();
         u._id = request.id;
         u.owner = request.processInstance.owner.value;
-        u.status = request.name;
+        if ((request.name).includes( "ACCEPTED" )) {
+            u.status = "Accepted";
+            u.completed = true;
+        } else if ((request.name).includes( "REJECTED" )) {
+            u.status = "Rejected";
+            u.completed = true;
+        } else {
+            u.status = request.name;
+            u.completed = false;
+        }
         u.description = request.processInstance.description.value;
         u.creationDate = request.processInstance.creationDate.value;
         return u;
