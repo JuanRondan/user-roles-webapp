@@ -4,7 +4,7 @@ import { RequestService } from '../../services/request.service';
 import { RoleService } from '../../services/role.service';
 import { Request } from '../../types/Request';
 import { Global, GLOBALS } from '../../utils/globals';
-
+import { ToasterService} from 'angular2-toaster';
 @Component({
   selector: 'app-request',
   templateUrl: './request.component.html',
@@ -22,6 +22,7 @@ export class RequestComponent implements OnInit {
 
   constructor(private requestService: RequestService,
     private roleService: RoleService,
+    private _toasterService: ToasterService,
     @Inject(GLOBALS) public global: Global) {
 
     this.showAddBtn = false;
@@ -29,7 +30,7 @@ export class RequestComponent implements OnInit {
   }
 
   ngOnInit() {
-    let roleId = this.global.userDetails.roles[0];
+    const roleId = this.global.userDetails.roles[0];
     if (roleId) {
       this.roleService.getRole(roleId).subscribe(role => {
         this.role = role.name;
@@ -40,7 +41,7 @@ export class RequestComponent implements OnInit {
         }
       });
     } else {
-      console.log("user unauthorized to access this page");
+      console.log('user unauthorized to access this page');
     }
   }
 
@@ -57,29 +58,27 @@ export class RequestComponent implements OnInit {
 
   initiateRequest(request: Request) {
     this.requestService.initiateRequest(request).subscribe((response) => {
-      console.log("initiate request completed ", response);
+      console.log('initiate request completed', response);
       this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
   }
 
   approveRequest(request: Request) {
     this.requestService.approveRequest(request._id).subscribe((response) => {
-      console.log("request approved ", response);
+      console.log('request approved', response);
       this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
     });
   }
 
   rejectRequest(request: Request) {
     this.requestService.rejectRequest(request._id).subscribe((response) => {
-      console.log("request rejected ", response);
+      console.log('request rejected', response);
       this.requests$ = this.requestService.getRequests(this.global.userDetails.email, this.role);
-    })
+    });
   }
 
   closeRequestDetails() {
     this.requestToEdit = null;
+    this.formAdd = true;
   }
 }
-
-
-

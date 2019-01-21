@@ -8,7 +8,7 @@
               <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
             </button>
             <div *ngIf="formAdd; else approveReject">
-              <h6 class="modal-title">Add Request</h6>
+              <h6 class="modal-title">Initiate Request</h6>
             </div>
             <ng-template #approveReject>
               <h6 class="modal-title">Approve/Reject Request</h6>
@@ -24,28 +24,28 @@
   
                 <label class="form-label">Current Date<span class="form-label-required"> *</span></label>
                 <label *ngIf="(requestForm.controls.created.dirty || requestForm.controls.created.touched) && requestForm.controls.created.invalid && requestForm.controls.created.errors.required"><span class="text-danger">Date is required</span></label>
-                <input type="date" name="date" formControlName="created" id="currentDate"
+                <input type="text" name="date" formControlName="created" id="currentDate"
                 class="form-control text-input">                
               </div>
               <div class="add-panel second-panel">
-                  <!-- <label *ngIf="(requestForm.controls.description.dirty || requestForm.controls.description.touched) && requestForm.controls.description.invalid && requestForm.controls.description.errors.required"><span class="text-danger">Comment is required</span></label> -->
-                  <label class="form-label">Your comment</label>
+                  <label class="form-label">Your comment <span class="form-label-required"> *</span></label>
+                  <label *ngIf="(requestForm.controls.description.dirty || requestForm.controls.description.touched) && requestForm.controls.description.invalid && requestForm.controls.description.errors.required"><span class="text-danger">Comment is required</span></label>
                   <textarea class="textarea" formControlName="description"></textarea>
               </div>
             </div>
-            <div>
+            <!-- <div>
               {{requestForm.value | json}}
-            </div>
+            </div> -->
           </div>
           <div class="modal-footer clearfix">
             <div class="buttons-combined pull-right" *ngIf="formAdd; else approveOrReject">
-              <button class="button button-primary" type="submit" [disabled]="!requestForm.valid">Add</button>
+              <button class="button button-primary" type="submit" [class.button-disabled]="requestForm.invalid">Initiate</button>
               <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
             </div>
             <ng-template #approveOrReject>
-              <div class="buttons-combined pull-right">
-                <button class="button button-primary" type="button" (click)="approve()">Approve</button>
-                <button class="button button-primary" type="button" (click)="reject()">Reject</button>
+              <div class="buttons-combined pull-right" *ngIf = "!showApproveReject">
+                <button class="button button-primary" type="button" [class.button-disabled]]="requestForm.invalid" (click)="approve()">Approve</button>
+                <button class="button button-primary" type="button" [class.button-disabled]="requestForm.invalid" (click)="reject()">Reject</button>
               </div>
             </ng-template>
           </div>

@@ -5,7 +5,7 @@
         <table class="table table-title table-pagination table-striped" style="width: 100%;">
           <caption>
             Request List
-            <div class="pull-right">
+            <div class="pull-right" *ngIf="showAddBtn">
               <button class="button button-primary" type="button" (click)="createRequest()">New Request</button>
             </div>
           </caption>
@@ -14,6 +14,7 @@
               <th>Owner</th>
               <th>Status</th>
               <th>Description</th>
+              <th>Comment</th>
               <th>Date</th>
             </tr>
           </thead>
@@ -79,7 +80,7 @@
   </div>
 </div>
 
-<app-request-detail id="request-detail" *ngIf="requestToEdit" [formAdd]="formAdd" [request]="requestToEdit"
+<app-request-detail id="request-detail" *ngIf="requestToEdit" [showApproveReject] = "showAddBtn" [formAdd]="formAdd" [request]="requestToEdit"
   (notifyInitiate)="initiateRequest( $event )" (notifyApprove)="approveRequest($event)" (notifyReject)="rejectRequest($event)"
   (notifyDelete)="deleteRequest( $event )" (notifyCloseComponent)="closeRequestDetails()">
 </app-request-detail>
