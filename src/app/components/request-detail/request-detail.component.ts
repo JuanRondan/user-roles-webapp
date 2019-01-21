@@ -10,7 +10,7 @@ import { Request } from '../../types/Request';
 })
 export class RequestDetailComponent implements OnInit {
   @Input() formAdd: boolean;
-  //@Input() getFromValue: any;
+  @Input() showApproveReject: boolean;
   @Input() request: Request;
   @Output() notifyInitiate = new EventEmitter<Request>();
   @Output() notifyDelete = new EventEmitter<string>();
@@ -21,9 +21,9 @@ export class RequestDetailComponent implements OnInit {
   requestForm: FormGroup;
   constructor(private _fb: FormBuilder) {
     this.requestForm = this._fb.group({
-      'name': ['', [Validators.required]],
-      'created': ['', [Validators.required]],
-      'description': ['', []]
+      'name': [{value: ''}, [Validators.required]],
+      'created': [{value: '', disabled: true}, [Validators.required]],
+      'description': [{value: ''}, [Validators.required]]
     });
     //this.requestForm.disable();
   }
@@ -34,6 +34,7 @@ export class RequestDetailComponent implements OnInit {
       'created': this.request.creationDate,
       'description': this.request.description
     });
+    // this.requestForm.created.disable();
   }
 
   close() {
@@ -43,16 +44,17 @@ export class RequestDetailComponent implements OnInit {
 
   requestFormData(form: FormGroup) {
     this.request.description = this.requestForm.controls.description.value;
-
-    //if role === user
     this.notifyInitiate.emit(this.request);
     this.close();
   }
 
   approve() {
-    this.notifyApprove.emit(this.requestForm.controls.value);
+    // this.notifyApprove.emit(this.request);
+    console.log(this.requestForm.valid);
+    this.close();
   }
   reject() {
-    this.notifyReject.emit(this.requestForm.controls);
+    this.notifyReject.emit(this.request);
+    this.close();
   }
 }

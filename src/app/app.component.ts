@@ -5,29 +5,30 @@ import { GLOBALS, Global } from './utils/globals';
 import { IdamAuthenticationService } from '@pa-util/angular2-idam';
 import { Router } from '@angular/router';
 import { UserService } from './services/user.service';
+import { ToasterModule, ToasterService, ToasterConfig } from 'angular2-toaster';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [ToasterService]
 })
 export class AppComponent implements OnInit, OnDestroy {
 
   private ngUnsubscribe: Subject<void> = new Subject<void>();
-  firstInitial : string;
-  lastInitial : string;
-  uName : string;
-  uLastName : string;
-  showPupUpUser : boolean;
-  router : Router;
-  isLogged : boolean;
-  showSidebar : boolean;
-
+  firstInitial: string;
+  lastInitial: string;
+  uName: string;
+  uLastName: string;
+  showPupUpUser: boolean;
+  router: Router;
+  isLogged: boolean;
+  showSidebar: boolean;
   constructor(
             public authService: IdamAuthenticationService,
             private userService: UserService,
-            @Inject(GLOBALS) public g: Global, //Recomended injection token this is how to inject it on your components and services,
-            router : Router,
+            @Inject(GLOBALS) public g: Global, // Recomended injection token this is how to inject it on your components and services,
+            router: Router,
     ) {
       this.router = router;
     }
@@ -76,12 +77,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.showSidebar = !this.showSidebar;
   }
 
-  logout(): void{
+  logout(): void {
     this.authService.Logout();
     location.replace('/');
   }
 
-  login(): void{
+  login(): void {
     this.authService.NavigateToLogin();
   }
 }
