@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Role } from '../../types/role';
 import { AppRoles } from '@pa-util/trident-rolemanagement/types/app-roles';
 import { ActivatedRoute } from '@angular/router';
+import { ConfirmationAlertService } from '../../services/common-service/confirmation-alert.service';
 
 @Component({
   selector: 'app-role-list',
@@ -26,7 +27,9 @@ export class RoleListComponent implements OnInit {
   /*variable to store the reference to the component itself (it's to be used in the table component)*/
   _self : any;
 
-  constructor( private route: ActivatedRoute, private roleService: RoleService) { }
+  constructor( private route: ActivatedRoute,
+    private _ConfirmationAlertService: ConfirmationAlertService,
+    private roleService: RoleService) { }
 
   ngOnInit() {
     this.resolvedRoles = this.route.snapshot.data.resolvedRoles;
@@ -123,23 +126,26 @@ export class RoleListComponent implements OnInit {
       this.roleService.updateRole( updatedRole ).subscribe( role => {
         updatedRole = role;
         this.roles$ = this.roleService.getRoles();
+        this._ConfirmationAlertService.callToasterMsg('success', 'Role updated succesfully');
       });
 
     } else {
       this.roleService.createRole( updatedRole ).subscribe( newRole => {
         updatedRole = newRole;
         this.roles$ = this.roleService.getRoles();
+        this._ConfirmationAlertService.callToasterMsg('success', 'Role created succesfully');
         this.roles.push(newRole);
         this.roleToEdit = null;
       });
     }
   }
 
-  deleteRole( roleId: string, table : any ) {
+  deleteRole( roleId: string, table: any ) {
     this.roleService.deleteRole( roleId ).subscribe( () => { 
       this.roles$ = this.roleService.getRoles();
       this.roles$.subscribe(table.refreshItems());
-      this.roleToEdit = null; 
+      this._ConfirmationAlertService.callToasterMsg('success', 'Role deleted succesfully');
+      this.roleToEdit = null;
     });
   }
 
