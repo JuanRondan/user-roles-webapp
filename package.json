@@ -22,6 +22,7 @@
     "@angular/router": "^6.0.3",
     "@pa-util/angular2-idam": "^1.5.3",
     "@pa-util/trident-rolemanagement": "^0.1.93",
+    "angular2-toaster": "^7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.3.3",

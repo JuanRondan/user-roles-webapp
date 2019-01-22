@@ -5,6 +5,7 @@ import { GLOBALS, Global } from './utils/globals';
 import { IdamAuthenticationService } from '@pa-util/angular2-idam';
 import { Router } from '@angular/router';
 import { UserService } from './services/user.service';
+import { ToasterService, ToasterConfig } from 'angular2-toaster';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,9 @@ import { UserService } from './services/user.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-
+  public config: ToasterConfig = new ToasterConfig({
+    positionClass: 'toast-top-right'
+  });
   private ngUnsubscribe: Subject<void> = new Subject<void>();
   firstInitial : string;
   lastInitial : string;
@@ -25,6 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(
             public authService: IdamAuthenticationService,
+            private toasterService: ToasterService,
             private userService: UserService,
             @Inject(GLOBALS) public g: Global, //Recomended injection token this is how to inject it on your components and services,
             router : Router,

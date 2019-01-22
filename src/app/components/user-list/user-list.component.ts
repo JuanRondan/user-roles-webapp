@@ -6,6 +6,7 @@ import { AppRoles } from '@pa-util/trident-rolemanagement/types/app-roles';
 
 import { User } from '../../types/user';
 import { ActivatedRoute } from '@angular/router';
+import { ConfirmationAlertService } from '../../services/common-service/confirmation-alert.service';
 
 @Component({
   selector: 'app-user-list',
@@ -22,7 +23,9 @@ export class UserListComponent implements OnInit {
   //users: AppUserRolesPaging;
   //roles: AppRoles;
   
-  constructor(private userService: UserService, private route: ActivatedRoute) { }
+  constructor(private userService: UserService,
+    private _ConfirmationAlertService: ConfirmationAlertService,
+    private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.users$ = this.userService.getUsers();
@@ -41,10 +44,12 @@ export class UserListComponent implements OnInit {
   updateUser(updatedUser: User) {
     if (updatedUser._id) {
       this.userService.updateUser(updatedUser).subscribe(user => updatedUser = user);
+      this._ConfirmationAlertService.callToasterMsg('success', 'User updated succesfully');
     } else {
       this.userService.createUser(updatedUser).subscribe(newUser => {
         updatedUser = newUser;
         this.users$ = this.userService.getUsers();
+        this._ConfirmationAlertService.callToasterMsg('success', 'User created succesfully');
       });
     }
   }

@@ -10,7 +10,7 @@
                 (change)="toggleHideCompleted()">
               <label for="showCompleted">Show completed</label>
             </div>
-            <div class="pull-right">
+            <div class="pull-right" *ngIf="showAddBtn">
               <button class="button button-primary" type="button" (click)="createRequest()">New Request</button>
             </div>
           </caption>
@@ -85,7 +85,7 @@
   </div>
 </div>
 
-<app-request-detail id="request-detail" *ngIf="requestToEdit" [formAdd]="formAdd" [request]="requestToEdit"
+<app-request-detail id="request-detail" *ngIf="requestToEdit" [showApproveReject] = "showAddBtn" [formAdd]="formAdd" [request]="requestToEdit"
   (notifyInitiate)="initiateRequest( $event )" (notifyApprove)="approveRequest($event)" (notifyReject)="rejectRequest($event)"
   (notifyDelete)="deleteRequest( $event )" (notifyCloseComponent)="closeRequestDetails()">
 </app-request-detail>

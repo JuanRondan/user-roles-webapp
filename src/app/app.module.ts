@@ -29,6 +29,8 @@ import { GLOBALS } from './utils/globals';
 import { environment } from '../environments/environment';
 import { RequestComponent } from './components/request/request.component';
 import { RequestDetailComponent } from './components/request-detail/request-detail.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToasterModule, ToasterService} from 'angular2-toaster';
 
 const appRoutes : Routes = [
   { path : 'users',
@@ -67,7 +69,9 @@ const appRoutes : Routes = [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,    
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToasterModule.forRoot(),
     Angular2IdamModule.forRoot({
       discoveryUrl: environment.discoveryUrl,
       redirect: environment.redirect,
