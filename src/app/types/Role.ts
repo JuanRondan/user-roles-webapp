@@ -20,10 +20,14 @@ export class Role {
 export class RoleAdapter implements Adapter<Role> {
     adapt( role: any ): Role {
         let u = new Role();
-        u._id = role._id;
+        u._id = role.id;
+        u.name = role.name;
+        u.description = role.type;
+
+/*         u._id = role._id;
         u.name = role.name;
         u.description = role.description;
-        u.permissions = role.permissions;
+        u.permissions = role.permissions; */
         return u;
     }
 }

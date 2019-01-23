@@ -34,15 +34,12 @@ export class RequestComponent implements OnInit {
   }
 
   ngOnInit() {
-    let roleId = this.global.userDetails.roles[0];
-    if (roleId) {
-      this.roleService.getRole(roleId).subscribe(role => {
-        this.role = role.name;
-        this.refreshList();
-        if (role.name === 'user') {
-          this.showAddBtn = true;
-        }
-      });
+    this.role = this.global.userDetails.roles[0];
+    if (this.role) {      
+      if (this.role === 'user') {
+        this.showAddBtn = true;
+      }
+      this.refreshList();
     } else {
       console.log("user unauthorized to access this page");
     }

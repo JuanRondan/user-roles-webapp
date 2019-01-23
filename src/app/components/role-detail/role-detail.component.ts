@@ -31,9 +31,9 @@ export class RoleDetailComponent implements OnInit {
     this.role = null;
   }
 
-  updatePermissions( rolePermissions: Object[] ) {
+/*   updatePermissions( rolePermissions: Object[] ) {
     this.role.permissions = rolePermissions;
-  }
+  } */
 
   close() {
     this.notifyCloseComponent.emit();

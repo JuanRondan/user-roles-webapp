@@ -18,7 +18,7 @@ export class RoleService {
   private roleApiUrl = environment.roleApiUrl;
 
   getRoles(): Observable<Role[]> {
-    return this.http.get( `${this.roleApiUrl}` ).pipe(
+    return this.http.get( `${this.roleApiUrl}/camunda` ).pipe(
       map ( (jsonData: any[]) => jsonData.map( jsonRole =>
         this.adapter.adapt( jsonRole )
        ))
@@ -56,26 +56,3 @@ export class RoleService {
     return payload;
   }
 }
-
-export const mockRoles = [
-  {
-    _id: "1",
-    name: "God",
-    description: "can do anything, can delete admin",
-  },
-  {
-    _id: "2",
-    name: "Admin",
-    description: "can do anything except removing god",
-  },
-  {
-    _id: "3",
-    name: "Developer",
-    description: "can do anything, even hacking god",
-  },
-  {
-    _id: "4",
-    name: "User",
-    description: "serves to the rest of the roles",
-  },
-];
