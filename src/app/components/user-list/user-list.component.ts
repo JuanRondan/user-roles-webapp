@@ -35,6 +35,7 @@ export class UserListComponent implements OnInit {
 
   createUser() {
     this.userToEdit = new User();
+    this.hideBackground =  true;
   }
 
   editUser(user: User) {

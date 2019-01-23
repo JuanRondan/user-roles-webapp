@@ -5,12 +5,12 @@
     <!--TOP MENU BAR-->
     <nav class="navigation nav-box-shadow">
         <div class="top-bar">
-            <div class="sidebar-ctrl-box">
+            <div class="sidebar-ctrl-box" *ngIf="isLogged">
                 <a class="hamberger-btn" (click)="sidebarCollapse();"><i class="appkiticon icon-outline-menu-view"></i></a>
             </div>
             <div class="logo-box">
                 <img class="logo" src="assets/images/component/pwc_logo_header_2x.png"></div>
-            <div class="app-name border-left d-none d-sm-block">User Role Manager</div>
+            <div class="app-name border-left d-none d-sm-block" *ngIf="isLogged">User Role Manager</div>
             <!-- <div class="app-name border-left d-block d-sm-none">Application</div> -->
 
             <!-- SEARCH BAR -->
@@ -59,8 +59,8 @@
     </nav>
 
     <!-- SIDE BAR BUTTONS -->
-    <div class="content">
-        <div id="sidebar" class="left-nav" [class.active]="showSidebar">
+    <div class="content" >
+        <div id="sidebar" class="left-nav" [class.active]="showSidebar" *ngIf="isLogged">
             <ul class="left-nav-item-list">
                 <li class="item active">
                     <a class="item-content" routerLink="/users" routerLinkActive="active">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer col-12">
+            <div class="footer col-12" *ngIf="isLogged">
                 <div class="foot-left ellipsis"></div>
                 <div class="foot-left" title="&#xA9; 2017 PwC. All rights reserved. PwC refers to the US member firm of the PwC network or one of its subsidiaries or affiliates.">&#xA9;
                     2017 PwC. All rights reserved. PwC refers to the US member firm of the PwC network or one of

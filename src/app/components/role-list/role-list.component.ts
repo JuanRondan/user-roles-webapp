@@ -116,6 +116,7 @@ export class RoleListComponent implements OnInit {
 
   createRole() {
     this.roleToEdit = new Role();
+    this.hideBackground =  true;
   }
 
   editRole( role: Role) {

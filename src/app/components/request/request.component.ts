@@ -50,6 +50,7 @@ export class RequestComponent implements OnInit {
 
   createRequest() {
     this.requestToEdit = new Request();
+    this.hideBackground =  true;
     this.requestToEdit.owner = this.global.userDetails.email;
     this.requestToEdit.creationDate = new Date();
   }
