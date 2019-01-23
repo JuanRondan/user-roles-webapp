@@ -16,6 +16,7 @@ import { Request } from '../../types/Request';
 export class RequestComponent implements OnInit {
 
   showAddBtn: boolean;
+  hideBackground: boolean;
   formAdd: boolean;
   fromValue: any;
   role: string;
@@ -56,6 +57,7 @@ export class RequestComponent implements OnInit {
   editRequest(request: Request) {
     this.requestToEdit = request;
     this.formAdd = false;
+    this.hideBackground =  true;
     if (this.role !== 'user') {
       this.showAddBtn = false;
     }
@@ -98,6 +100,7 @@ export class RequestComponent implements OnInit {
   closeRequestDetails() {
     this.requestToEdit = null;
     this.formAdd = true;
+    this.hideBackground =  false;
     if (this.role === 'user') {
       this.showAddBtn = true;
     }
