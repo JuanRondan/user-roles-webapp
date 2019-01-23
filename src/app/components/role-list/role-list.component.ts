@@ -13,7 +13,8 @@ import { ConfirmationAlertService } from '../../services/common-service/confirma
 })
 
 export class RoleListComponent implements OnInit {
-  
+
+  hideBackground: boolean;
   roleToEdit: Role;
   roles$: Observable<Role[]>;
   resolvedRoles: AppRoles;
@@ -119,6 +120,7 @@ export class RoleListComponent implements OnInit {
 
   editRole( role: Role) {
     this.roleToEdit = role;
+    this.hideBackground = true;
   }
 
   updateRole( updatedRole: Role) {
@@ -151,5 +153,6 @@ export class RoleListComponent implements OnInit {
 
   closeRoleDetails() {
     this.roleToEdit = null;
+    this.hideBackground = false;
   }
 }

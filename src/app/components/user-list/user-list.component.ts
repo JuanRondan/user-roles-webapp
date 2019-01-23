@@ -19,7 +19,7 @@ export class UserListComponent implements OnInit {
   userToEdit: User;
   showModal: boolean;
   userToDelete: string;
-  
+  hideBackground: boolean;
   //users: AppUserRolesPaging;
   //roles: AppRoles;
   
@@ -39,6 +39,7 @@ export class UserListComponent implements OnInit {
 
   editUser(user: User) {
     this.userToEdit = user;
+    this.hideBackground = true;
   }
 
   updateUser(updatedUser: User) {
@@ -71,6 +72,7 @@ export class UserListComponent implements OnInit {
 
   closeUserDetails() {
     this.userToEdit = null;
+    this.hideBackground = false;
   }
 
 }

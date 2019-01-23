@@ -3,3 +3,9 @@
     padding-right: 0px !important;
     margin-right: 0px !important;
 }
+#userToEditModal {
+    z-index: 10000;
+    max-height: 75vh;
+    overflow-y: scroll;
+    top: 0px;
+}

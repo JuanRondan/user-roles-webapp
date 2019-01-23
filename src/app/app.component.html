@@ -60,21 +60,24 @@
 
     <!-- SIDE BAR BUTTONS -->
     <div class="content">
-        <div id="sidebar" class="left-nav cl-nav" [class.active]="showSidebar">
+        <div id="sidebar" class="left-nav" [class.active]="showSidebar">
             <ul class="left-nav-item-list">
-                <li class="item">
-                    <a class="item-content">
-                        <i class="appkiticon icon-outline-person item-icon" routerLink="/users" routerLinkActive="active"></i>
+                <li class="item active">
+                    <a class="item-content" routerLink="/users" routerLinkActive="active">
+                        <i class="appkiticon icon-outline-person item-icon" ></i>
+                        <span class="item-name">Users</span>
                     </a>
                 </li>
                 <li class="item">
-                    <a class="item-content">
-                        <i class="appkiticon icon-outline-settings item-icon" routerLink="/roles" routerLinkActive="active"></i>
+                    <a class="item-content" routerLink="/roles" routerLinkActive="active">
+                        <i class="appkiticon icon-outline-settings item-icon" ></i>
+                        <span class="item-name">Roles</span>
                     </a>
                 </li>
                 <li class="item">
-                    <a class="item-content">
-                        <i class="appkiticon icon-fill-convert item-icon" routerLink="/requests" routerLinkActive="active"></i>
+                    <a class="item-content" routerLink="/requests" routerLinkActive="active">
+                        <i class="appkiticon icon-fill-convert item-icon" ></i>
+                        <span class="item-name">Requests</span>
                     </a>
                 </li>
             </ul>
