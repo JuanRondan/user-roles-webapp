@@ -300,14 +300,16 @@ i {
 
 .modal-popup {
     position: absolute;    
-    z-index: 99;
+    z-index: 10000;
     background: white;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%); 
 }
-
+.modal >.modal-dialog{
+  margin: 0;
+}
 .custom-modal-background {
     position: absolute;
     background-color: black;
