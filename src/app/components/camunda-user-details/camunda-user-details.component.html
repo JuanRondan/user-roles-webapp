@@ -1,0 +1,60 @@
+<div class="modal fade add-edit-modal modal-popup" role="dialog" id="userToEditModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <form novalidate [formGroup]="requestForm" (ngSubmit)="requestFormData( requestForm )">
+        <div class="modal-header">
+          <button type="button" class="close" (click)="close()">
+            <i class="appkiticon icon-outline-close" aria-hidden="true"></i>
+          </button>
+          <div *ngIf="addUser; else editUser">
+            <h6 class="modal-title">Add Request</h6>
+          </div>
+          <ng-template #editUser>
+            <h6 class="modal-title">Edit User</h6>
+          </ng-template>
+        </div>
+        <div class="modal-body clearfix">
+          <div class="d-flex flex-column-lt-850">
+            <div class="add-panel">
+              <label class="form-label">First Name<span class="form-label-required"> *</span></label>
+              <label *ngIf="(requestForm.controls.firstName.dirty || requestForm.controls.firstName.touched) && requestForm.controls.firstName.invalid && requestForm.controls.firstName.errors.required"><span
+                  class="text-danger">First Name is required</span></label>
+              <input type="text" name="firstName" formControlName="firstName" placeholder="First Name" id="firstName"
+                class="form-control text-input">
+
+              <label class="form-label">Last Name<span class="form-label-required"> *</span></label>
+              <label *ngIf="(requestForm.controls.lastName.dirty || requestForm.controls.lastName.touched) && requestForm.controls.lastName.invalid && requestForm.controls.lastName.errors.required"><span
+                  class="text-danger">Last Name is required</span></label>
+              <input type="text" name="lastName" formControlName="lastName" placeholder="Last Name" id="lastName" class="form-control text-input">
+
+              <label class="form-label">Email<span class="form-label-required"> *</span></label>
+              <label *ngIf="(requestForm.controls.email.dirty || requestForm.controls.email.touched) && requestForm.controls.email.invalid && requestForm.controls.email.errors.required"><span
+                  class="text-danger">Email is required</span></label>
+              <input type="email" name="email" formControlName="email" placeholder="Email" id="email" class="form-control text-input">
+
+              <label class="form-label">Password<span class="form-label-required"> *</span></label>
+              <label *ngIf="(requestForm.controls.password.dirty || requestForm.controls.password.touched) && requestForm.controls.password.invalid && requestForm.controls.password.errors.required"><span
+                  class="text-danger">Password is required</span></label>
+              <input type="text" name="password" formControlName="password" placeholder="Password" id="password" class="form-control text-input">
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="buttons-combined pull-right">
+            <button class="button button-primary" type="submit" [disabled]="requestForm.invalid" [class.button-disabled]="requestForm.invalid">
+              <span *ngIf="formAdd; else formEdit">Add</span>
+              <ng-template #formEdit>
+                <span>Update</span>
+              </ng-template>
+            </button>
+            <button class="button button-secondary" type="button" (click)="close()">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

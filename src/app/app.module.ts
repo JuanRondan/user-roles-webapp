@@ -31,6 +31,8 @@ import { RequestComponent } from './components/request/request.component';
 import { RequestDetailComponent } from './components/request-detail/request-detail.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToasterModule, ToasterService} from 'angular2-toaster';
+import { CamundaUserDetailsComponent } from './components/camunda-user-details/camunda-user-details.component';
+import { CamundaUserListComponent } from './components/camunda-user-list/camunda-user-list.component';
 
 const appRoutes : Routes = [
   { path : 'users',
@@ -45,6 +47,9 @@ const appRoutes : Routes = [
   },
   { path : 'requests',
     component : RequestComponent,
+  },
+  { path : 'camundauser',
+    component : CamundaUserListComponent,
   },
   { path: '', component: IdamLoginComponent },
 ];
@@ -64,6 +69,8 @@ const appRoutes : Routes = [
     DynamicTableComponent,
     RequestComponent,
     RequestDetailComponent,
+    CamundaUserDetailsComponent,
+    CamundaUserListComponent,
   ],
   imports: [
     BrowserModule,
