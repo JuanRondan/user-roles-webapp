@@ -11,6 +11,11 @@
         <div class="modal-body clearfix">
           <div class="d-flex flex-column-lt-850">
             <div class="add-panel">
+              <label class="form-label">Role Id:<span class="form-label-required"> *</span></label>
+              <label [hidden]="roleId.pristine || roleId.valid"><span class="text-danger">Role Id is required</span></label>
+              <input type="text" class="text-input" placeholder="Role id" id="roleId" [ngModel]="role.id" name="roleId"
+                #roleId="ngModel" required>
+
               <label class="form-label">Role Name:<span class="form-label-required"> *</span></label>
               <label [hidden]="roleName.pristine || roleName.valid"><span class="text-danger">Role name is required</span></label>
               <input type="text" class="text-input" placeholder="Role name" id="roleName" [ngModel]="role.name" name="roleName"

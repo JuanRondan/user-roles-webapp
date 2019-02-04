@@ -10,8 +10,9 @@ import { Role } from '../../types/role';
 export class RoleDetailComponent implements OnInit {
 
   @Input() role: Role;
+  @Input() updating: boolean;
+  @Output() notifyCreate = new EventEmitter<Role>();
   @Output() notifyUpdate = new EventEmitter<Role>();
-  @Output() notifyDelete = new EventEmitter<string>();
   @Output() notifyCloseComponent = new EventEmitter<any>();
 
   constructor() {}
@@ -20,15 +21,15 @@ export class RoleDetailComponent implements OnInit {
   }
 
   onSubmit( form: any) {
+    this.role.id = form.value.roleId;
     this.role.name = form.value.roleName;
     this.role.description = form.value.description;
-    this.notifyUpdate.emit(this.role);
+    if (this.updating) {
+      this.notifyUpdate.emit(this.role);
+    } else {
+      this.notifyCreate.emit(this.role);
+    }
     this.close();
-  }
-
-  deleteRole() {
-    this.notifyDelete.emit( this.role._id );
-    this.role = null;
   }
 
 /*   updatePermissions( rolePermissions: Object[] ) {

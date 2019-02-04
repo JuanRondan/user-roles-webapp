@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RoleService } from '../../services/role.service';
 import { Observable } from 'rxjs';
 import { Role } from '../../types/role';
@@ -18,6 +18,7 @@ export class RoleListComponent implements OnInit {
   roleToEdit: Role;
   roles$: Observable<Role[]>;
   resolvedRoles: AppRoles;
+  updating: boolean;
 
   /*array where the items are stored*/
   roles : Array<Role>;
@@ -88,7 +89,7 @@ export class RoleListComponent implements OnInit {
         //action
         create : {
           //name of the method that sould be declared in the current component
-          method : 'createRole',
+          method : 'addRole',
           //title to be shown in the interface in the control of the action
           title : 'Add Role',
         },
@@ -114,33 +115,33 @@ export class RoleListComponent implements OnInit {
     this.roles = r;
   }
 
-  createRole() {
+  addRole() {
     this.roleToEdit = new Role();
     this.hideBackground =  true;
+    this.updating = false;
   }
 
   editRole( role: Role) {
     this.roleToEdit = role;
     this.hideBackground = true;
+    this.updating = true;
   }
 
   updateRole( updatedRole: Role) {
-    if (updatedRole._id) {
-      this.roleService.updateRole( updatedRole ).subscribe( role => {
-        updatedRole = role;
-        this.roles$ = this.roleService.getRoles();
-        this._ConfirmationAlertService.callToasterMsg('success', 'Role updated succesfully');
-      });
+    this.roleService.updateRole( updatedRole ).subscribe( role => {
+      updatedRole = role;
+      this.roles$ = this.roleService.getRoles();
+      this._ConfirmationAlertService.callToasterMsg('success', 'Role updated succesfully');
+    });
+  }
 
-    } else {
-      this.roleService.createRole( updatedRole ).subscribe( newRole => {
-        updatedRole = newRole;
-        this.roles$ = this.roleService.getRoles();
-        this._ConfirmationAlertService.callToasterMsg('success', 'Role created succesfully');
-        this.roles.push(newRole);
-        this.roleToEdit = null;
-      });
-    }
+  createRole( createdRole: Role) {
+    this.roleService.createRole( createdRole ).subscribe(() => {        
+      this.roles$ = this.roleService.getRoles();
+      this._ConfirmationAlertService.callToasterMsg('success', 'Role created succesfully');
+      this.roles.push(createdRole);
+      this.roleToEdit = null;
+    });    
   }
 
   deleteRole( roleId: string, table: any ) {
