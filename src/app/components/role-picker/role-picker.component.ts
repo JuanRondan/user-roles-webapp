@@ -28,11 +28,11 @@ export class RolePickerComponent implements OnInit {
   }
 
   onRoleCheck( role: Role) {
-    let index = this.selectedRoles.indexOf( role._id);
+    let index = this.selectedRoles.indexOf( role.id);
     if ( index > -1) {
       this.selectedRoles.splice( index, 1 );
     } else {
-      this.selectedRoles.push( role._id );
+      this.selectedRoles.push( role.id );
     }
     this.updatedRoles.emit( this.selectedRoles );
   }
