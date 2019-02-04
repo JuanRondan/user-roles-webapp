@@ -58,11 +58,13 @@ export class UserListComponent implements OnInit {
 
   confirmDelete(userId: string) {
     this.showModal = true;
+    this.hideBackground = true;
     this.userToDelete = userId;
   }
 
   cancelDelete() {
     this.showModal = false;
+    this.hideBackground = false;
   }
 
   deleteUser() {
