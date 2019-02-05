@@ -48,13 +48,14 @@ export class CamundaUserListComponent implements OnInit {
 
   createCamundaUser(updatedUser: CamundaUser) {
     if (updatedUser._id) {
-      this.camundaUserService.updateCamundaUser(updatedUser).subscribe(user => {
-        updatedUser = user;
-        this._ConfirmationAlertService.callToasterMsg('success', 'User updated succesfully');
-      }, err => {
-        this._ConfirmationAlertService.callToasterMsg('error', err.error.message);
-      });
-      this.users$ = this.camundaUserService.getCamundaUserRequests();
+      this.camundaUserService.updateCamundaUser(updatedUser).subscribe();
+      // .subscribe(user => {
+      //   updatedUser = user;
+      //   this._ConfirmationAlertService.callToasterMsg('success', 'User updated succesfully');
+      // }, err => {
+      //   this._ConfirmationAlertService.callToasterMsg('error', err.error.message);
+      // });
+      // this.users$ = this.camundaUserService.getCamundaUserRequests();
     } else {
       this.camundaUserService.createCamundaUser(updatedUser).subscribe(newUser => {
         updatedUser = newUser;
@@ -74,9 +75,7 @@ export class CamundaUserListComponent implements OnInit {
   }
 
   deleteUser() {
-    this.camundaUserService.deleteCamundaUser(this.userToDelete).subscribe(() => {
-      this.users$ = this.camundaUserService.getCamundaUserRequests();
-    });
+    this.camundaUserService.deleteCamundaUser(this.userToDelete);
   }
 
   closeUserDetails() {

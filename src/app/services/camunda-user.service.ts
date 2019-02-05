@@ -35,9 +35,9 @@ export class CamundaUserService {
     return this.http.put(`${this.userApiUrl}/updateCamundaUser`, request);
   }
 
-    // UPDATE CAMUNDA USER
+    // DELETE CAMUNDA USER
     deleteCamundaUser( request: any): Observable<any> {
-      console.log('create camunda user', request);
+      console.log('delete camunda user', request);
       return this.http.delete(`${this.userApiUrl}/${request}`);
     }
 }
