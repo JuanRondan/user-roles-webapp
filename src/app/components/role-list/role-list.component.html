@@ -17,8 +17,9 @@
 <div id="role-detail">
   <app-role-detail *ngIf="roleToEdit"
       [role]="roleToEdit"
+      [updating] = "updating"
+      (notifyCreate)="createRole( $event )"
       (notifyUpdate)="updateRole( $event )"
-      (notifyDelete)="deleteRole( $event )"
       (notifyCloseComponent)="closeRoleDetails()">
   </app-role-detail>
 </div>
