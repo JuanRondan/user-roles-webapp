@@ -39,7 +39,7 @@ export class CamundaUserDetailsComponent implements OnInit {
   requestFormData(form: FormGroup) {
     const formValue = _.clone(form.value);
     if (!this.formAdd) {
-      formValue._id = this.formData['_id'];
+      formValue.id = this.formData['id'];
     }
     this.notifyUpdate.emit(formValue);
     this.close();

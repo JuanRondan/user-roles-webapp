@@ -1,6 +1,6 @@
 <!-- <trident-user-roles [appUsers]="users" [appRoles]="roles" ></trident-user-roles> -->
 <div class="modal-backdrop" *ngIf="hideBackground"></div>
-<div class="row">
+<!-- <div class="row">
   <div class="col-12 view fluid">
     <div class="table-wrapper with-caption with-foot">
       <div class="table-responsive-wrapper">
@@ -76,9 +76,21 @@
       </div>
     </div>
   </div>
+</div> -->
+<div id="role-list" class="row">
+  <div class="col-sm-12">
+    <!--
+      [configuration], how to create the table (attributes, columns, sorting and filter methods, etc)
+      [listComponent], the angular component where the list elements are stored and handled
+    -->
+    <app-dynamic-table
+      [showAddBtn] = "true"
+      [configuration] = "searchConfig"
+      [listComponent] = "_self"
+    ></app-dynamic-table>
+  </div>
 </div>
-
 <app-camunda-user-details *ngIf="requestToAddEdit" [formAdd]="formAdd" [formData]="requestToAddEdit" (notifyUpdate)="createCamundaUser( $event )" (notifyCloseComponent)="closeUserDetails()">
 </app-camunda-user-details>
 
-<app-modal-dialog *ngIf="showModal" [message]="'Are you sure you want to delete this user?'" (cancel)="cancelDelete()"  (confirm)="deleteUser()" ></app-modal-dialog>
+<app-modal-dialog *ngIf="showModal" [message]="'Are you sure you want to delete this user?'" (cancel)="cancelDelete()"  (confirm)="confirmDelete()" ></app-modal-dialog>

@@ -19,7 +19,11 @@ export class CamundaUserService {
   // GET ALL THE CAMUNDA USER
   getCamundaUserRequests( ): Observable<CamundaUser[]> {
     return this.http.get(`${this.camundaUserApiUrl}/user/` ).pipe(
-      map((rawData: any[]) => rawData.map( rawRequest => this.adapter.adapt(rawRequest)))
+      map((rawData: any[]) => rawData.map( (rawRequest) => {
+        const resData = rawRequest;
+        resData.fullName = rawRequest.firstName + ' ' + rawRequest.lastName;
+        return this.adapter.adapt(resData);
+      }))
     );
   }
 
@@ -32,12 +36,12 @@ export class CamundaUserService {
   // UPDATE CAMUNDA USER
   updateCamundaUser( request: any): Observable<any> {
     console.log('update camunda user', request);
-    return this.http.put(`${this.userApiUrl}/updateCamundaUser`, request);
+    return this.http.put(`${this.userApiUrl}/camunda/updateCamundaUser`, request);
   }
 
     // DELETE CAMUNDA USER
-    deleteCamundaUser( request: any): Observable<any> {
+    deleteCamundaUser( request: string): Observable<any> {
       console.log('delete camunda user', request);
-      return this.http.delete(`${this.userApiUrl}/${request}`);
+      return this.http.delete(`${this.userApiUrl}/camunda/${request}`);
     }
 }

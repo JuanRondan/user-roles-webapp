@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="search-box pull-right" *ngIf="showAddBtn">
-          <button class="button button-primary" type="button"(click)="listComponent[Table.actions.create.method]()">{{Table.actions.create.title}}</button>
+          <button class="button button-primary" type="button"(click)="listComponent[Table.actions.create.method](this)">{{Table.actions.create.title}}</button>
         </div>
       </caption>
       <thead>
