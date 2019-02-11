@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { environment } from '../../environments/environment';
-import { CamundaUser, CamundaUserAdapter } from '../types/camunda-user'; 
+import { CamundaUser, CamundaUserAdapter } from '../types/camunda-user';
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +27,12 @@ export class CamundaUserService {
     );
   }
 
+  // LIST OF ROLE ASSIGNED TO A USER
+  camundaUserRoleList(userId: string): Observable<CamundaUser[]> {
+    return this.http.get(`${this.userApiUrl}/camundaUserRole/${userId}` ).pipe(
+      map((rawData: any[]) => rawData.map( (rawRequest) => rawRequest ))
+    );
+  }
   // CREATE CAMUNDA USER
   createCamundaUser( request: any): Observable<any> {
     console.log('create camunda user', request);
@@ -39,9 +45,18 @@ export class CamundaUserService {
     return this.http.put(`${this.userApiUrl}/camunda/updateCamundaUser`, request);
   }
 
-    // DELETE CAMUNDA USER
-    deleteCamundaUser( request: string): Observable<any> {
-      console.log('delete camunda user', request);
-      return this.http.delete(`${this.userApiUrl}/camunda/${request}`);
-    }
+  // ASSINING PARTICULAR ROLE TO A USER
+  camundaUserRoleAssignment( request: any): Observable<any> {
+    console.log('update camunda user', request);
+    return this.http.put(`${this.userApiUrl}/camunda/camundaUserRoleAssignment`, request);
+  }
+  // REMOVING  PARTICULAR ROLE FROM A USER
+  camundaUserRoleRemoval(request: any): Observable<any> {
+    return this.http.put(`${this.userApiUrl}/camunda/camundaUserRoleRemoval`, request);
+  }
+  // DELETE CAMUNDA USER
+  deleteCamundaUser( request: string): Observable<any> {
+    console.log('delete camunda user', request);
+    return this.http.delete(`${this.userApiUrl}/camunda/${request}`);
+  }
 }

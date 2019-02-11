@@ -9,11 +9,10 @@ import * as _ from 'lodash';
 })
 export class CamundaUserDetailsComponent implements OnInit {
   
-  @Input() formData: any;
+  @Input() camundaUser: CamundaUser;
   @Input() formAdd: boolean;
   @Output() notifyUpdate = new EventEmitter<any>();
   @Output() notifyCloseComponent = new EventEmitter<any>();
-  camundaUser: CamundaUser;
   requestForm: FormGroup;
   constructor(private _fb: FormBuilder) {
 
@@ -25,26 +24,40 @@ export class CamundaUserDetailsComponent implements OnInit {
       'firstName': ['', [Validators.required]],
       'lastName': ['', [Validators.required]],
       'email': ['', [Validators.required]],
-      'password': ['', [Validators.required]]
+      'password': ['', [Validators.required]],
+      'guid': ['', [Validators.required]],
+      'roles': [''],
+      'status': [''],
     });
     if (!this.formAdd) {
+      delete (this.requestForm.controls.password);
+    }
+    console.log(this.camundaUser);
+    if (!this.formAdd) {
       this.requestForm.patchValue({
-        'firstName': this.formData.firstName,
-        'lastName': this.formData.lastName,
-        'email': this.formData.email,
-        'password': this.formData.password
+        'firstName': this.camundaUser.firstName,
+        'lastName': this.camundaUser.lastName,
+        'email': this.camundaUser.email,
+        'password': this.camundaUser.password,
+        'guid': this.camundaUser.id,
+        'roles': this.camundaUser.roles,
+        'status': this.camundaUser.status
       });
     }
   }
   requestFormData(form: FormGroup) {
     const formValue = _.clone(form.value);
+    formValue.roles = this.camundaUser.roles;
     if (!this.formAdd) {
-      formValue.id = this.formData['id'];
+      formValue.id = this.camundaUser['id'];
     }
     this.notifyUpdate.emit(formValue);
     this.close();
   }
   close() {
     this.notifyCloseComponent.emit();
+  }
+  updateRoles( userRoles: string[] ) {
+    this.camundaUser.roles = userRoles;
   }
 }

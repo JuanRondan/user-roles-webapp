@@ -1,7 +1,7 @@
 <label class="form-label">User Roles</label>
 <ol class="list selectable-list">
   <li *ngFor="let role of roles index as i">
-    <input type="checkbox" class="checkbox" name="{{i}}" id="{{i}}" [ngModel]="checkForRole(role._id)" (change)="onRoleCheck( role )">
+    <input type="checkbox" class="checkbox" [checked]="role?.selected"  name="{{i}}" id="{{i}}"  (change)="onRoleCheck( role )">
     <label for="{{i}}">{{ role.name }}</label>
   </li>
 </ol>

@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 
 import { RoleService } from '../../services/role.service';
 import { Role } from '../../types/role';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-role-picker',
@@ -20,7 +21,10 @@ export class RolePickerComponent implements OnInit {
   constructor( private roleService: RoleService) { }
 
   ngOnInit() {
-    this.subsRoles = this.roleService.getRoles().subscribe( roles => this.roles = roles );
+    this.subsRoles = this.roleService.getRoles().subscribe( roles => {
+      this.roles = roles;
+      this.checkboxPrePopulate();
+    });
   }
 
   checkForRole( id: string ): boolean {
@@ -36,7 +40,25 @@ export class RolePickerComponent implements OnInit {
     }
     this.updatedRoles.emit( this.selectedRoles );
   }
-
+  checkboxPrePopulate() {
+    if (this.roles.length > 0 && this.selectedRoles.length > 0) {
+      let checkForIdMatch = null;
+      this.roles.forEach((roles) => {
+        checkForIdMatch = _.find(this.selectedRoles, (selectedId) => {
+          if (roles.id === selectedId) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        if (checkForIdMatch) {
+          roles['selected'] = true;
+        } else {
+          roles['selected'] = false;
+        }
+      });
+    }
+  }
   ngOnDestroy() {
     if (this.subsRoles) this.subsRoles.unsubscribe();
   }

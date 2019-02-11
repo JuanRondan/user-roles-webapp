@@ -8,7 +8,16 @@ export class CamundaUser {
     fullName: string;
     email: string;
     password: string;
-    constructor() { }
+    guid: string;
+    roles: string[];
+    status: boolean;
+    constructor() {
+        this.roles = new Array<string>();
+    }
+
+    displayName(): string {
+        return this.firstName + ' ' + this.lastName;
+    }
 
 }
 @Injectable({
@@ -23,7 +32,10 @@ export class CamundaUserAdapter implements Adapter<CamundaUser> {
         u.lastName = camundaUser.lastName;
         u.fullName = camundaUser.fullName;
         u.email = camundaUser.email;
+        u.guid = camundaUser.guid;
+        u.roles = camundaUser.roles;
         u.password = camundaUser.password;
+        u.status = camundaUser.status;
         return u;
     }
 }

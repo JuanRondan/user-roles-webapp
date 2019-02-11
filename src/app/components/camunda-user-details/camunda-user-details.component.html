@@ -28,18 +28,45 @@
                   class="text-danger">Last Name is required</span></label>
               <input type="text" name="lastName" formControlName="lastName" placeholder="Last Name" id="lastName" class="form-control text-input">
 
+              <label class="form-label">GUID<span class="form-label-required"> *</span></label>
+              <label *ngIf="(requestForm.controls.guid.dirty || requestForm.controls.guid.touched) && requestForm.controls.guid.invalid && requestForm.controls.guid.errors.required"><span class="text-danger">GUID is required</span></label>
+              <input type="text" class="form-control text-input" placeholder="GUID" id="guid" formControlName="guid" name="guid"
+                 required>
+
               <label class="form-label">Email<span class="form-label-required"> *</span></label>
               <label *ngIf="(requestForm.controls.email.dirty || requestForm.controls.email.touched) && requestForm.controls.email.invalid && requestForm.controls.email.errors.required"><span
                   class="text-danger">Email is required</span></label>
               <input type="email" name="email" formControlName="email" placeholder="Email" id="email" class="form-control text-input">
+              <div *ngIf="formAdd">
+                <label class="form-label">Password<span class="form-label-required"> *</span></label>
+                <label *ngIf="(requestForm.controls.password.dirty || requestForm.controls.password.touched) && requestForm.controls.password.invalid && requestForm.controls.password.errors.required"><span
+                    class="text-danger">Password is required</span></label>
+                <input type="text" name="password" formControlName="password" placeholder="Password" id="password" class="form-control text-input">  
+              </div>
+            </div>
+            <div class="add-panel second-panel">
+              <app-role-picker [selectedRoles]="camundaUser.roles" (updatedRoles)="updateRoles($event)">
+              </app-role-picker>
 
-              <label class="form-label">Password<span class="form-label-required"> *</span></label>
-              <label *ngIf="(requestForm.controls.password.dirty || requestForm.controls.password.touched) && requestForm.controls.password.invalid && requestForm.controls.password.errors.required"><span
-                  class="text-danger">Password is required</span></label>
-              <input type="text" name="password" formControlName="password" placeholder="Password" id="password" class="form-control text-input">
+              <!-- SWITCH BUTTON USER STATUS -->
+
+              <div class="row col-6" style="margin-top: 20px">
+                <h6>Active:</h6>
+                <div class="toggle-text-button toggle-mini row" style="margin-left: 10px">
+                  <label class="toggle-button-label">
+                    <input type="checkbox" class="toggle-button-checkbox" formControlName="status" name="status">
+                    <div>
+                      <span class="toggle-button-inner on">On</span>
+                      <span class="toggle-button-inner off">Off</span>
+                      <span class="toggle-button-switch"></span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- ************************** -->
 
             </div>
-
           </div>
 
         </div>
