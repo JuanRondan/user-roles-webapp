@@ -143,8 +143,8 @@ export class CamundaUserListComponent implements OnInit {
   }
 
   createCamundaUser(updatedUser: CamundaUser) {
-
     if (this.formAdd) {
+      // add user
       this.camundaUserService.createCamundaUser(updatedUser).subscribe(newUser => {
         this.users$ = this.camundaUserService.getCamundaUserRequests();
         this.users$.subscribe(this.table.refreshItems());
@@ -160,6 +160,7 @@ export class CamundaUserListComponent implements OnInit {
         });
       });
     } else {
+      // edit user
       this.camundaUserService.updateCamundaUser(updatedUser).subscribe(user => {
         this.users$ = this.camundaUserService.getCamundaUserRequests();
         this.users$.subscribe(this.table.refreshItems());

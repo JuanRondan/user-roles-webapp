@@ -24,6 +24,7 @@
     "@pa-util/trident-rolemanagement": "^0.1.93",
     "angular2-toaster": "^7.0.0",
     "core-js": "^2.5.4",
+    "lodash": "^4.17.11",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.3.3",
     "zone.js": "^0.8.26"

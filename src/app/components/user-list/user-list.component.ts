@@ -70,6 +70,7 @@ export class UserListComponent implements OnInit {
   deleteUser() {
     this.userService.deleteUser(this.userToDelete).subscribe(() => {
       this.users$ = this.userService.getUsers();
+      this.hideBackground = false;
     });
   }
 
