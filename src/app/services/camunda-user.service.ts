@@ -59,4 +59,9 @@ export class CamundaUserService {
     console.log('delete camunda user', request);
     return this.http.delete(`${this.userApiUrl}/camunda/${request}`);
   }
+  // GET CAMUNDA USER PROFILE
+  getCamundaUserProfile(guid: string): Observable<any> {
+    console.log('camunda user profile details', guid);
+    return this.http.get(`${this.userApiUrl}/camundaUserProfileDetails/${guid}`);
+  }
 }

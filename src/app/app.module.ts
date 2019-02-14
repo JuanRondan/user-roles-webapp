@@ -36,7 +36,7 @@ import { CamundaUserListComponent } from './components/camunda-user-list/camunda
 
 const appRoutes : Routes = [
   { path : 'users',
-    component : UserListComponent,
+    component : CamundaUserListComponent,
     //resolve: { resolvedRoles: AppRolesResolver },
     //canActivate: [AuthGuard, RoleEditorGuard]
   },

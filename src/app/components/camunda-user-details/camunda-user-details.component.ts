@@ -43,6 +43,7 @@ export class CamundaUserDetailsComponent implements OnInit {
         'roles': this.camundaUser.roles,
         'status': this.camundaUser.status
       });
+      this.requestForm.controls.guid.disable();
     }
   }
   requestFormData(form: FormGroup) {

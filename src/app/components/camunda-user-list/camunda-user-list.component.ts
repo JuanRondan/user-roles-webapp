@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { CamundaUserService } from '../../services/camunda-user.service';
 import { Observable } from 'rxjs';
 import * as _ from 'lodash';
 
 import { CamundaUser } from '../../types/camunda-user';
+import { Global, GLOBALS } from '../../utils/globals';
 import { ActivatedRoute } from '@angular/router';
 import { ConfirmationAlertService } from '../../services/common-service/confirmation-alert.service';
 
@@ -18,6 +19,7 @@ export class CamundaUserListComponent implements OnInit {
   showModal: boolean;
   userToDelete: string;
   hideBackground: boolean;
+  showAddBtn: boolean;
   requestToAddEdit: CamundaUser;
   formAdd: boolean;
   table: any;
@@ -34,9 +36,15 @@ export class CamundaUserListComponent implements OnInit {
 
   constructor(private camundaUserService: CamundaUserService,
     private _ConfirmationAlertService: ConfirmationAlertService,
+    @Inject(GLOBALS) public global: Global,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.userRoles = this.global.userDetails.roles;
+    this.showAddBtn = false;
+    if (this.userRoles[0] === 'admin') {
+      this.showAddBtn = true;
+    }
     this.users$ = this.camundaUserService.getCamundaUserRequests();
     this.formAdd = true;
     // this.users = this.route.snapshot.data.resolvedUsers;
@@ -127,13 +135,14 @@ export class CamundaUserListComponent implements OnInit {
   }
 
   editUser(userData: CamundaUser, table: any) {
-    this.camundaUserService.camundaUserRoleList(userData.id).subscribe((roles) => {
-      this.userRoles = roles;
-      const roleList = _.map(this.userRoles, 'id');
+    // this.camundaUserService.camundaUserRoleList(userData.id).subscribe((roles) => {
+      // this.userRoles = roles;
+      // const roleList = _.map(this.userRoles, 'id');
+      const roleList = this.userRoles;
       this.table = table;
       userData.roles = roleList;
       this.requestToAddEdit = userData;
-    });
+    // });
 
     // if (this.requestToAddEdit.roles === undefined) {
     //   this.requestToAddEdit.roles = [];
