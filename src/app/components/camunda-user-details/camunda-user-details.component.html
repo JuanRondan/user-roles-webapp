@@ -36,7 +36,7 @@
               <label class="form-label">Email<span class="form-label-required"> *</span></label>
               <label *ngIf="(requestForm.controls.email.dirty || requestForm.controls.email.touched) && requestForm.controls.email.invalid && requestForm.controls.email.errors.required"><span
                   class="text-danger">Email is required</span></label>
-              <input type="email" name="email" formControlName="email" placeholder="Email" id="email" class="form-control text-input">
+              <input type="email" name="email" formControlName="email" placeholder="Email" id="email" class="form-control text-input" email>
               <div *ngIf="formAdd">
                 <label class="form-label">Password<span class="form-label-required"> *</span></label>
                 <label *ngIf="(requestForm.controls.password.dirty || requestForm.controls.password.touched) && requestForm.controls.password.invalid && requestForm.controls.password.errors.required"><span

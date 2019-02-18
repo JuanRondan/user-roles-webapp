@@ -13,6 +13,8 @@ export class DynamicTableComponent implements OnInit {
   @Input() configuration: any;
   @Input() listComponent: any;
   @Input() showAddBtn: boolean;
+  @Input() editDisabled: boolean;
+  @Input() deleteDisabled: boolean;
 
   constructor() {
     this.search = {

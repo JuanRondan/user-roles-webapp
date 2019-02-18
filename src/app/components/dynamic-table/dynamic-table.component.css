@@ -1,3 +1,10 @@
 .table-body{
     text-align: center;
 }
+.delete-btn, .edit-btn{
+    cursor: pointer;
+}
+.delete-btn:disabled, .edit-btn:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}

@@ -10,3 +10,16 @@
 #sidebar.active {
     margin-left: -80px;
 }
+.left-nav .item.active .item-content:before {
+    content: "";
+    position: absolute;
+    width: .3125rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #d04a02;
+}
+.left-nav .item.active .item-content{
+    background-color: #282f34;
+    position: relative
+}

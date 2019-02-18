@@ -7,11 +7,12 @@ import { CamundaUser } from '../../types/camunda-user';
 import { Global, GLOBALS } from '../../utils/globals';
 import { ActivatedRoute } from '@angular/router';
 import { ConfirmationAlertService } from '../../services/common-service/confirmation-alert.service';
-
+import {AppComponent} from '../../app.component';
 @Component({
   selector: 'app-camunda-user-list',
   templateUrl: './camunda-user-list.component.html',
-  styleUrls: ['./camunda-user-list.component.css']
+  styleUrls: ['./camunda-user-list.component.css'],
+  providers: [AppComponent]
 })
 export class CamundaUserListComponent implements OnInit {
 
@@ -22,8 +23,11 @@ export class CamundaUserListComponent implements OnInit {
   showAddBtn: boolean;
   requestToAddEdit: CamundaUser;
   formAdd: boolean;
+  editDisabled: boolean;
+  deleteDisabled: boolean;
   table: any;
   userRoles;
+  selectedUserRoles: any;
 
   /*array where the items are stored*/
   users: Array<CamundaUser>;
@@ -36,15 +40,15 @@ export class CamundaUserListComponent implements OnInit {
 
   constructor(private camundaUserService: CamundaUserService,
     private _ConfirmationAlertService: ConfirmationAlertService,
+    private appComponent: AppComponent,
     @Inject(GLOBALS) public global: Global,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.userRoles = this.global.userDetails.roles;
     this.showAddBtn = false;
-    if (this.userRoles[0] === 'admin') {
-      this.showAddBtn = true;
-    }
+    this.deleteDisabled = true;
+    this.editDisabled = true;
+    this.refreshRoleInGlobal();
     this.users$ = this.camundaUserService.getCamundaUserRequests();
     this.formAdd = true;
     // this.users = this.route.snapshot.data.resolvedUsers;
@@ -135,14 +139,14 @@ export class CamundaUserListComponent implements OnInit {
   }
 
   editUser(userData: CamundaUser, table: any) {
-    // this.camundaUserService.camundaUserRoleList(userData.id).subscribe((roles) => {
-      // this.userRoles = roles;
-      // const roleList = _.map(this.userRoles, 'id');
-      const roleList = this.userRoles;
+    this.camundaUserService.camundaUserRoleList(userData.id).subscribe((roles) => {
+      this.selectedUserRoles = roles;
+      const roleList = _.map(roles, 'id');
+      // const roleList = this.userRoles;
       this.table = table;
       userData.roles = roleList;
       this.requestToAddEdit = userData;
-    // });
+    });
 
     // if (this.requestToAddEdit.roles === undefined) {
     //   this.requestToAddEdit.roles = [];
@@ -178,7 +182,7 @@ export class CamundaUserListComponent implements OnInit {
         this._ConfirmationAlertService.callToasterMsg('error', err.error.message);
       });
       // const rolesToAdd = _.difference(updatedUser.roles, this.userRoles);
-      const userSelectedRoleId = _.map(this.userRoles, 'id');
+      const userSelectedRoleId = _.map(this.selectedUserRoles, 'id');
       const addRoles = updatedUser.roles.filter(e => !userSelectedRoleId.includes(e));
       const removeRoles = userSelectedRoleId.filter(e => !updatedUser.roles.includes(e));
       // adding roles to user
@@ -205,7 +209,8 @@ export class CamundaUserListComponent implements OnInit {
           });
         });
       }
-
+      this.appComponent.ngOnInit();
+      this.refreshRoleInGlobal();
       // this.users$ = this.camundaUserService.getCamundaUserRequests();      
     }
   }
@@ -236,10 +241,29 @@ export class CamundaUserListComponent implements OnInit {
       this.cancelDelete();
     });
   }
-
+  refreshRoleInGlobal() {
+    const userGuid = this.global.userDetails['id'];
+    this.camundaUserService.camundaUserRoleList(userGuid).subscribe((roles) => {
+      this.selectedUserRoles = roles;
+      const roleList = _.map(roles, 'id');
+      this.global.userDetails.roles = roleList;
+      this.checkRole();
+    });
+  }
+  checkRole() {
+    this.userRoles = this.global.userDetails.roles;
+    if (this.userRoles[0] === 'admin') {
+      this.showAddBtn = true;
+      this.deleteDisabled = false;
+      this.editDisabled = false;
+    }
+  }
   closeUserDetails() {
     this.requestToAddEdit = null;
     this.hideBackground = false;
   }
-
+  // TO RELOAD THE PAGE AFTER CHANGE IN ROLE
+  // refresh(): void {
+  //   window.location.reload();
+  // }
 }

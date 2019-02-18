@@ -84,6 +84,8 @@
       [listComponent], the angular component where the list elements are stored and handled
     -->
     <app-dynamic-table
+      [editDisabled] = "editDisabled"
+      [deleteDisabled] = "editDisabled"
       [showAddBtn] = "showAddBtn"
       [configuration] = "searchConfig"
       [listComponent] = "_self"
